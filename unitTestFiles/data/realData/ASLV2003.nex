@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Colinus virginianus,Colinus cristatusa),(((Phasianus colchicus,(((Centrocercus urophasianus,Tympanuchus cupido),(Lagopus lagopusa,Lagopus mutus)),Bonasa sewerzowi)),(Perdix dauurica,Perdix perdixa)),(Bambusicola thoracica,(Gallus variusa,Gallus gallusa))));
+endblock;
+begin parasite;
+tree parasite =(((((COVI2,(COVI1,COCR)),(CEUR,TYCU)),(PHCO1,(PHCO2,(BOSE,BATH)))),(LALA,LAMU)),((PEDA,PEPE),(GAVA,GAGA)));
+endblock;
+begin distribution;
+Range
+COVI2 : Colinus virginianus, COVI1 : Colinus virginianus, COCR : Colinus cristatusa, PHCO1 : Phasianus colchicus, PHCO2 : Phasianus colchicus, CEUR : Centrocercus urophasianus, TYCU : Tympanuchus cupido, LALA : Lagopus lagopusa, LAMU : Lagopus mutus, BOSE : Bonasa sewerzowi, BATH : Bambusicola thoracica, PEDA : Perdix dauurica, PEPE : Perdix perdixa, GAVA : Gallus variusa, GAGA : Gallus gallusa;
+endblock;

@@ -1,0 +1,198 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 30;
+	TAXLABELS
+		f._botryocarpa
+		f._hispioides
+		f._bernaysii
+		f._nodosa
+		f._racemosa
+		f._sur
+		f._sycomorus
+		f._botryoides
+		f._microdictya
+		f._semivestita
+		f._ochrochlora
+		f._adenosperma
+		apo.gw468
+		apo.b73
+		apo.g093
+		apo.gw522
+		apo.g13
+		apo.b191
+		apo.g101
+		apo.gw1075b
+		apo.gw1075a
+		apo.gw840a
+		apo.gw840b
+		apo.mspar4
+		apo.gw841a
+		apo.gw841b
+		apo.gw954
+		apo.gw700
+		apo.gw674
+		apo.gw735
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	InternalNode_00008,
+		H2	InternalNode_00007,
+		H3	InternalNode_00002,
+		H4	f._botryocarpa,
+		H5	InternalNode_00001,
+		H6	f._hispioides,
+		H7	f._bernaysii,
+		H8	InternalNode_00006,
+		H9	f._nodosa,
+		H10	InternalNode_00005,
+		H11	f._racemosa,
+		H12	InternalNode_00004,
+		H13	f._sur,
+		H14	InternalNode_00003,
+		H15	f._sycomorus,
+		H16	f._botryoides,
+		H17	f._microdictya,
+		H18	InternalNode_00010,
+		H19	f._semivestita,
+		H20	InternalNode_00009,
+		H21	f._ochrochlora,
+		H22	f._adenosperma,
+		P0	InternalNode_00017,
+		P1	InternalNode_00004,
+		P2	apo.gw468,
+		P3	InternalNode_00003,
+		P4	apo.b73,
+		P5	InternalNode_00002,
+		P6	apo.g093,
+		P7	InternalNode_00001,
+		P8	apo.gw522,
+		P9	apo.g13,
+		P10	InternalNode_00016,
+		P11	apo.b191,
+		P12	InternalNode_00015,
+		P13	apo.g101,
+		P14	InternalNode_00014,
+		P15	InternalNode_00010,
+		P16	apo.gw1075b,
+		P17	InternalNode_00009,
+		P18	InternalNode_00007,
+		P19	apo.gw1075a,
+		P20	InternalNode_00006,
+		P21	InternalNode_00005,
+		P22	apo.gw840a,
+		P23	apo.gw840b,
+		P24	apo.mspar4,
+		P25	InternalNode_00008,
+		P26	apo.gw841a,
+		P27	apo.gw841b,
+		P28	InternalNode_00013,
+		P29	apo.gw954,
+		P30	InternalNode_00012,
+		P31	apo.gw700,
+		P32	InternalNode_00011,
+		P33	apo.gw674,
+		P34	apo.gw735
+		;
+	TREE HOST = ((((H4,(H6,H7)H5)H3,(H9,(H11,(H13,(H15,H16)H14)H12)H10)H8)H2,H17)H1,(H19,(H21,H22)H20)H18)H0;
+	TREE PARASITE = ((P2,(P4,(P6,(P8,P9)P7)P5)P3)P1,(P11,(P13,((P16,((P19,((P22,P23)P21,P24)P20)P18,(P26,P27)P25)P17)P15,(P29,(P31,(P33,P34)P32)P30)P28)P14)P12)P10)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		apo.b191	f._nodosa,
+		apo.b73	f._hispioides,
+		apo.g093	f._hispioides,
+		apo.g101	f._nodosa,
+		apo.g13	f._bernaysii,
+		apo.gw1075a	f._racemosa,
+		apo.gw1075b	f._racemosa,
+		apo.gw468	f._botryocarpa,
+		apo.gw522	f._bernaysii,
+		apo.gw674	f._ochrochlora,
+		apo.gw700	f._semivestita,
+		apo.gw735	f._adenosperma,
+		apo.gw840a	f._sur,
+		apo.gw840b	f._sur,
+		apo.gw841a	f._botryoides,
+		apo.gw841b	f._botryoides,
+		apo.gw954	f._microdictya,
+		apo.mspar4	f._sycomorus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

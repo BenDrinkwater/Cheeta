@@ -1,0 +1,354 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 59;
+	TAXLABELS
+		s._siamkayai
+		s._carpocapsae
+		s._scapterisci
+		s._monticolum
+		s._diaprepesi
+		s._sangi
+		s._khoisanae
+		s._hermaphroditum
+		s._longicaudum
+		s._glaseri
+		s._apuliae
+		s._boemarei
+		s._anatoliense
+		s._websteri
+		s._rarum
+		s._weiseri
+		s._feltiae_france
+		s._feltiae_fl
+		s._puntauvense
+		s._feltiae_ca
+		s._jollieti
+		s._kraussei
+		s._oregonense_az
+		s._oregonense_or
+		s._riobrave
+		s._bicornutum
+		s._abbasi
+		s._costaricense
+		s._affine
+		s._intermedium
+		x._stockiae
+		x._innexi
+		x._hominickii
+		x._beddingi
+		x._poinarii
+		x._doucetiae
+		x._vietnamensis
+		x._kozodoi_s._apuliae
+		x._kozodoi_s._boemarei
+		x._szentirmaii_s._rarum
+		x._indica
+		x._nematophila_s._anatoliense
+		x._nematophila_s._websteri
+		x._nematophila_s._carpocapsae
+		x._sp._s._costaricense
+		x._sp._s._khoisanae
+		x._bovienii_s._affine
+		x._bovienii_s._weiseri
+		x._bovienii_s._feltiae_fl
+		x._bovienii_s._intermedium
+		x._bovienii_s._jollieti
+		x._bovienii_s._kraussei
+		x._bovienii_s._feltiae_france
+		x._bovienii_s._puntauvense
+		x._bovienii_s._feltiae_ca
+		x._bovienii_s._oreganense_az
+		x._bovienii_s._oreganense_or
+		x._cabanillasii
+		x._budapestensis
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00029,
+		H1	InternalNode_00003,
+		H2	InternalNode_00002,
+		H3	InternalNode_00001,
+		H4	s._siamkayai,
+		H5	s._carpocapsae,
+		H6	s._scapterisci,
+		H7	s._monticolum,
+		H8	InternalNode_00028,
+		H9	InternalNode_00026,
+		H10	InternalNode_00010,
+		H11	InternalNode_00007,
+		H12	s._diaprepesi,
+		H13	InternalNode_00006,
+		H14	InternalNode_00004,
+		H15	s._sangi,
+		H16	s._khoisanae,
+		H17	InternalNode_00005,
+		H18	s._hermaphroditum,
+		H19	s._longicaudum,
+		H20	InternalNode_00009,
+		H21	s._glaseri,
+		H22	InternalNode_00008,
+		H23	s._apuliae,
+		H24	s._boemarei,
+		H25	InternalNode_00025,
+		H26	InternalNode_00012,
+		H27	InternalNode_00011,
+		H28	s._anatoliense,
+		H29	s._websteri,
+		H30	s._rarum,
+		H31	InternalNode_00024,
+		H32	InternalNode_00020,
+		H33	InternalNode_00017,
+		H34	InternalNode_00016,
+		H35	s._weiseri,
+		H36	InternalNode_00015,
+		H37	InternalNode_00013,
+		H38	s._feltiae_france,
+		H39	s._feltiae_fl,
+		H40	InternalNode_00014,
+		H41	s._puntauvense,
+		H42	s._feltiae_ca,
+		H43	s._jollieti,
+		H44	InternalNode_00019,
+		H45	s._kraussei,
+		H46	InternalNode_00018,
+		H47	s._oregonense_az,
+		H48	s._oregonense_or,
+		H49	InternalNode_00023,
+		H50	InternalNode_00022,
+		H51	s._riobrave,
+		H52	InternalNode_00021,
+		H53	s._bicornutum,
+		H54	s._abbasi,
+		H55	s._costaricense,
+		H56	InternalNode_00027,
+		H57	s._affine,
+		H58	s._intermedium,
+		P0	InternalNode_00028,
+		P1	x._stockiae,
+		P2	InternalNode_00027,
+		P3	x._innexi,
+		P4	InternalNode_00026,
+		P5	InternalNode_00013,
+		P6	x._hominickii,
+		P7	InternalNode_00012,
+		P8	InternalNode_00005,
+		P9	InternalNode_00003,
+		P10	x._beddingi,
+		P11	InternalNode_00002,
+		P12	InternalNode_00001,
+		P13	x._poinarii,
+		P14	x._doucetiae,
+		P15	x._vietnamensis,
+		P16	InternalNode_00004,
+		P17	x._kozodoi_s._apuliae,
+		P18	x._kozodoi_s._boemarei,
+		P19	InternalNode_00011,
+		P20	InternalNode_00010,
+		P21	x._szentirmaii_s._rarum,
+		P22	InternalNode_00009,
+		P23	InternalNode_00008,
+		P24	x._indica,
+		P25	InternalNode_00007,
+		P26	InternalNode_00006,
+		P27	x._nematophila_s._anatoliense,
+		P28	x._nematophila_s._websteri,
+		P29	x._nematophila_s._carpocapsae,
+		P30	x._sp._s._costaricense,
+		P31	x._sp._s._khoisanae,
+		P32	InternalNode_00025,
+		P33	InternalNode_00023,
+		P34	InternalNode_00018,
+		P35	InternalNode_00015,
+		P36	x._bovienii_s._affine,
+		P37	InternalNode_00014,
+		P38	x._bovienii_s._weiseri,
+		P39	x._bovienii_s._feltiae_fl,
+		P40	InternalNode_00017,
+		P41	InternalNode_00016,
+		P42	x._bovienii_s._intermedium,
+		P43	x._bovienii_s._jollieti,
+		P44	x._bovienii_s._kraussei,
+		P45	InternalNode_00022,
+		P46	InternalNode_00019,
+		P47	x._bovienii_s._feltiae_france,
+		P48	x._bovienii_s._puntauvense,
+		P49	InternalNode_00021,
+		P50	x._bovienii_s._feltiae_ca,
+		P51	InternalNode_00020,
+		P52	x._bovienii_s._oreganense_az,
+		P53	x._bovienii_s._oreganense_or,
+		P54	InternalNode_00024,
+		P55	x._cabanillasii,
+		P56	x._budapestensis
+		;
+	TREE HOST = ((((H4,H5)H3,H6)H2,H7)H1,((((H12,((H15,H16)H14,(H18,H19)H17)H13)H11,(H21,(H23,H24)H22)H20)H10,(((H28,H29)H27,H30)H26,((((H35,((H38,H39)H37,(H41,H42)H40)H36)H34,H43)H33,(H45,(H47,H48)H46)H44)H32,((H51,(H53,H54)H52)H50,H55)H49)H31)H25)H9,(H57,H58)H56)H8)H0;
+	TREE PARASITE = (P1,(P3,((P6,(((P10,((P13,P14)P12,P15)P11)P9,(P17,P18)P16)P8,((P21,((P24,((P27,P28)P26,P29)P25)P23,P30)P22)P20,P31)P19)P7)P5,((((P36,(P38,P39)P37)P35,((P42,P43)P41,P44)P40)P34,((P47,P48)P46,(P50,(P52,P53)P51)P49)P45)P33,(P55,P56)P54)P32)P4)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0,
+		P41	0	0,
+		P42	0	0,
+		P43	0	0,
+		P44	0	0,
+		P45	0	0,
+		P46	0	0,
+		P47	0	0,
+		P48	0	0,
+		P49	0	0,
+		P50	0	0,
+		P51	0	0,
+		P52	0	0,
+		P53	0	0,
+		P54	0	0,
+		P55	0	0,
+		P56	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		x._beddingi	s._hermaphroditum,
+		x._bovienii_s._affine	s._affine,
+		x._bovienii_s._feltiae_ca	s._feltiae_ca,
+		x._bovienii_s._feltiae_fl	s._feltiae_fl,
+		x._bovienii_s._feltiae_france	s._feltiae_france,
+		x._bovienii_s._intermedium	s._intermedium,
+		x._bovienii_s._jollieti	s._jollieti,
+		x._bovienii_s._kraussei	s._kraussei,
+		x._bovienii_s._oreganense_az	s._oregonense_az,
+		x._bovienii_s._oreganense_or	s._oregonense_or,
+		x._bovienii_s._puntauvense	s._puntauvense,
+		x._bovienii_s._weiseri	s._weiseri,
+		x._budapestensis	s._bicornutum,
+		x._cabanillasii	s._riobrave,
+		x._doucetiae	s._diaprepesi,
+		x._hominickii	s._monticolum,
+		x._indica	s._abbasi,
+		x._innexi	s._scapterisci,
+		x._kozodoi_s._apuliae	s._apuliae,
+		x._kozodoi_s._boemarei	s._boemarei,
+		x._nematophila_s._anatoliense	s._anatoliense,
+		x._nematophila_s._carpocapsae	s._carpocapsae,
+		x._nematophila_s._websteri	s._websteri,
+		x._poinarii	s._glaseri,
+		x._sp._s._costaricense	s._costaricense,
+		x._sp._s._khoisanae	s._khoisanae,
+		x._stockiae	s._siamkayai,
+		x._szentirmaii_s._rarum	s._rarum,
+		x._vietnamensis	s._sangi
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((T. talpoides,T. bottae),((O. hispidus,((O. underwoodi,O. cavator),(O. cherriei,O. heterodus))),((G. bursarius majus,G. bursarius halli),G. breviceps)));
+endblock;
+begin parasite;
+tree parasite =((T. barbarae,T. minor),((G. chapini,((G. setzeri,G. panamensis),(G. cherriei,G. costaricensis))),((G. geomydis,G. oklahomensis),G. ewingi)));
+endblock;
+begin distribution;
+Range
+T. barbarae : T. talpoides, T. minor : T. bottae, G. chapini : O. hispidus, G. setzeri : O. underwoodi, G. panamensis : O. cavator, G. cherriei : O. cherriei, G. costaricensis : O. heterodus, G. geomydis : G. bursarius majus, G. oklahomensis : G. bursarius halli, G. ewingi : G. breviceps;
+endblock;

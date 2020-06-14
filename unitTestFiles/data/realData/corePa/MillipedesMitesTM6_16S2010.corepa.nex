@@ -1,0 +1,96 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		spc001336
+		spc001176
+		spc001355
+		spc001205
+		spc001361
+		spc001307
+		mit002021
+		mit001441
+		mit000911
+		mit002182
+		mit002211
+		mit001841
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00005,
+		H1	InternalNode_00004,
+		H2	InternalNode_00001,
+		H3	spc001336,
+		H4	spc001176,
+		H5	InternalNode_00003,
+		H6	spc001355,
+		H7	InternalNode_00002,
+		H8	spc001205,
+		H9	spc001361,
+		H10	spc001307,
+		P0	InternalNode_00005,
+		P1	InternalNode_00002,
+		P2	InternalNode_00001,
+		P3	mit002021,
+		P4	mit001441,
+		P5	mit000911,
+		P6	InternalNode_00004,
+		P7	InternalNode_00003,
+		P8	mit002182,
+		P9	mit002211,
+		P10	mit001841
+		;
+	TREE HOST = (((H3,H4)H2,(H6,(H8,H9)H7)H5)H1,H10)H0;
+	TREE PARASITE = (((P3,P4)P2,P5)P1,((P8,P9)P7,P10)P6)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		mit000911	spc001176,
+		mit001441	spc001205,
+		mit001841	spc001307,
+		mit002021	spc001336,
+		mit002182	spc001355,
+		mit002211	spc001361
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Artibeus spp.,((((Calomys musculinus,(Calomys callosus,(Neacomys guianae,(Oryzomys capito,(Oryzomys buccinatus,Oryzomys albigularis))))),Bolomys obscurus),(Sigmodon alstoni,Sigmodon hispidus)),Neotoma albigula));
+endblock;
+begin parasite;
+tree parasite =(((TCR,(JUN,MAC)),(AMA-1,AMA-2)),((LAT,OLV),(((PAR,PIC),(TAM,WWA)),PIR)));
+endblock;
+begin distribution;
+Range
+TCR : Artibeus spp., JUN : Calomys musculinus, MAC : Calomys callosus, LAT : Calomys callosus, AMA-1 : Neacomys guianae, AMA-2 : Oryzomys capito, PAR : Oryzomys buccinatus, PIC : Oryzomys albigularis, OLV : Bolomys obscurus, PIR : Sigmodon alstoni, TAM : Sigmodon hispidus, WWA : Neotoma albigula;
+endblock;

@@ -1,0 +1,206 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 32;
+	TAXLABELS
+		f._variegata
+		f._botryoides
+		f._sycomorus
+		f._sur
+		f._racemosa
+		f._robusta
+		f._nodosa
+		f._botryocarpa
+		f._septica
+		f._hispidioides
+		f._bernaysii
+		f._itoana
+		f._microdictya
+		f._semivestita
+		f._ochrochlora
+		f._adenosperma
+		c._appendicuatus
+		c._bloommersii
+		c._arabicus
+		c._capensis
+		c._fusciceps
+		c._nexilis
+		c._cf._nexilis
+		c._corneri
+		c._bisulcatus
+		c._hooglandii
+		c._dentifer
+		c._armipes
+		c._kaironkensis
+		c._grandii
+		c._medlerianus
+		c._riparianus
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00015,
+		H1	InternalNode_00012,
+		H2	InternalNode_00010,
+		H3	InternalNode_00006,
+		H4	f._variegata,
+		H5	InternalNode_00005,
+		H6	InternalNode_00003,
+		H7	InternalNode_00002,
+		H8	InternalNode_00001,
+		H9	f._botryoides,
+		H10	f._sycomorus,
+		H11	f._sur,
+		H12	f._racemosa,
+		H13	InternalNode_00004,
+		H14	f._robusta,
+		H15	f._nodosa,
+		H16	InternalNode_00009,
+		H17	f._botryocarpa,
+		H18	InternalNode_00008,
+		H19	f._septica,
+		H20	InternalNode_00007,
+		H21	f._hispidioides,
+		H22	f._bernaysii,
+		H23	InternalNode_00011,
+		H24	f._itoana,
+		H25	f._microdictya,
+		H26	InternalNode_00014,
+		H27	f._semivestita,
+		H28	InternalNode_00013,
+		H29	f._ochrochlora,
+		H30	f._adenosperma,
+		P0	InternalNode_00015,
+		P1	InternalNode_00004,
+		P2	InternalNode_00002,
+		P3	c._appendicuatus,
+		P4	InternalNode_00001,
+		P5	c._bloommersii,
+		P6	c._arabicus,
+		P7	InternalNode_00003,
+		P8	c._capensis,
+		P9	c._fusciceps,
+		P10	InternalNode_00014,
+		P11	InternalNode_00009,
+		P12	InternalNode_00005,
+		P13	c._nexilis,
+		P14	c._cf._nexilis,
+		P15	InternalNode_00008,
+		P16	InternalNode_00006,
+		P17	c._corneri,
+		P18	c._bisulcatus,
+		P19	InternalNode_00007,
+		P20	c._hooglandii,
+		P21	c._dentifer,
+		P22	InternalNode_00013,
+		P23	InternalNode_00010,
+		P24	c._armipes,
+		P25	c._kaironkensis,
+		P26	InternalNode_00012,
+		P27	c._grandii,
+		P28	InternalNode_00011,
+		P29	c._medlerianus,
+		P30	c._riparianus
+		;
+	TREE HOST = ((((H4,((((H9,H10)H8,H11)H7,H12)H6,(H14,H15)H13)H5)H3,(H17,(H19,(H21,H22)H20)H18)H16)H2,(H24,H25)H23)H1,(H27,(H29,H30)H28)H26)H0;
+	TREE PARASITE = (((P3,(P5,P6)P4)P2,(P8,P9)P7)P1,(((P13,P14)P12,((P17,P18)P16,(P20,P21)P19)P15)P11,((P24,P25)P23,(P27,(P29,P30)P28)P26)P22)P10)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		c._appendicuatus	f._variegata,
+		c._arabicus	f._sycomorus,
+		c._armipes	f._itoana,
+		c._bisulcatus	f._septica,
+		c._bloommersii	f._botryoides,
+		c._capensis	f._sur,
+		c._cf._nexilis	f._nodosa,
+		c._corneri	f._botryocarpa,
+		c._dentifer	f._bernaysii,
+		c._fusciceps	f._racemosa,
+		c._grandii	f._semivestita,
+		c._hooglandii	f._hispidioides,
+		c._kaironkensis	f._microdictya,
+		c._medlerianus	f._ochrochlora,
+		c._nexilis	f._robusta,
+		c._riparianus	f._adenosperma
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

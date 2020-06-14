@@ -1,0 +1,208 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 33;
+	TAXLABELS
+		aa
+		hi
+		pm
+		se
+		ec
+		yp
+		vc
+		pa
+		bc
+		rs
+		bp
+		ng
+		nm
+		af
+		at
+		sm
+		ml
+		cc
+		ct
+		pg
+		aa
+		pm
+		yp
+		sm1
+		sm2
+		cc
+		ct
+		rs1
+		ml1
+		bc2
+		bp2
+		pa
+		rs2
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00019,
+		H1	InternalNode_00017,
+		H2	InternalNode_00013,
+		H3	InternalNode_00012,
+		H4	InternalNode_00007,
+		H5	InternalNode_00006,
+		H6	InternalNode_00005,
+		H7	InternalNode_00002,
+		H8	InternalNode_00001,
+		H9	aa,
+		H10	hi,
+		H11	pm,
+		H12	InternalNode_00004,
+		H13	InternalNode_00003,
+		H14	se,
+		H15	ec,
+		H16	yp,
+		H17	vc,
+		H18	pa,
+		H19	InternalNode_00011,
+		H20	InternalNode_00009,
+		H21	bc,
+		H22	InternalNode_00008,
+		H23	rs,
+		H24	bp,
+		H25	InternalNode_00010,
+		H26	ng,
+		H27	nm,
+		H28	af,
+		H29	InternalNode_00016,
+		H30	InternalNode_00015,
+		H31	InternalNode_00014,
+		H32	at,
+		H33	sm,
+		H34	ml,
+		H35	cc,
+		H36	InternalNode_00018,
+		H37	ct,
+		H38	pg,
+		P0	InternalNode_00012,
+		P1	InternalNode_00008,
+		P2	InternalNode_00007,
+		P3	InternalNode_00005,
+		P4	InternalNode_00002,
+		P5	InternalNode_00001,
+		P6	aa,
+		P7	pm,
+		P8	yp,
+		P9	InternalNode_00004,
+		P10	InternalNode_00003,
+		P11	sm1,
+		P12	sm2,
+		P13	cc,
+		P14	InternalNode_00006,
+		P15	ct,
+		P16	rs1,
+		P17	ml1,
+		P18	InternalNode_00011,
+		P19	InternalNode_00010,
+		P20	InternalNode_00009,
+		P21	bc2,
+		P22	bp2,
+		P23	pa,
+		P24	rs2
+		;
+	TREE HOST = (((((((((H9,H10)H8,H11)H7,((H14,H15)H13,H16)H12)H6,H17)H5,H18)H4,((H21,(H23,H24)H22)H20,(H26,H27)H25)H19)H3,H28)H2,(((H32,H33)H31,H34)H30,H35)H29)H1,(H37,H38)H36)H0;
+	TREE PARASITE = ((((((P6,P7)P5,P8)P4,((P11,P12)P10,P13)P9)P3,(P15,P16)P14)P2,P17)P1,(((P21,P22)P20,P23)P19,P24)P18)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		aa	aa,
+		bc2	bc,
+		bp2	bp,
+		cc	cc,
+		ct	ct,
+		ml1	ml,
+		pa	pa,
+		pm	pm,
+		rs1	rs,
+		rs2	rs,
+		sm1	sm,
+		sm2	sm,
+		yp	yp
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

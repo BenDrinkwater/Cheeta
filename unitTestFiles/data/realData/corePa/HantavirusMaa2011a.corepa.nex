@@ -1,0 +1,249 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 40;
+	TAXLABELS
+		peromyscus_maniculatus
+		oligoryzomys_longicaudatus
+		myodes_glareolus
+		microtus_arvalis
+		microtus_pennssylvanicus
+		rattus_norvegicus
+		apodemus_flavicollis
+		apodemus_peninsulae
+		apodemus_agrarius
+		blarina_brevicauda
+		anourosorex_squamipes
+		sorex_cinereus
+		sorex_monticolus
+		sorex_roboratus
+		sorex_araneus
+		crocidura_lasiura
+		suncus_murinus
+		scalopus_aquaticus
+		neurotrichus_gibbsii
+		urotrichus_talpoides
+		talpa_europaea
+		68
+		72
+		73
+		74
+		76
+		77
+		50
+		52
+		54
+		55
+		56
+		60
+		62
+		66
+		67
+		65
+		59
+		46
+		47
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00020,
+		H1	InternalNode_00008,
+		H2	InternalNode_00004,
+		H3	peromyscus_maniculatus,
+		H4	InternalNode_00003,
+		H5	oligoryzomys_longicaudatus,
+		H6	InternalNode_00002,
+		H7	myodes_glareolus,
+		H8	InternalNode_00001,
+		H9	microtus_arvalis,
+		H10	microtus_pennssylvanicus,
+		H11	InternalNode_00007,
+		H12	rattus_norvegicus,
+		H13	InternalNode_00006,
+		H14	apodemus_flavicollis,
+		H15	InternalNode_00005,
+		H16	apodemus_peninsulae,
+		H17	apodemus_agrarius,
+		H18	InternalNode_00019,
+		H19	InternalNode_00015,
+		H20	InternalNode_00013,
+		H21	InternalNode_00009,
+		H22	blarina_brevicauda,
+		H23	anourosorex_squamipes,
+		H24	InternalNode_00012,
+		H25	InternalNode_00010,
+		H26	sorex_cinereus,
+		H27	sorex_monticolus,
+		H28	InternalNode_00011,
+		H29	sorex_roboratus,
+		H30	sorex_araneus,
+		H31	InternalNode_00014,
+		H32	crocidura_lasiura,
+		H33	suncus_murinus,
+		H34	InternalNode_00018,
+		H35	scalopus_aquaticus,
+		H36	InternalNode_00017,
+		H37	neurotrichus_gibbsii,
+		H38	InternalNode_00016,
+		H39	urotrichus_talpoides,
+		H40	talpa_europaea,
+		P0	InternalNode_00018,
+		P1	InternalNode_00016,
+		P2	InternalNode_00005,
+		P3	68,
+		P4	InternalNode_00004,
+		P5	InternalNode_00001,
+		P6	72,
+		P7	73,
+		P8	InternalNode_00003,
+		P9	74,
+		P10	InternalNode_00002,
+		P11	76,
+		P12	77,
+		P13	InternalNode_00015,
+		P14	InternalNode_00008,
+		P15	50,
+		P16	InternalNode_00007,
+		P17	52,
+		P18	InternalNode_00006,
+		P19	54,
+		P20	55,
+		P21	InternalNode_00014,
+		P22	56,
+		P23	InternalNode_00013,
+		P24	InternalNode_00012,
+		P25	60,
+		P26	InternalNode_00011,
+		P27	62,
+		P28	InternalNode_00010,
+		P29	InternalNode_00009,
+		P30	66,
+		P31	67,
+		P32	65,
+		P33	59,
+		P34	InternalNode_00017,
+		P35	46,
+		P36	47
+		;
+	TREE HOST = (((H3,(H5,(H7,(H9,H10)H8)H6)H4)H2,(H12,(H14,(H16,H17)H15)H13)H11)H1,((((H22,H23)H21,((H26,H27)H25,(H29,H30)H28)H24)H20,(H32,H33)H31)H19,(H35,(H37,(H39,H40)H38)H36)H34)H18)H0;
+	TREE PARASITE = (((P3,((P6,P7)P5,(P9,(P11,P12)P10)P8)P4)P2,((P15,(P17,(P19,P20)P18)P16)P14,(P22,((P25,(P27,((P30,P31)P29,P32)P28)P26)P24,P33)P23)P21)P13)P1,(P35,P36)P34)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		46	crocidura_lasiura,
+		47	suncus_murinus,
+		50	rattus_norvegicus,
+		52	apodemus_flavicollis,
+		54	apodemus_peninsulae,
+		55	apodemus_agrarius,
+		56	blarina_brevicauda,
+		59	urotrichus_talpoides,
+		60	anourosorex_squamipes,
+		62	sorex_cinereus,
+		65	neurotrichus_gibbsii,
+		66	sorex_monticolus,
+		67	sorex_roboratus,
+		68	scalopus_aquaticus,
+		72	peromyscus_maniculatus,
+		73	oligoryzomys_longicaudatus,
+		74	myodes_glareolus,
+		76	microtus_arvalis,
+		77	microtus_pennssylvanicus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

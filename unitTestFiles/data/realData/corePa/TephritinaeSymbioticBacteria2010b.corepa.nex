@@ -1,0 +1,217 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 34;
+	TAXLABELS
+		t._arnicae
+		t._bardanae
+		t._cometa
+		t._matricariae
+		t._divisa
+		c._ramulosa
+		a._helianthi
+		t._stellata
+		t._amoena
+		s._marginata
+		o._flavipennis
+		c._doronici
+		c._guttella
+		d._bidentis
+		n._bisetosa
+		n._pupillata
+		b._oleae
+		stammerula_tephritidis_t.b.
+		stammerula_tephritidis_t.a.
+		stammerula_tephritidis_t.c.
+		stammerula_tephritidis_t.m.
+		stammerula_tephritidis_t.d.
+		stammerula_sp._a.h.
+		stammerula_sp._c.r.
+		stammerula_sp._t.s.
+		stammerula_sp._t.a.
+		stammerula_sp._s.m.
+		stammerula_sp._o.f.
+		stammerula_sp._c.d.
+		symb._c.g.
+		erwinia_dacicola
+		symb._d.b.
+		symb._n.b.
+		symb._n.p.
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00016,
+		H1	InternalNode_00015,
+		H2	InternalNode_00013,
+		H3	InternalNode_00008,
+		H4	InternalNode_00005,
+		H5	InternalNode_00004,
+		H6	t._arnicae,
+		H7	InternalNode_00003,
+		H8	InternalNode_00001,
+		H9	t._bardanae,
+		H10	t._cometa,
+		H11	InternalNode_00002,
+		H12	t._matricariae,
+		H13	t._divisa,
+		H14	c._ramulosa,
+		H15	InternalNode_00007,
+		H16	a._helianthi,
+		H17	InternalNode_00006,
+		H18	t._stellata,
+		H19	t._amoena,
+		H20	InternalNode_00012,
+		H21	s._marginata,
+		H22	InternalNode_00011,
+		H23	InternalNode_00010,
+		H24	o._flavipennis,
+		H25	InternalNode_00009,
+		H26	c._doronici,
+		H27	c._guttella,
+		H28	d._bidentis,
+		H29	InternalNode_00014,
+		H30	n._bisetosa,
+		H31	n._pupillata,
+		H32	b._oleae,
+		P0	InternalNode_00016,
+		P1	InternalNode_00014,
+		P2	InternalNode_00011,
+		P3	InternalNode_00009,
+		P4	InternalNode_00008,
+		P5	InternalNode_00005,
+		P6	InternalNode_00004,
+		P7	stammerula_tephritidis_t.b.,
+		P8	InternalNode_00003,
+		P9	stammerula_tephritidis_t.a.,
+		P10	InternalNode_00002,
+		P11	stammerula_tephritidis_t.c.,
+		P12	InternalNode_00001,
+		P13	stammerula_tephritidis_t.m.,
+		P14	stammerula_tephritidis_t.d.,
+		P15	stammerula_sp._a.h.,
+		P16	InternalNode_00007,
+		P17	InternalNode_00006,
+		P18	stammerula_sp._c.r.,
+		P19	stammerula_sp._t.s.,
+		P20	stammerula_sp._t.a.,
+		P21	stammerula_sp._s.m.,
+		P22	InternalNode_00010,
+		P23	stammerula_sp._o.f.,
+		P24	stammerula_sp._c.d.,
+		P25	InternalNode_00013,
+		P26	InternalNode_00012,
+		P27	symb._c.g.,
+		P28	erwinia_dacicola,
+		P29	symb._d.b.,
+		P30	InternalNode_00015,
+		P31	symb._n.b.,
+		P32	symb._n.p.
+		;
+	TREE HOST = ((((((H6,((H9,H10)H8,(H12,H13)H11)H7)H5,H14)H4,(H16,(H18,H19)H17)H15)H3,(H21,((H24,(H26,H27)H25)H23,H28)H22)H20)H2,(H30,H31)H29)H1,H32)H0;
+	TREE PARASITE = (((((((P7,(P9,(P11,(P13,P14)P12)P10)P8)P6,P15)P5,((P18,P19)P17,P20)P16)P4,P21)P3,(P23,P24)P22)P2,((P27,P28)P26,P29)P25)P1,(P31,P32)P30)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		erwinia_dacicola	b._oleae,
+		stammerula_sp._a.h.	a._helianthi,
+		stammerula_sp._c.d.	c._doronici,
+		stammerula_sp._c.r.	c._ramulosa,
+		stammerula_sp._o.f.	o._flavipennis,
+		stammerula_sp._s.m.	s._marginata,
+		stammerula_sp._t.a.	t._amoena,
+		stammerula_sp._t.s.	t._stellata,
+		stammerula_tephritidis_t.a.	t._arnicae,
+		stammerula_tephritidis_t.b.	t._bardanae,
+		stammerula_tephritidis_t.c.	t._cometa,
+		stammerula_tephritidis_t.d.	t._divisa,
+		stammerula_tephritidis_t.m.	t._matricariae,
+		symb._c.g.	c._guttella,
+		symb._d.b.	d._bidentis,
+		symb._n.b.	n._bisetosa,
+		symb._n.p.	n._pupillata
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((Pterodroma hypoleuca,(Pterodroma cookii,Pterodroma inexpectata)),Pterodroma lessonii),((Calonectris diomedea,(Puffinus huttoni,(Puffinus assimilis baroli,Puffinus boydi))),(Puffinus tenuirostris,(Puffinus gravis,Puffinus griseus)))),(Pelagodroma marina,Oceanodroma castro));
+endblock;
+begin parasite;
+tree parasite =(((((Halipeurus theresae,(Halipeurus turtur,(Halipeurus consimilis,Halipeurus procellariae))),(Halipeurus abnormis T53,Halipeurus RF21)),(Halipeurus spadix,Halipeurus gravis)),((Halipeurus diversus T25,Halipeurus diversus RF01),(Halipeurus diversus RF61,Halipeurus diversus))),(Halipeurus pelagicus,Halipeurus pelagicus T43));
+endblock;
+begin distribution;
+Range
+Halipeurus pelagicus : Pelagodroma marina, Halipeurus pelagicus T43 : Oceanodroma castro, Halipeurus diversus : Puffinus griseus, Halipeurus diversus RF61 : Puffinus tenuirostris, Halipeurus diversus RF01 : Puffinus boydi, Halipeurus diversus T25 : Puffinus assimilis baroli, Halipeurus gravis : Puffinus gravis, Halipeurus spadix : Puffinus huttoni, Halipeurus RF21 : Calonectris diomedea, Halipeurus abnormis T53 : Calonectris diomedea, Halipeurus procellariae : Pterodroma lessonii, Halipeurus consimilis : Pterodroma inexpectata, Halipeurus turtur : Pterodroma cookii, Halipeurus theresae : Pterodroma hypoleuca;
+endblock;

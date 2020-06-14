@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((h1,h2),(h3,(h4,((h5,h6),(h7,(h8,(h9,h10)))))));
+endblock;
+begin parasite;
+tree parasite =(((p1,p2),p3),(p4,(p5,(p6,((p7,p8),(p9,p10))))));
+endblock;
+begin distribution;
+Range
+p1 : h1, p4 : h1, p8 : h1, p2 : h3, p3 : h5, p1 : h1, p4 : h1, p8 : h1, p5 : h6, p6 : h10, p7 : h4, p1 : h1, p4 : h1, p8 : h1, p9 : h8, p10 : h9;
+endblock;

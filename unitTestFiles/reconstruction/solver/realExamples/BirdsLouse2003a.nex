@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Chaetura pelagica,Chaetura vauxi),(((C. esculenta nitens,((C. esculenta bagobo,C. esculenta  marginata),(C. esculenta cyanoptila 1,C. esculenta cyanoptila 2))),C. linchi),(((((((A. elaphrus,A. francicus),A. spodiopygius assimilis 1),(A. mearnsi,A. vanikorensis palawanensis)),(A. fuciphagus vestitus,A. salanganus natunae)),(A. spodiopygius assimilis 2,A. s. spodiopygius)),((A. maximus lowi,A. brevirostris vulcanorum),A. terraereginae)),(Cypsiurus balasiensis,Cypsiurus parvus))));
+endblock;
+begin parasite;
+tree parasite =(((D. dubius,D. vauxi),((Dennyus sp. 1,((((D. distinctus ssp. a,D. distinctus ssp. b),(D. distinctus timjonesi,D. d. distinctus)),(((D. somadikartai 1,D. somadikartai 2),(D. carljonesi fosteri,D. carljonesi forresteri)),(D. hahnae,((D. c. carljonesi a,D. c. carljonesi b),D. c. carljonesi c)))),((D. singhi a,D. singhi b),D. kristinae))),(((D. wraggi a,D. wraggi b),D. simberloffi),((Dennyus sp. 2,D. wellsi),((D. thompsoni,D. collinsi),D. adamsae))))),(D. cypsiurus 1,D. cypsiurus 2));
+endblock;
+begin distribution;
+Range
+D. dubius : Chaetura pelagica, D. vauxi : Chaetura vauxi, Dennyus sp. 1 : C. esculenta nitens, D. distinctus ssp. a : C. esculenta bagobo, D. distinctus ssp. b : C. esculenta  marginata, D. distinctus timjonesi : C. esculenta cyanoptila 1, D. d. distinctus : C. esculenta cyanoptila 2, D. somadikartai 1 : C. esculenta cyanoptila 2, D. somadikartai 2 : C. linchi, D. carljonesi fosteri : A. elaphrus, D. carljonesi forresteri : A. francicus, D. hahnae : A. mearnsi, D. c. carljonesi a : A. fuciphagus vestitus, D. c. carljonesi b : A. salanganus natunae, D. wellsi : A. salanganus natunae, D. c. carljonesi c : A. maximus lowi, D. simberloffi : A. maximus lowi, D. thompsoni : A. maximus lowi, D. singhi a : A. spodiopygius assimilis 1, D. wraggi a : A. spodiopygius assimilis 1, D. singhi b : A. spodiopygius assimilis 2, D. wraggi b : A. spodiopygius assimilis 2, D. kristinae : A. s. spodiopygius, Dennyus sp. 2 : A. vanikorensis palawanensis, D. collinsi : A. brevirostris vulcanorum, D. adamsae : A. terraereginae, D. cypsiurus 1 : Cypsiurus balasiensis, D. cypsiurus 2 : Cypsiurus parvus;
+endblock;

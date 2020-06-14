@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Elephantulus edwardii,(Elephantulus rupestris,Elephantulus intufi)),(((Scalopus aquaticus,((Talpa europaea,Urotrichus talpoides),Neurotrichus gibbsii)),((((Crocidura lasiure,((Suncus murinus,(Crocidura shantungensis 10-11,Crocidura shantungensis SH42)),Crocidura obscurior)),Crocidura theresae),((Sorex cylindricauda,Sorex araneus),(Sorex cinereus,Sorex monticolus))),Anourosorex squamipes)),(((Apodemus flavicollis,Rattus norvegicus),(Apodemus peninsulae,Apodemus agrarius)),(Peromyscus maniculatus,(Otigoryzomys fulvescens,(Myodes glareolus,(Microtus arvalis,Microtus pennsylvanicus)))))));
+endblock;
+begin parasite;
+tree parasite =((NVA,(MJN,TPM)),(((((JJU10-11,JJUSH42),(AZG,TGN)),(((ASA,(QDL,SWS)),((JMS,ARR),CBN)),OXB)),(DOB,(SEO,(SOO,HTN)))),((SN,AND),(PUU,(YUL,PH)))));
+endblock;
+begin distribution;
+Range
+JJU10-11 : Crocidura shantungensis 10-11, JJUSH42 : Crocidura shantungensis SH42, DOB : Apodemus flavicollis, SEO : Rattus norvegicus, SOO : Apodemus peninsulae, HTN : Apodemus agrarius, SN : Peromyscus maniculatus, AND : Otigoryzomys fulvescens, PUU : Myodes glareolus, YUL : Microtus arvalis, PH : Microtus pennsylvanicus, NVA : Talpa europaea, MJN : Crocidura lasiure, TPM : Suncus murinus, AZG : Crocidura obscurior, TGN : Crocidura theresae, ASA : Urotrichus talpoides, QDL : Sorex cylindricauda, SWS : Sorex araneus, JMS : Sorex cinereus, ARR : Sorex monticolus, CBN : Anourosorex squamipes, OXB : Neurotrichus gibbsii;
+endblock;

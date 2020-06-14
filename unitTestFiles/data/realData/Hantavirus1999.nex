@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Rattus rattus,(Apodemus flavicollis,((Oryzomys palustris,Oligoryzomys microtis),(Calomys,((Reithrodontomys megalotis,(Peromyscus maniculatus,Peromyscus leucopus)),((((Microtus californicus,Microtus pennsylvanicus),(Microtus arvalis,Microtus fortis)),(Clethrionomys rufocanus,Clethrionomys glareolus)),(Lemmus sibiricus,Lemmus trimucronatus)))))));
+endblock;
+begin parasite;
+tree parasite =(SEO,(DOB,(((BAY,(RIOM,LN)),(ELMC,(SN,NY))),(((ILV,PH),TUL),((PUU Tobetsu,PUU Sotkamo),(KBR,TOP))))));
+endblock;
+begin distribution;
+Range
+TOP : Lemmus sibiricus, KBR : Microtus fortis, PUU Tobetsu : Clethrionomys rufocanus, PUU Sotkamo : Clethrionomys glareolus, TUL : Microtus arvalis, PH : Microtus pennsylvanicus, ILV : Microtus californicus, NY : Peromyscus leucopus, SN : Peromyscus maniculatus, ELMC : Reithrodontomys megalotis, LN : Calomys, RIOM : Oligoryzomys microtis, BAY : Oryzomys palustris, DOB : Apodemus flavicollis, SEO : Rattus rattus;
+endblock;

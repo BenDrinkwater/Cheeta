@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Trichosurus vulpecula,((Bos taurus,(Ovis aries,Capra hircus)),Odocoileus hemionus)),((Gallus gallus,Coturnix sp.),Elaphe guttata));
+endblock;
+begin parasite;
+tree parasite =((Trichosurus vulpecula ATAV,(((Bos taurus ATAV,(Ovis aries ATAV,Capra hircus ATAV)),Odocoileus hemionus ATAV),(Gallus gallus ATAV,Coturnix sp. ATAV))),Elaphe guttata ATAV);
+endblock;
+begin distribution;
+Range
+Trichosurus vulpecula ATAV : Trichosurus vulpecula, Bos taurus ATAV : Bos taurus, Ovis aries ATAV : Ovis aries, Capra hircus ATAV : Capra hircus, Odocoileus hemionus ATAV : Odocoileus hemionus, Gallus gallus ATAV : Gallus gallus, Coturnix sp. ATAV : Coturnix sp., Elaphe guttata ATAV : Elaphe guttata;
+endblock;

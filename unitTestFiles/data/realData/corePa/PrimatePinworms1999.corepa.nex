@@ -1,0 +1,456 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 77;
+	TAXLABELS
+		callimico_goeldii
+		callithrix_jacchus
+		saguinus_oedipus
+		saguinus_nigricollis
+		cebus_spp.
+		saimiri_spp.
+		aotes_trivirgatus
+		callicebus_moloch
+		callicebus_torquatus
+		chiropotes_spp.
+		pithecia_spp.
+		alouatta_seniculus
+		brachyteles_arachnoides
+		lagothrix_lagotricha
+		ateles_ater
+		procolobus_badius
+		colobus_sp.
+		colobus_guereza
+		semnopithecus_entellus
+		trachypithecus_spp.
+		trachypithecus_phayrei
+		chlorocebus_aethiops
+		macaca_spp.
+		papio_spp.
+		pongo_pygmaeus
+		gorilla_gorilla
+		pan_spp.
+		homo_sapiens
+		daubentonia_madagascariensis
+		propithecus_verrauxei
+		hapalemur_simus
+		eulemur_macaco
+		eulemur_fulvus
+		cheirogaleus_major
+		microebus_murinus
+		nycticebus_coucang
+		h._goeldii
+		h._oedipi
+		h._callithricis
+		h._tamarini
+		t._clemenentinae
+		t._sceleratus
+		t._microon
+		t._callicebi
+		t._croizati
+		t._satanas
+		t._trypanuris
+		t._minutus
+		paraoxyuronema_spp.
+		p._brachytelesis
+		p._atelis
+		c._pesteri
+		c._inglisi
+		c._colobis
+		c._guerezae
+		c._paraguerezae
+		colobenterobius_spp.
+		c._zakiri
+		c._entellus
+		c._presbytis
+		e._bipapillatus
+		e._macaci
+		e._brevicauda
+		e._buckleyi
+		e._lerouxi
+		e._anthropopitheci
+		e._gregorii
+		e._vermicularis
+		m._daubentoniae
+		big._trichuroides
+		m._bauchotis
+		m._lemuris
+		m._baltazardi
+		m._vauceli
+		prt._nycticebi
+		l._contagiosus
+		l._microcebi
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00035,
+		H1	InternalNode_00027,
+		H2	InternalNode_00014,
+		H3	InternalNode_00008,
+		H4	InternalNode_00005,
+		H5	InternalNode_00003,
+		H6	callimico_goeldii,
+		H7	InternalNode_00002,
+		H8	callithrix_jacchus,
+		H9	InternalNode_00001,
+		H10	saguinus_oedipus,
+		H11	saguinus_nigricollis,
+		H12	InternalNode_00004,
+		H13	cebus_spp.,
+		H14	saimiri_spp.,
+		H15	InternalNode_00007,
+		H16	aotes_trivirgatus,
+		H17	InternalNode_00006,
+		H18	callicebus_moloch,
+		H19	callicebus_torquatus,
+		H20	InternalNode_00013,
+		H21	InternalNode_00009,
+		H22	chiropotes_spp.,
+		H23	pithecia_spp.,
+		H24	InternalNode_00012,
+		H25	alouatta_seniculus,
+		H26	InternalNode_00011,
+		H27	brachyteles_arachnoides,
+		H28	InternalNode_00010,
+		H29	lagothrix_lagotricha,
+		H30	ateles_ater,
+		H31	InternalNode_00026,
+		H32	InternalNode_00022,
+		H33	InternalNode_00019,
+		H34	InternalNode_00016,
+		H35	procolobus_badius,
+		H36	InternalNode_00015,
+		H37	colobus_sp.,
+		H38	colobus_guereza,
+		H39	InternalNode_00018,
+		H40	semnopithecus_entellus,
+		H41	InternalNode_00017,
+		H42	trachypithecus_spp.,
+		H43	trachypithecus_phayrei,
+		H44	InternalNode_00021,
+		H45	chlorocebus_aethiops,
+		H46	InternalNode_00020,
+		H47	macaca_spp.,
+		H48	papio_spp.,
+		H49	InternalNode_00025,
+		H50	pongo_pygmaeus,
+		H51	InternalNode_00024,
+		H52	gorilla_gorilla,
+		H53	InternalNode_00023,
+		H54	pan_spp.,
+		H55	homo_sapiens,
+		H56	InternalNode_00034,
+		H57	InternalNode_00033,
+		H58	InternalNode_00031,
+		H59	InternalNode_00028,
+		H60	daubentonia_madagascariensis,
+		H61	propithecus_verrauxei,
+		H62	InternalNode_00030,
+		H63	hapalemur_simus,
+		H64	InternalNode_00029,
+		H65	eulemur_macaco,
+		H66	eulemur_fulvus,
+		H67	InternalNode_00032,
+		H68	cheirogaleus_major,
+		H69	microebus_murinus,
+		H70	nycticebus_coucang,
+		P0	InternalNode_00040,
+		P1	InternalNode_00031,
+		P2	InternalNode_00014,
+		P3	InternalNode_00005,
+		P4	InternalNode_00003,
+		P5	InternalNode_00002,
+		P6	InternalNode_00001,
+		P7	h._goeldii,
+		P8	h._oedipi,
+		P9	h._callithricis,
+		P10	h._tamarini,
+		P11	InternalNode_00004,
+		P12	t._clemenentinae,
+		P13	t._sceleratus,
+		P14	InternalNode_00013,
+		P15	t._microon,
+		P16	InternalNode_00012,
+		P17	InternalNode_00006,
+		P18	t._callicebi,
+		P19	t._croizati,
+		P20	InternalNode_00011,
+		P21	InternalNode_00007,
+		P22	t._satanas,
+		P23	t._trypanuris,
+		P24	InternalNode_00010,
+		P25	t._minutus,
+		P26	InternalNode_00009,
+		P27	paraoxyuronema_spp.,
+		P28	InternalNode_00008,
+		P29	p._brachytelesis,
+		P30	p._atelis,
+		P31	InternalNode_00030,
+		P32	InternalNode_00022,
+		P33	InternalNode_00018,
+		P34	c._pesteri,
+		P35	InternalNode_00017,
+		P36	c._inglisi,
+		P37	InternalNode_00016,
+		P38	c._colobis,
+		P39	InternalNode_00015,
+		P40	c._guerezae,
+		P41	c._paraguerezae,
+		P42	InternalNode_00021,
+		P43	colobenterobius_spp.,
+		P44	InternalNode_00020,
+		P45	c._zakiri,
+		P46	InternalNode_00019,
+		P47	c._entellus,
+		P48	c._presbytis,
+		P49	InternalNode_00029,
+		P50	InternalNode_00026,
+		P51	InternalNode_00025,
+		P52	InternalNode_00024,
+		P53	InternalNode_00023,
+		P54	e._bipapillatus,
+		P55	e._macaci,
+		P56	e._brevicauda,
+		P57	e._buckleyi,
+		P58	e._lerouxi,
+		P59	InternalNode_00028,
+		P60	e._anthropopitheci,
+		P61	InternalNode_00027,
+		P62	e._gregorii,
+		P63	e._vermicularis,
+		P64	InternalNode_00039,
+		P65	InternalNode_00037,
+		P66	InternalNode_00036,
+		P67	m._daubentoniae,
+		P68	InternalNode_00035,
+		P69	big._trichuroides,
+		P70	InternalNode_00034,
+		P71	m._bauchotis,
+		P72	InternalNode_00033,
+		P73	m._lemuris,
+		P74	InternalNode_00032,
+		P75	m._baltazardi,
+		P76	m._vauceli,
+		P77	prt._nycticebi,
+		P78	InternalNode_00038,
+		P79	l._contagiosus,
+		P80	l._microcebi
+		;
+	TREE HOST = ((((((H6,(H8,(H10,H11)H9)H7)H5,(H13,H14)H12)H4,(H16,(H18,H19)H17)H15)H3,((H22,H23)H21,(H25,(H27,(H29,H30)H28)H26)H24)H20)H2,((((H35,(H37,H38)H36)H34,(H40,(H42,H43)H41)H39)H33,(H45,(H47,H48)H46)H44)H32,(H50,(H52,(H54,H55)H53)H51)H49)H31)H1,((((H60,H61)H59,(H63,(H65,H66)H64)H62)H58,(H68,H69)H67)H57,H70)H56)H0;
+	TREE PARASITE = (((((((P7,P8)P6,P9)P5,P10)P4,(P12,P13)P11)P3,(P15,((P18,P19)P17,((P22,P23)P21,(P25,(P27,(P29,P30)P28)P26)P24)P20)P16)P14)P2,(((P34,(P36,(P38,(P40,P41)P39)P37)P35)P33,(P43,(P45,(P47,P48)P46)P44)P42)P32,(((((P54,P55)P53,P56)P52,P57)P51,P58)P50,(P60,(P62,P63)P61)P59)P49)P31)P1,(((P67,(P69,(P71,(P73,(P75,P76)P74)P72)P70)P68)P66,P77)P65,(P79,P80)P78)P64)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		H59	0	0,
+		H60	0	0,
+		H61	0	0,
+		H62	0	0,
+		H63	0	0,
+		H64	0	0,
+		H65	0	0,
+		H66	0	0,
+		H67	0	0,
+		H68	0	0,
+		H69	0	0,
+		H70	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0,
+		P41	0	0,
+		P42	0	0,
+		P43	0	0,
+		P44	0	0,
+		P45	0	0,
+		P46	0	0,
+		P47	0	0,
+		P48	0	0,
+		P49	0	0,
+		P50	0	0,
+		P51	0	0,
+		P52	0	0,
+		P53	0	0,
+		P54	0	0,
+		P55	0	0,
+		P56	0	0,
+		P57	0	0,
+		P58	0	0,
+		P59	0	0,
+		P60	0	0,
+		P61	0	0,
+		P62	0	0,
+		P63	0	0,
+		P64	0	0,
+		P65	0	0,
+		P66	0	0,
+		P67	0	0,
+		P68	0	0,
+		P69	0	0,
+		P70	0	0,
+		P71	0	0,
+		P72	0	0,
+		P73	0	0,
+		P74	0	0,
+		P75	0	0,
+		P76	0	0,
+		P77	0	0,
+		P78	0	0,
+		P79	0	0,
+		P80	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		big._trichuroides	propithecus_verrauxei,
+		c._colobis	procolobus_badius,
+		c._entellus	semnopithecus_entellus,
+		c._guerezae	colobus_guereza,
+		c._inglisi	colobus_sp.,
+		c._paraguerezae	colobus_guereza,
+		c._pesteri	colobus_sp.,
+		c._presbytis	trachypithecus_phayrei,
+		c._zakiri	semnopithecus_entellus,
+		colobenterobius_spp.	trachypithecus_spp.,
+		e._anthropopitheci	pan_spp.,
+		e._bipapillatus	chlorocebus_aethiops,
+		e._brevicauda	papio_spp.,
+		e._buckleyi	pongo_pygmaeus,
+		e._gregorii	homo_sapiens,
+		e._lerouxi	gorilla_gorilla,
+		e._macaci	macaca_spp.,
+		e._vermicularis	homo_sapiens,
+		h._callithricis	callithrix_jacchus,
+		h._goeldii	callimico_goeldii,
+		h._oedipi	saguinus_oedipus,
+		h._tamarini	saguinus_nigricollis,
+		l._contagiosus	cheirogaleus_major,
+		l._microcebi	microebus_murinus,
+		m._baltazardi	eulemur_fulvus,
+		m._bauchotis	hapalemur_simus,
+		m._daubentoniae	daubentonia_madagascariensis,
+		m._lemuris	eulemur_macaco,
+		m._vauceli	eulemur_fulvus,
+		p._atelis	ateles_ater,
+		p._brachytelesis	brachyteles_arachnoides,
+		paraoxyuronema_spp.	lagothrix_lagotricha,
+		prt._nycticebi	nycticebus_coucang,
+		t._callicebi	callicebus_moloch,
+		t._clemenentinae	cebus_spp.,
+		t._croizati	callicebus_torquatus,
+		t._microon	aotes_trivirgatus,
+		t._minutus	alouatta_seniculus,
+		t._satanas	chiropotes_spp.,
+		t._sceleratus	saimiri_spp.,
+		t._trypanuris	pithecia_spp.
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

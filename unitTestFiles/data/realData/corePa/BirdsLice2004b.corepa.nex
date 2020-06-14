@@ -1,0 +1,163 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		catharacta_skua
+		diomedea_epomophora
+		diomedea_dabbenena
+		diomedea_antipodensis
+		diomedea_exulans
+		phoebastria_immutabilis
+		phoebastria_irrorata
+		thalassarche_melanophris
+		thalassarche_chrysostoma
+		fulmarus_glacialis
+		fulmarus_glacialoides
+		haffneria_grandis
+		harrisoniella_hopkinsi
+		harrisoniella_hopkinsi_gla656
+		harrisoniella_hopkinsi_gla505
+		harrisoniella_ferox
+		harrisoniella_densa
+		episbates_pederiformis
+		perineus_concinnoides
+		perineus_oblongus
+		perineus_circumfasciatus_fd09
+		perineus_circumfasciatus_fd06
+		perineus_nigrolimbatus_2
+		perineus_nigrolimbatus_gla519
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00010,
+		H1	catharacta_skua,
+		H2	InternalNode_00009,
+		H3	InternalNode_00007,
+		H4	InternalNode_00005,
+		H5	InternalNode_00003,
+		H6	diomedea_epomophora,
+		H7	InternalNode_00002,
+		H8	InternalNode_00001,
+		H9	diomedea_dabbenena,
+		H10	diomedea_antipodensis,
+		H11	diomedea_exulans,
+		H12	InternalNode_00004,
+		H13	phoebastria_immutabilis,
+		H14	phoebastria_irrorata,
+		H15	InternalNode_00006,
+		H16	thalassarche_melanophris,
+		H17	thalassarche_chrysostoma,
+		H18	InternalNode_00008,
+		H19	fulmarus_glacialis,
+		H20	fulmarus_glacialoides,
+		P0	InternalNode_00012,
+		P1	InternalNode_00005,
+		P2	haffneria_grandis,
+		P3	InternalNode_00004,
+		P4	InternalNode_00003,
+		P5	harrisoniella_hopkinsi,
+		P6	InternalNode_00002,
+		P7	InternalNode_00001,
+		P8	harrisoniella_hopkinsi_gla656,
+		P9	harrisoniella_hopkinsi_gla505,
+		P10	harrisoniella_ferox,
+		P11	harrisoniella_densa,
+		P12	InternalNode_00011,
+		P13	episbates_pederiformis,
+		P14	InternalNode_00010,
+		P15	perineus_concinnoides,
+		P16	InternalNode_00009,
+		P17	perineus_oblongus,
+		P18	InternalNode_00008,
+		P19	InternalNode_00006,
+		P20	perineus_circumfasciatus_fd09,
+		P21	perineus_circumfasciatus_fd06,
+		P22	InternalNode_00007,
+		P23	perineus_nigrolimbatus_2,
+		P24	perineus_nigrolimbatus_gla519
+		;
+	TREE HOST = (H1,((((H6,((H9,H10)H8,H11)H7)H5,(H13,H14)H12)H4,(H16,H17)H15)H3,(H19,H20)H18)H2)H0;
+	TREE PARASITE = ((P2,((P5,((P8,P9)P7,P10)P6)P4,P11)P3)P1,(P13,(P15,(P17,((P20,P21)P19,(P23,P24)P22)P18)P16)P14)P12)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		episbates_pederiformis	phoebastria_irrorata,
+		haffneria_grandis	catharacta_skua,
+		harrisoniella_densa	phoebastria_immutabilis,
+		harrisoniella_ferox	thalassarche_melanophris,
+		harrisoniella_hopkinsi_gla505	diomedea_antipodensis,
+		harrisoniella_hopkinsi_gla656	diomedea_dabbenena,
+		harrisoniella_hopkinsi	diomedea_epomophora,
+		perineus_circumfasciatus_fd06	thalassarche_chrysostoma,
+		perineus_circumfasciatus_fd09	thalassarche_melanophris,
+		perineus_concinnoides	diomedea_exulans,
+		perineus_nigrolimbatus_2	fulmarus_glacialis,
+		perineus_nigrolimbatus_gla519	fulmarus_glacialoides,
+		perineus_oblongus	phoebastria_irrorata
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Si. hispidus USA,Si. alstoni Venezuela),(Ak. montensis Brazil,(Ca. laucha Paraguay,((Or. palustris USA,Or. couesi Mexico),(Or. microtis Bolivia,(Or. fulvescens Venezuela and Paraguay,Or. longicaudatus Argentina))))));
+endblock;
+begin parasite;
+tree parasite =((((BCCV USA,MULV USA),BAYV USA),OROV Mexico),(((JABV Brazil,MPRLV Venezuela),((LANV Paraguay,RIOMV Bolivia),ANDV Argentina)),(CHOV Paraguay,CADV Venezuela)));
+endblock;
+begin distribution;
+Range
+BCCV USA : Si. hispidus USA, MULV USA : Si. hispidus USA, BCCV USA : Si. hispidus USA, MULV USA : Si. hispidus USA, BAYV USA : Or. palustris USA, OROV Mexico : Or. couesi Mexico, JABV Brazil : Ak. montensis Brazil, MPRLV Venezuela : Or. fulvescens Venezuela and Paraguay, CHOV Paraguay : Or. fulvescens Venezuela and Paraguay, LANV Paraguay : Ca. laucha Paraguay, RIOMV Bolivia : Or. microtis Bolivia, ANDV Argentina : Or. longicaudatus Argentina, MPRLV Venezuela : Or. fulvescens Venezuela and Paraguay, CHOV Paraguay : Or. fulvescens Venezuela and Paraguay, CADV Venezuela : Si. alstoni Venezuela;
+endblock;

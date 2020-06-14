@@ -1,0 +1,213 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 33;
+	TAXLABELS
+		koala_bear
+		opossum
+		rat
+		mouse
+		rabbit
+		baboon
+		human
+		gibbon
+		domestic_pig
+		domestic_sheep
+		cat
+		red_fox
+		eurasian_badger
+		american_mink
+		shortbeaked_echidna
+		hc2
+		rv_opossum
+		rv_polynesian_rat
+		rv_mus_caroli
+		rv_koala
+		galv
+		pervc
+		pervb
+		mlv
+		felv
+		orevi
+		baev
+		ecei
+		ovevi
+		vuev
+		meevi
+		mievi
+		rv_echidna
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00014,
+		H1	InternalNode_00013,
+		H2	InternalNode_00001,
+		H3	koala_bear,
+		H4	opossum,
+		H5	InternalNode_00012,
+		H6	InternalNode_00002,
+		H7	rat,
+		H8	mouse,
+		H9	InternalNode_00011,
+		H10	rabbit,
+		H11	InternalNode_00010,
+		H12	InternalNode_00004,
+		H13	baboon,
+		H14	InternalNode_00003,
+		H15	human,
+		H16	gibbon,
+		H17	InternalNode_00009,
+		H18	InternalNode_00005,
+		H19	domestic_pig,
+		H20	domestic_sheep,
+		H21	InternalNode_00008,
+		H22	cat,
+		H23	InternalNode_00007,
+		H24	red_fox,
+		H25	InternalNode_00006,
+		H26	eurasian_badger,
+		H27	american_mink,
+		H28	shortbeaked_echidna,
+		P0	InternalNode_00017,
+		P1	hc2,
+		P2	InternalNode_00016,
+		P3	InternalNode_00013,
+		P4	rv_opossum,
+		P5	InternalNode_00012,
+		P6	InternalNode_00005,
+		P7	InternalNode_00003,
+		P8	InternalNode_00001,
+		P9	rv_polynesian_rat,
+		P10	rv_mus_caroli,
+		P11	InternalNode_00002,
+		P12	rv_koala,
+		P13	galv,
+		P14	InternalNode_00004,
+		P15	pervc,
+		P16	pervb,
+		P17	InternalNode_00011,
+		P18	InternalNode_00009,
+		P19	InternalNode_00007,
+		P20	InternalNode_00006,
+		P21	mlv,
+		P22	felv,
+		P23	orevi,
+		P24	InternalNode_00008,
+		P25	baev,
+		P26	ecei,
+		P27	InternalNode_00010,
+		P28	ovevi,
+		P29	vuev,
+		P30	InternalNode_00015,
+		P31	InternalNode_00014,
+		P32	meevi,
+		P33	mievi,
+		P34	rv_echidna
+		;
+	TREE HOST = (((H3,H4)H2,((H7,H8)H6,(H10,((H13,(H15,H16)H14)H12,((H19,H20)H18,(H22,(H24,(H26,H27)H25)H23)H21)H17)H11)H9)H5)H1,H28)H0;
+	TREE PARASITE = (P1,((P4,((((P9,P10)P8,(P12,P13)P11)P7,(P15,P16)P14)P6,((((P21,P22)P20,P23)P19,(P25,P26)P24)P18,(P28,P29)P27)P17)P5)P3,((P32,P33)P31,P34)P30)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		baev	baboon,
+		ecei	cat,
+		felv	cat,
+		galv	gibbon,
+		hc2	human,
+		meevi	eurasian_badger,
+		mievi	american_mink,
+		mlv	mouse,
+		orevi	rabbit,
+		ovevi	domestic_sheep,
+		pervb	domestic_pig,
+		pervc	domestic_pig,
+		rv_echidna	shortbeaked_echidna,
+		rv_koala	koala_bear,
+		rv_mus_caroli	mouse,
+		rv_opossum	opossum,
+		rv_polynesian_rat	rat,
+		vuev	red_fox
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

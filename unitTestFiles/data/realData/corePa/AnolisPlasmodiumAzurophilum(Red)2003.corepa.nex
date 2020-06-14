@@ -1,0 +1,129 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		a._gundlachi
+		a._schwartzi
+		a._bimaculatus
+		a._sabanus
+		a._oculatus
+		a._marmoratus
+		a._roquet
+		a._trinitatus
+		a._richardi
+		pr_p._az._red
+		st._k_p._az._red_b
+		st._k_p._az._red_a
+		gu_p._az._red
+		s_p._az._red
+		d_p._az._red
+		m_p._az._red
+		st._v_p._az._red
+		gr_p._az._red
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00008,
+		H1	InternalNode_00005,
+		H2	a._gundlachi,
+		H3	InternalNode_00004,
+		H4	InternalNode_00002,
+		H5	a._schwartzi,
+		H6	InternalNode_00001,
+		H7	a._bimaculatus,
+		H8	a._sabanus,
+		H9	InternalNode_00003,
+		H10	a._oculatus,
+		H11	a._marmoratus,
+		H12	InternalNode_00007,
+		H13	a._roquet,
+		H14	InternalNode_00006,
+		H15	a._trinitatus,
+		H16	a._richardi,
+		P0	InternalNode_00008,
+		P1	InternalNode_00001,
+		P2	pr_p._az._red,
+		P3	st._k_p._az._red_b,
+		P4	InternalNode_00007,
+		P5	InternalNode_00004,
+		P6	InternalNode_00002,
+		P7	st._k_p._az._red_a,
+		P8	gu_p._az._red,
+		P9	InternalNode_00003,
+		P10	s_p._az._red,
+		P11	d_p._az._red,
+		P12	InternalNode_00006,
+		P13	InternalNode_00005,
+		P14	m_p._az._red,
+		P15	st._v_p._az._red,
+		P16	gr_p._az._red
+		;
+	TREE HOST = ((H2,((H5,(H7,H8)H6)H4,(H10,H11)H9)H3)H1,(H13,(H15,H16)H14)H12)H0;
+	TREE PARASITE = ((P2,P3)P1,(((P7,P8)P6,(P10,P11)P9)P5,((P14,P15)P13,P16)P12)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		d_p._az._red	a._oculatus,
+		gr_p._az._red	a._richardi,
+		gu_p._az._red	a._marmoratus,
+		m_p._az._red	a._roquet,
+		pr_p._az._red	a._gundlachi,
+		s_p._az._red	a._sabanus,
+		st._k_p._az._red_a	a._bimaculatus,
+		st._k_p._az._red_b	a._schwartzi,
+		st._v_p._az._red	a._trinitatus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

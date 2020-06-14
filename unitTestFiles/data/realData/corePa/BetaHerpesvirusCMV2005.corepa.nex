@@ -1,0 +1,151 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 22;
+	TAXLABELS
+		nycticebus_coucang
+		pan_troglodytes
+		cercopithecus_aethiops
+		mandrillus_sphinx
+		papio_anubis
+		macaca_mulatta
+		colobus_badius
+		colobus_guereza
+		aotus_sp.
+		saimiri_sciureus
+		cebus_sp.
+		n.coucangcmv
+		p.troglodytescmv
+		c.aethiopscmv
+		m.sphinxcmv
+		p.anubiscmv
+		m.mulattacmv
+		co.badiuscmv
+		c.guerezacmv
+		aotus_sp.cmv
+		sa.sciureuscmv
+		cebus_sp.cmv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00010,
+		H1	nycticebus_coucang,
+		H2	InternalNode_00009,
+		H3	InternalNode_00006,
+		H4	pan_troglodytes,
+		H5	InternalNode_00005,
+		H6	InternalNode_00003,
+		H7	cercopithecus_aethiops,
+		H8	InternalNode_00002,
+		H9	InternalNode_00001,
+		H10	mandrillus_sphinx,
+		H11	papio_anubis,
+		H12	macaca_mulatta,
+		H13	InternalNode_00004,
+		H14	colobus_badius,
+		H15	colobus_guereza,
+		H16	InternalNode_00008,
+		H17	aotus_sp.,
+		H18	InternalNode_00007,
+		H19	saimiri_sciureus,
+		H20	cebus_sp.,
+		P0	InternalNode_00010,
+		P1	n.coucangcmv,
+		P2	InternalNode_00009,
+		P3	InternalNode_00006,
+		P4	p.troglodytescmv,
+		P5	InternalNode_00005,
+		P6	InternalNode_00003,
+		P7	InternalNode_00002,
+		P8	c.aethiopscmv,
+		P9	InternalNode_00001,
+		P10	m.sphinxcmv,
+		P11	p.anubiscmv,
+		P12	m.mulattacmv,
+		P13	InternalNode_00004,
+		P14	co.badiuscmv,
+		P15	c.guerezacmv,
+		P16	InternalNode_00008,
+		P17	aotus_sp.cmv,
+		P18	InternalNode_00007,
+		P19	sa.sciureuscmv,
+		P20	cebus_sp.cmv
+		;
+	TREE HOST = (H1,((H4,((H7,((H10,H11)H9,H12)H8)H6,(H14,H15)H13)H5)H3,(H17,(H19,H20)H18)H16)H2)H0;
+	TREE PARASITE = (P1,((P4,(((P8,(P10,P11)P9)P7,P12)P6,(P14,P15)P13)P5)P3,(P17,(P19,P20)P18)P16)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		aotus_sp.cmv	aotus_sp.,
+		c.aethiopscmv	cercopithecus_aethiops,
+		c.guerezacmv	colobus_guereza,
+		cebus_sp.cmv	cebus_sp.,
+		co.badiuscmv	colobus_badius,
+		m.mulattacmv	macaca_mulatta,
+		m.sphinxcmv	mandrillus_sphinx,
+		n.coucangcmv	nycticebus_coucang,
+		p.anubiscmv	papio_anubis,
+		p.troglodytescmv	pan_troglodytes,
+		sa.sciureuscmv	saimiri_sciureus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

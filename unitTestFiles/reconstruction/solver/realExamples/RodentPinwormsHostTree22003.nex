@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Caviidae,(Dasyproctidae a,(Dasyproctidae b,Chinchillidae)));
+endblock;
+begin parasite;
+tree parasite =(Dasyproctidae a,(Caviidae,Chinchillidae));
+endblock;
+begin distribution;
+Range
+Dasyproctidae a : Dasyproctidae a, Caviidae : Caviidae, Chinchillidae : Chinchillidae;
+endblock;

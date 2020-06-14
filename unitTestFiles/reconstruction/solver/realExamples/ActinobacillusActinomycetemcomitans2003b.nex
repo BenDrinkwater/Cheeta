@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((((((Aa,Hi),Pm),((Se,Ec),Yp)),Vc),Pa),((Bc,(Rs,Bp)),(Ng,Nm))),Af),(((At,Sm),Ml),Cc)),(Ct,Pg)),(Sc,(Mt,Cd)));
+endblock;
+begin parasite;
+tree parasite =(((((((((Aa,Pm),Yp),((((At,Sm2),Ml3),Sm1),Cc)),(Ml1,Ml2)),(Ct,Rs1)),((((Bc2,Bp2),Rs2),Af),Pa)),(Bc1,Bp1)),Sc1),(Sc2,(Mt,Cd)));
+endblock;
+begin distribution;
+Range
+Cd : Cd, Mt : Mt, Sc2 : Sc, Sc1 : Sc, Aa : Aa, Pm : Pm, Yp : Yp, At : At, Sm1 : Sm, Sm2 : Sm, Ml1 : Ml, Ml3 : Ml, Ml2 : Ml, Ct : Ct, Af : Af, Rs2 : Rs, Rs1 : Rs, Bc2 : Bc, Bc1 : Bc, Bp2 : Bp, Bp1 : Bp, Pa : Pa, Cc : Cc;
+endblock;

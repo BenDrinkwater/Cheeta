@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((G. attwateri 5,G. attwateri 6),G. attwateri 7),(((G. brevicep 1,G. brevicep 3),G. brevicep 4),G. brevicep 2)),((G. texenis 8,G. texenis 9),G. bursarius 10));
+endblock;
+begin parasite;
+tree parasite =(((((G. subgeomydis 5,G. subgeomydis 7),((G. ewingi 1,G. ewingi 2),(G. ewingi 3,G. ewingi 6))),G. ewingi 4),(G heaneyi 8,G. heaneyi 9)),G. oklahomensis 10);
+endblock;
+begin distribution;
+Range
+G. subgeomydis 5 : G. attwateri 5, G. subgeomydis 7 : G. attwateri 7, G. ewingi 1 : G. attwateri 6, G. ewingi 2 : G. brevicep 1, G. ewingi 3 : G. brevicep 3, G. ewingi 6 : G. brevicep 2, G. ewingi 4 : G. brevicep 4, G heaneyi 8 : G. texenis 8, G. heaneyi 9 : G. texenis 9, G. oklahomensis 10 : G. bursarius 10;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((A. gundlachi,((A. schwartzi,(A. bimaculatus,A. sabanus)),(A. oculatus,A. marmoratus))),(A. roquet,(A. trinitatus,A. richardi)));
+endblock;
+begin parasite;
+tree parasite =((PR P. az. red,St. K P. az. red b),(((St. K P. az. red a,Gu P. az. red),(S P. az. red,D P. az. red)),((M P. az. red,St. V P. az. red),Gr P. az. red)));
+endblock;
+begin distribution;
+Range
+PR P. az. red : A. gundlachi, St. K P. az. red b : A. schwartzi, St. K P. az. red a : A. bimaculatus, Gu P. az. red : A. marmoratus, S P. az. red : A. sabanus, D P. az. red : A. oculatus, M P. az. red : A. roquet, St. V P. az. red : A. trinitatus, Gr P. az. red : A. richardi;
+endblock;

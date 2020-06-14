@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Diomedea epomophora,((Diomedea dabbenena,Diomedea exulans),(Diomedea gibsoni,Diomedea antipodensis))),Phoebastria immutabilis),(Thalassarche chlororhynchos,(Thalassarche bulleri,Thalassarche cauta)));
+endblock;
+begin parasite;
+tree parasite =(((Docophoroides brevis GLA657,(Docophoroides brevis NZ AP14,((Docophoroides brevis FD02,Docophoroides brevis GLA501),Docophoroides brevis GLA895))),(Docophoroides niethammeri,Docophoroides simplex)),(Docophoroides harrisoni GLA487,Docophoroides harrisoni GLA550));
+endblock;
+begin distribution;
+Range
+Docophoroides niethammeri : Phoebastria immutabilis, Docophoroides simplex : Thalassarche chlororhynchos, Docophoroides harrisoni GLA487 : Thalassarche bulleri, Docophoroides harrisoni GLA550 : Thalassarche cauta, Docophoroides brevis FD02 : Diomedea exulans, Docophoroides brevis NZ AP14 : Diomedea dabbenena, Docophoroides brevis GLA657 : Diomedea epomophora, Docophoroides brevis GLA501 : Diomedea gibsoni, Docophoroides brevis GLA895 : Diomedea antipodensis;
+endblock;

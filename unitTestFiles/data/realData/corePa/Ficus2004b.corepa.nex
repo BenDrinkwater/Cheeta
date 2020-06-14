@@ -1,0 +1,162 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		f._odoardi
+		f._grossularioides
+		f._wassa
+		f._conocephalfolia
+		f._tinctori
+		f._hispidioides
+		f._nodosa
+		f._sur
+		f._itana
+		f._superba
+		f._microcarpa
+		f._xylosycia
+		w._frustratus
+		k._wassae
+		k._jacobsi
+		l._gibbosae
+		c._dertifer
+		c._nexilis
+		c._capensis
+		c._armipes
+		b._malayana
+		p._comeri
+		e._verticillata
+		p._rieki
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	InternalNode_00004,
+		H2	InternalNode_00003,
+		H3	f._odoardi,
+		H4	InternalNode_00002,
+		H5	InternalNode_00001,
+		H6	f._grossularioides,
+		H7	f._wassa,
+		H8	f._conocephalfolia,
+		H9	f._tinctori,
+		H10	InternalNode_00010,
+		H11	InternalNode_00007,
+		H12	InternalNode_00006,
+		H13	f._hispidioides,
+		H14	InternalNode_00005,
+		H15	f._nodosa,
+		H16	f._sur,
+		H17	f._itana,
+		H18	InternalNode_00009,
+		H19	f._superba,
+		H20	InternalNode_00008,
+		H21	f._microcarpa,
+		H22	f._xylosycia,
+		P0	InternalNode_00011,
+		P1	w._frustratus,
+		P2	InternalNode_00010,
+		P3	InternalNode_00006,
+		P4	InternalNode_00005,
+		P5	InternalNode_00002,
+		P6	k._wassae,
+		P7	InternalNode_00001,
+		P8	k._jacobsi,
+		P9	l._gibbosae,
+		P10	InternalNode_00004,
+		P11	InternalNode_00003,
+		P12	c._dertifer,
+		P13	c._nexilis,
+		P14	c._capensis,
+		P15	c._armipes,
+		P16	InternalNode_00009,
+		P17	b._malayana,
+		P18	InternalNode_00008,
+		P19	InternalNode_00007,
+		P20	p._comeri,
+		P21	e._verticillata,
+		P22	p._rieki
+		;
+	TREE HOST = (((H3,((H6,H7)H5,H8)H4)H2,H9)H1,(((H13,(H15,H16)H14)H12,H17)H11,(H19,(H21,H22)H20)H18)H10)H0;
+	TREE PARASITE = (P1,((((P6,(P8,P9)P7)P5,((P12,P13)P11,P14)P10)P4,P15)P3,(P17,((P20,P21)P19,P22)P18)P16)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		b._malayana	f._grossularioides,
+		c._armipes	f._itana,
+		c._capensis	f._sur,
+		c._dertifer	f._hispidioides,
+		c._nexilis	f._nodosa,
+		e._verticillata	f._microcarpa,
+		k._jacobsi	f._conocephalfolia,
+		k._wassae	f._wassa,
+		l._gibbosae	f._tinctori,
+		p._comeri	f._superba,
+		p._rieki	f._xylosycia,
+		w._frustratus	f._odoardi
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((11,12),10),8),6),4),2);
+endblock;
+begin parasite;
+tree parasite =((((((24,25),23),21),19),17),15);
+endblock;
+begin distribution;
+Range
+24 : 11, 25 : 12, 17 : 2, 15 : 4, 21 : 10, 19 : 8, 23 : 6;
+endblock;

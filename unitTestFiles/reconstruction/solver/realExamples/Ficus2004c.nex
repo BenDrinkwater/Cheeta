@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((F. variegata,((((F. botryoides,F. sycomorus),F. sur),F. racemosa),(F. robusta,F. nodosa))),(F. botryocarpa,(F. septica,(F. hispidioides,F. bernaysii)))),(F. itoana,F. microdictya)),(F. semivestita,(F. ochrochlora,F. adenosperma)));
+endblock;
+begin parasite;
+tree parasite =(((C. appendicuatus,(C. bloommersii,C. arabicus)),(C. capensis,C. fusciceps)),(((C. nexilis,C. cf. nexilis),((C. corneri,C. bisulcatus),(C. hooglandii,C. dentifer))),((C. armipes,C. kaironkensis),(C. grandii,(C. medlerianus,C. riparianus)))));
+endblock;
+begin distribution;
+Range
+C. appendicuatus : F. variegata, C. bloommersii : F. botryoides, C. arabicus : F. sycomorus, C. capensis : F. sur, C. fusciceps : F. racemosa, C. nexilis : F. robusta, C. cf. nexilis : F. nodosa, C. corneri : F. botryocarpa, C. bisulcatus : F. septica, C. hooglandii : F. hispidioides, C. dentifer : F. bernaysii, C. armipes : F. itoana, C. kaironkensis : F. microdictya, C. grandii : F. semivestita, C. medlerianus : F. ochrochlora, C. riparianus : F. adenosperma;
+endblock;

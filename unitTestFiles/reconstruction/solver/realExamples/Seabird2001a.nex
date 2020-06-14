@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Storm petrel,(Mottled petrel,(Diving petrel,(Sotty shearwater,Huttons shearwater))));
+endblock;
+begin parasite;
+tree parasite =(T. schilingi,(H. pelagicus,(H. consimilis,(H. falsus,(H. diversus,H. spadix)))));
+endblock;
+begin distribution;
+Range
+T. schilingi : Mottled petrel, H. consimilis : Mottled petrel, H. falsus : Diving petrel, H. diversus : Sotty shearwater, H. spadix : Huttons shearwater, H. pelagicus : Storm petrel;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Nycticebus coucang,((Pan troglodytes,((Cercopithecus aethiops,((Mandrillus sphinx,Papio anubis),Macaca mulatta)),(Colobus badius,Colobus guereza))),(Aotus sp.,(Saimiri sciureus,Cebus sp.))));
+endblock;
+begin parasite;
+tree parasite =(N.coucangCMV,((P.troglodytesCMV,(((C.aethiopsCMV,(M.sphinxCMV,P.anubisCMV)),M.mulattaCMV),(Co.badiusCMV,C.guerezaCMV))),(Aotus sp.CMV,(Sa.sciureusCMV,Cebus sp.CMV))));
+endblock;
+begin distribution;
+Range
+N.coucangCMV : Nycticebus coucang, P.troglodytesCMV : Pan troglodytes, C.aethiopsCMV : Cercopithecus aethiops, M.sphinxCMV : Mandrillus sphinx, P.anubisCMV : Papio anubis, M.mulattaCMV : Macaca mulatta, Co.badiusCMV : Colobus badius, C.guerezaCMV : Colobus guereza, Aotus sp.CMV : Aotus sp., Sa.sciureusCMV : Saimiri sciureus, Cebus sp.CMV : Cebus sp.;
+endblock;

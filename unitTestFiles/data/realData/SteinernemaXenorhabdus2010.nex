@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((S. siamkayai,S. carpocapsae),S. scapterisci),S. monticolum),((((S. diaprepesi,((S. sangi,S. khoisanae),(S. hermaphroditum,S. longicaudum))),(S. glaseri,(S. apuliae,S. boemarei))),(((S. anatoliense,S. websteri),S. rarum),((((S. weiseri,((S. feltiae France,S. feltiae Fl),(S. puntauvense,S. feltiae CA))),S. jollieti),(S. kraussei,(S. oregonense AZ,S. oregonense OR))),((S. riobrave,(S. bicornutum,S. abbasi )),S. costaricense)))),(S. affine,S. intermedium)));
+endblock;
+begin parasite;
+tree parasite =(X. stockiae,(X. innexi,((X. hominickii,(((X. beddingi,((X. poinarii,X. doucetiae),X. vietnamensis)),(X. kozodoi S. apuliae,X. kozodoi S. boemarei)),((X. szentirmaii S. rarum,((X. indica,((X. nematophila S. anatoliense,X. nematophila S. websteri),X. nematophila S. carpocapsae)),X. sp. S. costaricense)),X. sp. S. khoisanae))),((((X. bovienii S. affine,(X. bovienii S. weiseri,X. bovienii S. feltiae FL)),((X. bovienii S. intermedium,X. bovienii S. jollieti),X. bovienii S. kraussei)),((X. bovienii S. feltiae France,X. bovienii S. puntauvense ),(X. bovienii S. feltiae CA,(X. bovienii S. oreganense AZ ,X. bovienii S. oreganense OR)))),(X. cabanillasii,X. budapestensis)))));
+endblock;
+begin distribution;
+Range
+X. stockiae : S. siamkayai, X. innexi : S. scapterisci, X. hominickii : S. monticolum, X. kozodoi S. apuliae : S. apuliae, X. kozodoi S. boemarei : S. boemarei, X. szentirmaii S. rarum : S. rarum, X. budapestensis : S. bicornutum, X. cabanillasii : S. riobrave, X. bovienii S. oreganense OR : S. oregonense OR, X. bovienii S. oreganense AZ  : S. oregonense AZ, X. bovienii S. feltiae CA : S. feltiae CA, X. bovienii S. feltiae France : S. feltiae France, X. bovienii S. puntauvense  : S. puntauvense, X. bovienii S. weiseri : S. weiseri, X. bovienii S. kraussei : S. kraussei, X. bovienii S. jollieti : S. jollieti, X. bovienii S. affine : S. affine, X. bovienii S. intermedium : S. intermedium, X. sp. S. costaricense : S. costaricense, X. indica : S. abbasi , X. nematophila S. carpocapsae : S. carpocapsae, X. nematophila S. websteri : S. websteri, X. vietnamensis : S. sangi, X. doucetiae : S. diaprepesi, X. poinarii : S. glaseri, X. beddingi : S. hermaphroditum, X. bovienii S. feltiae FL : S. feltiae Fl, X. nematophila S. anatoliense : S. anatoliense, X. sp. S. khoisanae : S. khoisanae;
+endblock;

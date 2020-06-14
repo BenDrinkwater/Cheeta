@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((((Macaca silenus,Macaca fascicularis),(Paplo hamadryas,Mandrillus sphinx)),(Colobus guereza,Procolobus badius)),((((Pan troglodytes,Pan panicus),Gorilla gorilla),Pongo pygmaeus),(Hylobates leucogenys,Hylobates lar))),((Ateles panicus,((Saguinus midas,Callthrix penicillata),(Cebus albifrons,Salmiri sciureus))),Pithecia pithecia));
+endblock;
+begin parasite;
+tree parasite =((((M.silenusLCV,M.fascicularisLCV),((((P.hamadryasLCV,M.sphinxLCV),C.guerezaLCV),Pro.badiusLCV),((Pa.troglodytesLCV,Pa.panicusLCV),G. gorillaLCV2))),((Gorilla gorilla3,P.pygmaeusLCV),(H.leucogenysLCV,H.larLCV))),((A.panicusLCV,((S.midasLCV,C.penicillataLCV),P.pitheciaLCV)),(Ce.albifronsLCV,Sa.sciureusLCV)));
+endblock;
+begin distribution;
+Range
+M.silenusLCV : Macaca silenus, M.fascicularisLCV : Macaca fascicularis, P.hamadryasLCV : Paplo hamadryas, M.sphinxLCV : Mandrillus sphinx, C.guerezaLCV : Colobus guereza, Pro.badiusLCV : Procolobus badius, Pa.troglodytesLCV : Pan troglodytes, Pa.panicusLCV : Pan panicus, G. gorillaLCV2 : Gorilla gorilla, Gorilla gorilla3 : Gorilla gorilla, G. gorillaLCV2 : Gorilla gorilla, Gorilla gorilla3 : Gorilla gorilla, P.pygmaeusLCV : Pongo pygmaeus, H.leucogenysLCV : Hylobates leucogenys, H.larLCV : Hylobates lar, A.panicusLCV : Ateles panicus, S.midasLCV : Saguinus midas, C.penicillataLCV : Callthrix penicillata, P.pitheciaLCV : Pithecia pithecia, Ce.albifronsLCV : Cebus albifrons, Sa.sciureusLCV : Salmiri sciureus;
+endblock;

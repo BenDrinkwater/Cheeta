@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((F. costaricana,F. turbinata),F. colubrinae),F. dugandii),F. paraensis),(F. nymphaefolia,F. popenoei)),(((F. trigonata,F. triangle),F. perforata),(F. citrifolia,F. obtusifolia)));
+endblock;
+begin parasite;
+tree parasite =(P. estherae,(((P. baschierii,P. grandii),((P. hoffmeyerii,P. longiceps),(((P. piceipes,P. gemellus2),((P. insularis2,P. orozcoi),(P. gemellus1,(P. herrei,P. insularis1)))),P. tonduzi))),P. lopesi));
+endblock;
+begin distribution;
+Range
+P. estherae : F. costaricana, P. baschierii : F. turbinata, P. tonduzi : F. citrifolia, P. insularis1 : F. perforata, P. insularis2 : F. perforata, P. longiceps : F. dugandii, P. piceipes : F. nymphaefolia, P. gemellus2 : F. popenoei, P. gemellus1 : F. popenoei, P. orozcoi : F. colubrinae, P. grandii : F. trigonata, P. hoffmeyerii : F. obtusifolia, P. herrei : F. paraensis, P. lopesi : F. triangle;
+endblock;

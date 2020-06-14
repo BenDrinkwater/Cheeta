@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((C quartinia,C melanotis),((E astrild,(E paludicola,(E rhodopyga,(E troglodytes,E melpoda)))),E erythronotos));
+endblock;
+begin parasite;
+tree parasite =((((V macroura. Sa,V macroura. Sb),(V macroura. Sc,(V macroura. Sd,V macroura. Se))),(V macroura. Wa,V macroura. Wb)),V hypocherina);
+endblock;
+begin distribution;
+Range
+V macroura. Sa : C quartinia, V macroura. Sb : C melanotis, V macroura. Sc : E astrild, V macroura. Sd : E paludicola, V macroura. Se : E rhodopyga, V macroura. Wa : E troglodytes, V macroura. Wb : E melpoda, V hypocherina : E erythronotos;
+endblock;

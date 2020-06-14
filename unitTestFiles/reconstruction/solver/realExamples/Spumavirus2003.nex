@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Gorilla gorilla,(Pan troglodytes,Homo sapiens)),((Cercopithecus aethiops,Cercopithecus patas),(Macaca Mulatta,((Papio cynocephalus,Papio ursinus),(Mandrillus sphinx,Mandrillus leucophaeus)))));
+endblock;
+begin parasite;
+tree parasite =((GgSV,(PtSV,HsSV)),(MmSV,(CaSV,(CpSV,((PcSV,PuSV),(MsSV,MlSV))))));
+endblock;
+begin distribution;
+Range
+GgSV : Gorilla gorilla, PtSV : Pan troglodytes, HsSV : Homo sapiens, CaSV : Cercopithecus aethiops, CpSV : Cercopithecus patas, MmSV : Macaca Mulatta, PcSV : Papio cynocephalus, PuSV : Papio ursinus, MsSV : Mandrillus sphinx, MlSV : Mandrillus leucophaeus;
+endblock;

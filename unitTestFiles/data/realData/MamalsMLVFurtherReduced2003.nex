@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Domestic Cow,Domestic  Sheep),(Grey Seal,(Eurasian Badger,American Mink))),(Human,Free Tailed Bat));
+endblock;
+begin parasite;
+tree parasite =((((HaEV,MeEVII),(MiEVII,(BoEV,OvEVII))),HERV.E),TeEV);
+endblock;
+begin distribution;
+Range
+HaEV : Domestic Cow, MeEVII : Domestic  Sheep, MiEVII : Grey Seal, BoEV : Eurasian Badger, OvEVII : American Mink, HERV.E : Human, TeEV : Free Tailed Bat;
+endblock;

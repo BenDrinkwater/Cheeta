@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((Daubentonia madagascariensis,Propithecus verrauxei),(Hapalemur simus,(Eulemur macaco,Eulemur fulvus))),(Cheirogaleus major,Microebus murinus)),Nycticebus coucang);
+endblock;
+begin parasite;
+tree parasite =(((M. daubentoniae,(Big. trichuroides,(M. bauchotis,(M. lemuris,(M. baltazardi,M. vauceli))))),Prt. nycticebi),(L. contagiosus,L. microcebi));
+endblock;
+begin distribution;
+Range
+M. daubentoniae : Daubentonia madagascariensis, Big. trichuroides : Propithecus verrauxei, M. bauchotis : Hapalemur simus, M. lemuris : Eulemur macaco, M. baltazardi : Eulemur fulvus, M. vauceli : Eulemur fulvus, M. baltazardi : Eulemur fulvus, M. vauceli : Eulemur fulvus, Prt. nycticebi : Nycticebus coucang, L. contagiosus : Cheirogaleus major, L. microcebi : Microebus murinus;
+endblock;

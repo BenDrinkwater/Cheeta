@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((P. regalis,((((P. nitens,P. schizodontes),(P. nigriventris,((P. proximus,(P. athysanus,(P. astrabocheilus,P. cuneatus))),P. macrocainus))),(P. xanthocephalus,P. greenwoodi)),P. riecki)),P. blandus);
+endblock;
+begin parasite;
+tree parasite =((Syco. sp402,(Syco. sp407,(Syco. sp401,Syco. sp409))),((((Syco. sp406,(Syco. sp403,Syco. sp400)),(Syco. sp405,Syco. sp399)),(Syco. sp410,Syco. sp411)),(Syco. sp413,Syco. sp434)));
+endblock;
+begin distribution;
+Range
+Syco. sp402 : P. regalis, Syco. sp407 : P. nitens, Syco. sp401 : P. schizodontes, Syco. sp409 : P. nigriventris, Syco. sp406 : P. athysanus, Syco. sp403 : P. astrabocheilus, Syco. sp400 : P. proximus, Syco. sp405 : P. cuneatus, Syco. sp399 : P. macrocainus, Syco. sp410 : P. riecki, Syco. sp411 : P. blandus, Syco. sp413 : P. xanthocephalus, Syco. sp434 : P. greenwoodi;
+endblock;

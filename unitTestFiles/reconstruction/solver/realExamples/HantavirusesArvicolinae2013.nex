@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Le. lemmus Russia,((Mi. arvalis Germany,((Mi fortis 682 China,Mi fortis Yuanjiang 15 China),Mi maximowiczii China)),(Mi californicus USA,Mi pennsylvanicus USA))),((My. glareolus Russia,((My rufocanus Japan,My rufocanus China),Eo. regulus South Korea)),Eo. miletus China));
+endblock;
+begin parasite;
+tree parasite =(((TULV Germany,(ISLA USA,PHV USA)),(((VLAV China,YUJV  China),(TOPV Russia,KHAV China)),(((PUUV Russia,HOKV Japan),PUUV like China),MUJV South Korea))),LUXV China);
+endblock;
+begin distribution;
+Range
+TULV Germany : Mi. arvalis Germany, ISLA USA : Mi californicus USA, PHV USA : Mi pennsylvanicus USA, VLAV China : Mi fortis 682 China, YUJV  China : Mi fortis Yuanjiang 15 China, TOPV Russia : Le. lemmus Russia, KHAV China : Mi maximowiczii China, PUUV Russia : My. glareolus Russia, HOKV Japan : My rufocanus Japan, PUUV like China : My rufocanus China, MUJV South Korea : Eo. regulus South Korea, LUXV China : Eo. miletus China;
+endblock;

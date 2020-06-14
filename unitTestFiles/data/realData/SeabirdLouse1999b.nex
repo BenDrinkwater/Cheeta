@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(L dominiconus,((E minor,(E pachyrhynchus,M antipodes)),((D epomorpha,P marnia),(P urinatrix,(P inexpectata,((P griseus,P huttoni),P westalandica))))));
+endblock;
+begin parasite;
+tree parasite =(S lari,((A watersoni,(A cristatai,A concii)),((Ha hopkinsi,(((H. pelagicus,(H. spadix,H. diversus)),H. falsus),H consimilis)),(T flemingi,(T schillingi,(T hexakon Pg,T hexakon Pw))))));
+endblock;
+begin distribution;
+Range
+S lari : L dominiconus, A watersoni : E minor, A cristatai : E pachyrhynchus, A concii : M antipodes, Ha hopkinsi : D epomorpha, H. pelagicus : P marnia, H. spadix : P huttoni, T flemingi : P huttoni, H. diversus : P griseus, T hexakon Pg : P griseus, H. falsus : P urinatrix, H consimilis : P inexpectata, T schillingi : P inexpectata, H consimilis : P inexpectata, T schillingi : P inexpectata, H. spadix : P huttoni, T flemingi : P huttoni, H consimilis : P inexpectata, T schillingi : P inexpectata, H. diversus : P griseus, T hexakon Pg : P griseus, T hexakon Pw : P westalandica;
+endblock;

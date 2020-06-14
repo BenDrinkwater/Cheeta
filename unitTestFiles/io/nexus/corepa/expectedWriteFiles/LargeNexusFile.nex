@@ -1,0 +1,510 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 86;
+	TAXLABELS
+		pinus_sylvestris
+		capsicum_annuum
+		primula_malacoides
+		pittosporum_tobira
+		daucus_carota
+		beta_vulgaris
+		raphanus_sativus
+		black_raspberry
+		fragaria_chiloensis
+		rosa_multiflora
+		rose_sp.
+		trifolium_repens
+		vicia_faba
+		vitis_vinifera
+		aspergillus_ochraceoroseus
+		pencillium_brevicompactum
+		gremmeniella_abietina
+		botryotinia_fuckeliana
+		sclerotinia_sclerotiorum
+		discula_destructiva
+		ophiostoma_himal_ulmi
+		ophiostoma_quercus
+		rosellinia_necatrix
+		fusarium_solani
+		fusarium_poae
+		atkinsonella_hypoxylon
+		ceratocystis_resinifera
+		ceratocystis_polonica
+		helicobasidium_mompa
+		helicobasidium_purpureum
+		flammulina_velutipes
+		pleurotus_ostreatus
+		thanatephorus_cucumeris
+		helicobasidium_annosum
+		helicobasidium_parviporum
+		helicobasidium_abietinum
+		pinus_sylvestris_partitvirus_nl_2005
+		pepper_cryptic_virus_1
+		pittosporum_cryptic_virus_1
+		raphanus_sativus_cryptic_virus_3
+		black_raspberry_cryptic_virus
+		beet_cryptic_virus_3
+		beet_cryptic_virus_2
+		raphanus_sativus_cryptic_virus_2
+		fragaria_chiloensis_cryptic_virus
+		rosa_multiflora_cryptic_virus
+		rose_cryptic_virus_1
+		grapevine_associated_partitvirus_2
+		aspergillus_ochraceous_virus
+		gremmeniella_abietina_rna_virus_ms1
+		gremmeniella_abietina_rna_virus_ms2
+		mycovirus_fusov
+		botryotinia_fuckeliana_partitvirus_1
+		discula_destructiva_virus_1
+		discula_destructiva_virus_2
+		ophiostoma_partitvirus_1
+		pencillium_stoloniferum_virus_s
+		scierotinia_sclerotiorum_partitvirus_s
+		flammulina_velutipes_isometric_virus
+		ophiostoma_quercus_partitvirus
+		primula_malacoides_virus_china_mar_2007
+		rosellinia_necatrix_partitvirus_1_w8
+		pleurotus_ostreatus_virus_1
+		grapevine_associated_partitvirus_1
+		fusarium_poae_virus_1
+		rhizoctonia_solani_virus_717
+		helicobasidium_mompa_partitvirus_v11
+		atkinsonella_hypoxylon_virus
+		ceratocystis_resinifera_virus_1
+		ceratocystis_polonica_partitvirus
+		helicobasidium_annosum_p_type_partitvirus
+		helicobasidium_rna_virus_2
+		raphanus_sativus_cryptic_virus_1
+		radish_partitvirus_jc_2004
+		helicobasidium_mompa_partitvirus_v1_2
+		carrot_cryptic_virus
+		white_clover_cryptic_virus_1
+		vicia_cryptic_virus
+		beet_cryptic_virus_1
+		helicobasidium_purpureum_partitvirus
+		helicobasidium_rna_virus_4
+		helicobasidium_parviporum_partitvirus_fr_110b
+		helicobasidium_rna_virus_5
+		helicobasidium_rna_virus_1
+		helicobasidium_annosum_virus
+		flammulina_velutipes_browning_virus
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00035,
+		H1	InternalNode_00013,
+		H2	pinus_sylvestris,
+		H3	InternalNode_00012,
+		H4	InternalNode_00003,
+		H5	InternalNode_00001,
+		H6	capsicum_annuum,
+		H7	primula_malacoides,
+		H8	InternalNode_00002,
+		H9	pittosporum_tobira,
+		H10	daucus_carota,
+		H11	InternalNode_00011,
+		H12	beta_vulgaris,
+		H13	InternalNode_00010,
+		H14	raphanus_sativus,
+		H15	InternalNode_00009,
+		H16	InternalNode_00008,
+		H17	InternalNode_00006,
+		H18	InternalNode_00004,
+		H19	black_raspberry,
+		H20	fragaria_chiloensis,
+		H21	InternalNode_00005,
+		H22	rosa_multiflora,
+		H23	rose_sp.,
+		H24	InternalNode_00007,
+		H25	trifolium_repens,
+		H26	vicia_faba,
+		H27	vitis_vinifera,
+		H28	InternalNode_00034,
+		H29	InternalNode_00026,
+		H30	InternalNode_00014,
+		H31	aspergillus_ochraceoroseus,
+		H32	pencillium_brevicompactum,
+		H33	InternalNode_00025,
+		H34	InternalNode_00016,
+		H35	gremmeniella_abietina,
+		H36	InternalNode_00015,
+		H37	botryotinia_fuckeliana,
+		H38	sclerotinia_sclerotiorum,
+		H39	InternalNode_00024,
+		H40	InternalNode_00019,
+		H41	InternalNode_00018,
+		H42	discula_destructiva,
+		H43	InternalNode_00017,
+		H44	ophiostoma_himal_ulmi,
+		H45	ophiostoma_quercus,
+		H46	rosellinia_necatrix,
+		H47	InternalNode_00023,
+		H48	InternalNode_00021,
+		H49	InternalNode_00020,
+		H50	fusarium_solani,
+		H51	fusarium_poae,
+		H52	atkinsonella_hypoxylon,
+		H53	InternalNode_00022,
+		H54	ceratocystis_resinifera,
+		H55	ceratocystis_polonica,
+		H56	InternalNode_00033,
+		H57	InternalNode_00027,
+		H58	helicobasidium_mompa,
+		H59	helicobasidium_purpureum,
+		H60	InternalNode_00032,
+		H61	InternalNode_00028,
+		H62	flammulina_velutipes,
+		H63	pleurotus_ostreatus,
+		H64	InternalNode_00031,
+		H65	thanatephorus_cucumeris,
+		H66	InternalNode_00030,
+		H67	InternalNode_00029,
+		H68	helicobasidium_annosum,
+		H69	helicobasidium_parviporum,
+		H70	helicobasidium_abietinum,
+		P0	InternalNode_00049,
+		P1	InternalNode_00023,
+		P2	InternalNode_00020,
+		P3	InternalNode_00010,
+		P4	pinus_sylvestris_partitvirus_nl_2005,
+		P5	InternalNode_00009,
+		P6	InternalNode_00005,
+		P7	InternalNode_00003,
+		P8	InternalNode_00002,
+		P9	InternalNode_00001,
+		P10	pepper_cryptic_virus_1,
+		P11	pittosporum_cryptic_virus_1,
+		P12	raphanus_sativus_cryptic_virus_3,
+		P13	black_raspberry_cryptic_virus,
+		P14	InternalNode_00004,
+		P15	beet_cryptic_virus_3,
+		P16	beet_cryptic_virus_2,
+		P17	InternalNode_00008,
+		P18	raphanus_sativus_cryptic_virus_2,
+		P19	InternalNode_00007,
+		P20	fragaria_chiloensis_cryptic_virus,
+		P21	InternalNode_00006,
+		P22	rosa_multiflora_cryptic_virus,
+		P23	rose_cryptic_virus_1,
+		P24	InternalNode_00019,
+		P25	InternalNode_00018,
+		P26	InternalNode_00011,
+		P27	grapevine_associated_partitvirus_2,
+		P28	aspergillus_ochraceous_virus,
+		P29	InternalNode_00017,
+		P30	InternalNode_00013,
+		P31	InternalNode_00012,
+		P32	gremmeniella_abietina_rna_virus_ms1,
+		P33	gremmeniella_abietina_rna_virus_ms2,
+		P34	mycovirus_fusov,
+		P35	InternalNode_00016,
+		P36	botryotinia_fuckeliana_partitvirus_1,
+		P37	InternalNode_00015,
+		P38	InternalNode_00014,
+		P39	discula_destructiva_virus_1,
+		P40	discula_destructiva_virus_2,
+		P41	ophiostoma_partitvirus_1,
+		P42	pencillium_stoloniferum_virus_s,
+		P43	InternalNode_00022,
+		P44	InternalNode_00021,
+		P45	scierotinia_sclerotiorum_partitvirus_s,
+		P46	flammulina_velutipes_isometric_virus,
+		P47	ophiostoma_quercus_partitvirus,
+		P48	InternalNode_00048,
+		P49	InternalNode_00034,
+		P50	InternalNode_00029,
+		P51	primula_malacoides_virus_china_mar_2007,
+		P52	InternalNode_00028,
+		P53	InternalNode_00027,
+		P54	InternalNode_00024,
+		P55	rosellinia_necatrix_partitvirus_1_w8,
+		P56	pleurotus_ostreatus_virus_1,
+		P57	InternalNode_00026,
+		P58	InternalNode_00025,
+		P59	grapevine_associated_partitvirus_1,
+		P60	fusarium_poae_virus_1,
+		P61	rhizoctonia_solani_virus_717,
+		P62	helicobasidium_mompa_partitvirus_v11,
+		P63	InternalNode_00033,
+		P64	InternalNode_00031,
+		P65	atkinsonella_hypoxylon_virus,
+		P66	InternalNode_00030,
+		P67	ceratocystis_resinifera_virus_1,
+		P68	ceratocystis_polonica_partitvirus,
+		P69	InternalNode_00032,
+		P70	helicobasidium_annosum_p_type_partitvirus,
+		P71	helicobasidium_rna_virus_2,
+		P72	InternalNode_00047,
+		P73	InternalNode_00046,
+		P74	InternalNode_00036,
+		P75	InternalNode_00035,
+		P76	raphanus_sativus_cryptic_virus_1,
+		P77	radish_partitvirus_jc_2004,
+		P78	helicobasidium_mompa_partitvirus_v1_2,
+		P79	InternalNode_00045,
+		P80	InternalNode_00044,
+		P81	InternalNode_00043,
+		P82	InternalNode_00042,
+		P83	InternalNode_00040,
+		P84	InternalNode_00039,
+		P85	InternalNode_00038,
+		P86	carrot_cryptic_virus,
+		P87	InternalNode_00037,
+		P88	white_clover_cryptic_virus_1,
+		P89	vicia_cryptic_virus,
+		P90	beet_cryptic_virus_1,
+		P91	helicobasidium_purpureum_partitvirus,
+		P92	InternalNode_00041,
+		P93	helicobasidium_rna_virus_4,
+		P94	helicobasidium_parviporum_partitvirus_fr_110b,
+		P95	helicobasidium_rna_virus_5,
+		P96	helicobasidium_rna_virus_1,
+		P97	helicobasidium_annosum_virus,
+		P98	flammulina_velutipes_browning_virus
+		;
+	TREE HOST = ((H2,(((H6,H7)H5,(H9,H10)H8)H4,(H12,(H14,((((H19,H20)H18,(H22,H23)H21)H17,(H25,H26)H24)H16,H27)H15)H13)H11)H3)H1,(((H31,H32)H30,((H35,(H37,H38)H36)H34,(((H42,(H44,H45)H43)H41,H46)H40,(((H50,H51)H49,H52)H48,(H54,H55)H53)H47)H39)H33)H29,((H58,H59)H57,((H62,H63)H61,(H65,((H68,H69)H67,H70)H66)H64)H60)H56)H28)H0;
+	TREE PARASITE = ((((P4,(((((P10,P11)P9,P12)P8,P13)P7,(P15,P16)P14)P6,(P18,(P20,(P22,P23)P21)P19)P17)P5)P3,(((P27,P28)P26,(((P32,P33)P31,P34)P30,(P36,((P39,P40)P38,P41)P37)P35)P29)P25,P42)P24)P2,((P45,P46)P44,P47)P43)P1,(((P51,(((P55,P56)P54,((P59,P60)P58,P61)P57)P53,P62)P52)P50,((P65,(P67,P68)P66)P64,(P70,P71)P69)P63)P49,((((P76,P77)P75,P78)P74,(((((((P86,(P88,P89)P87)P85,P90)P84,P91)P83,(P93,P94)P92)P82,P95)P81,P96)P80,P97)P79)P73,P98)P72)P48)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		H59	0	0,
+		H60	0	0,
+		H61	0	0,
+		H62	0	0,
+		H63	0	0,
+		H64	0	0,
+		H65	0	0,
+		H66	0	0,
+		H67	0	0,
+		H68	0	0,
+		H69	0	0,
+		H70	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0,
+		P41	0	0,
+		P42	0	0,
+		P43	0	0,
+		P44	0	0,
+		P45	0	0,
+		P46	0	0,
+		P47	0	0,
+		P48	0	0,
+		P49	0	0,
+		P50	0	0,
+		P51	0	0,
+		P52	0	0,
+		P53	0	0,
+		P54	0	0,
+		P55	0	0,
+		P56	0	0,
+		P57	0	0,
+		P58	0	0,
+		P59	0	0,
+		P60	0	0,
+		P61	0	0,
+		P62	0	0,
+		P63	0	0,
+		P64	0	0,
+		P65	0	0,
+		P66	0	0,
+		P67	0	0,
+		P68	0	0,
+		P69	0	0,
+		P70	0	0,
+		P71	0	0,
+		P72	0	0,
+		P73	0	0,
+		P74	0	0,
+		P75	0	0,
+		P76	0	0,
+		P77	0	0,
+		P78	0	0,
+		P79	0	0,
+		P80	0	0,
+		P81	0	0,
+		P82	0	0,
+		P83	0	0,
+		P84	0	0,
+		P85	0	0,
+		P86	0	0,
+		P87	0	0,
+		P88	0	0,
+		P89	0	0,
+		P90	0	0,
+		P91	0	0,
+		P92	0	0,
+		P93	0	0,
+		P94	0	0,
+		P95	0	0,
+		P96	0	0,
+		P97	0	0,
+		P98	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		aspergillus_ochraceous_virus	aspergillus_ochraceoroseus,
+		atkinsonella_hypoxylon_virus	atkinsonella_hypoxylon,
+		beet_cryptic_virus_1	beta_vulgaris,
+		beet_cryptic_virus_2	beta_vulgaris,
+		beet_cryptic_virus_3	beta_vulgaris,
+		black_raspberry_cryptic_virus	black_raspberry,
+		botryotinia_fuckeliana_partitvirus_1	botryotinia_fuckeliana,
+		pepper_cryptic_virus_1	capsicum_annuum,
+		ceratocystis_polonica_partitvirus	ceratocystis_polonica,
+		ceratocystis_resinifera_virus_1	ceratocystis_resinifera,
+		carrot_cryptic_virus	daucus_carota,
+		discula_destructiva_virus_1	discula_destructiva,
+		discula_destructiva_virus_2	discula_destructiva,
+		flammulina_velutipes_browning_virus	flammulina_velutipes,
+		flammulina_velutipes_isometric_virus	flammulina_velutipes,
+		fragaria_chiloensis_cryptic_virus	fragaria_chiloensis,
+		fusarium_poae_virus_1	fusarium_poae,
+		mycovirus_fusov	fusarium_solani,
+		gremmeniella_abietina_rna_virus_ms1	gremmeniella_abietina,
+		gremmeniella_abietina_rna_virus_ms2	gremmeniella_abietina,
+		helicobasidium_rna_virus_1	helicobasidium_abietinum,
+		helicobasidium_annosum_p_type_partitvirus	helicobasidium_annosum,
+		helicobasidium_mompa_partitvirus_v1_2	helicobasidium_mompa,
+		helicobasidium_mompa_partitvirus_v11	helicobasidium_mompa,
+		helicobasidium_annosum_virus	helicobasidium_parviporum,
+		helicobasidium_parviporum_partitvirus_fr_110b	helicobasidium_parviporum,
+		helicobasidium_rna_virus_2	helicobasidium_parviporum,
+		helicobasidium_rna_virus_4	helicobasidium_parviporum,
+		helicobasidium_rna_virus_5	helicobasidium_parviporum,
+		helicobasidium_purpureum_partitvirus	helicobasidium_purpureum,
+		ophiostoma_partitvirus_1	ophiostoma_himal_ulmi,
+		ophiostoma_quercus_partitvirus	ophiostoma_quercus,
+		pencillium_stoloniferum_virus_s	pencillium_brevicompactum,
+		pinus_sylvestris_partitvirus_nl_2005	pinus_sylvestris,
+		pittosporum_cryptic_virus_1	pittosporum_tobira,
+		pleurotus_ostreatus_virus_1	pleurotus_ostreatus,
+		primula_malacoides_virus_china_mar_2007	primula_malacoides,
+		radish_partitvirus_jc_2004	raphanus_sativus,
+		raphanus_sativus_cryptic_virus_1	raphanus_sativus,
+		raphanus_sativus_cryptic_virus_2	raphanus_sativus,
+		raphanus_sativus_cryptic_virus_3	raphanus_sativus,
+		rosa_multiflora_cryptic_virus	rosa_multiflora,
+		rose_cryptic_virus_1	rose_sp.,
+		rosellinia_necatrix_partitvirus_1_w8	rosellinia_necatrix,
+		scierotinia_sclerotiorum_partitvirus_s	sclerotinia_sclerotiorum,
+		rhizoctonia_solani_virus_717	thanatephorus_cucumeris,
+		white_clover_cryptic_virus_1	trifolium_repens,
+		vicia_cryptic_virus	vicia_faba,
+		grapevine_associated_partitvirus_1	vitis_vinifera,
+		grapevine_associated_partitvirus_2	vitis_vinifera
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

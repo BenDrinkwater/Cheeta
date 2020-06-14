@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Hystricidae,(Erethizontidae,Dinomyidae)),(Petromuridae,((((((Dolichotidae,Caviidae),Hydrochaeridae),Chinchillidae),Abrocomidae),Dasyproctidae),(Echimyidae,(Octodontidae,Capromyidae)))));
+endblock;
+begin parasite;
+tree parasite =((((Hystricidae,(Erethizontidae,Dinomyidae)),Dolichotidae),Hydrochaeridae),(Petromuridae,(((((Caviidae,Chinchillidae),Abrocomidae),(Echimyidae,Octodontidae)),Capromyidae),Dasyproctidae)));
+endblock;
+begin distribution;
+Range
+Hystricidae : Hystricidae, Erethizontidae : Erethizontidae, Dinomyidae : Dinomyidae, Petromuridae : Petromuridae, Dolichotidae : Dolichotidae, Hydrochaeridae : Hydrochaeridae, Caviidae : Caviidae, Chinchillidae : Chinchillidae, Abrocomidae : Abrocomidae, Dasyproctidae : Dasyproctidae, Echimyidae : Echimyidae, Octodontidae : Octodontidae, Capromyidae : Capromyidae;
+endblock;

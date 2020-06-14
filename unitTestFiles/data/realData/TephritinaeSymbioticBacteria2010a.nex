@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((((((((Tephritis divisa,Tephritis matricariae),(Tephritis cometa,Tephritis bardance)),Tephritis arnicae),Capitites ramulosa),(Acanthiophilus helianthi,(Trupanea stellata,Trupanea amoena))),(Sphenella marginata,(Oxyna flavipennis,((Campiglossa doronici,Campiglossa guttella),Dioxyna bidentis)))),(39,(41,((45,46),(47,48))))),((17,18),(19,(Noeeta pupillata,Noeeta bisetosa)))),((25,26),(27,(29,((33,34),(35,36)))))),(9,10)),(5,Bactrocera oleae)),2);
+endblock;
+begin parasite;
+tree parasite =((((((((((104,105),103),101),99),97),95),(92,93)),(88,89)),(82,(84,85))),(78,79));
+endblock;
+begin distribution;
+Range
+105 : Tephritis matricariae, 104 : Tephritis divisa, 103 : Tephritis cometa, 101 : Capitites ramulosa, 99 : Tephritis arnicae, 92 : Trupanea stellata, 93 : Trupanea amoena, 95 : Sphenella marginata, 89 : Oxyna flavipennis, 88 : Campiglossa doronici, 82 : Campiglossa guttella, 84 : Dioxyna bidentis, 85 : Bactrocera oleae, 79 : Noeeta bisetosa, 78 : Noeeta pupillata, 97 : Acanthiophilus helianthi;
+endblock;

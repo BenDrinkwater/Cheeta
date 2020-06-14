@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Prunus avium,Vitis vinifera),(Helminthosporium victoriae,((Penicillium chrysogenum,Neosartorya fumigata),(Verticillium dahliae,(Cryphonectria nitschkei,Fusarium oxysporum)))));
+endblock;
+begin parasite;
+tree parasite =(((Amasya cherry disease associated chrysovirus,Helminthosporium victoriae 145S virus),Fusarium oxysporum chrysovirus 1),((Grapevine associated chrysovirus 1,(Penicillium chrysogenum virus,Aspergillus fumigatus chrysovirus)),(Verticillium chrysogenum virus,Cryphonectria nitschkei chrysovirus 1)));
+endblock;
+begin distribution;
+Range
+Cryphonectria nitschkei chrysovirus 1 : Cryphonectria nitschkei, Verticillium chrysogenum virus : Verticillium dahliae, Aspergillus fumigatus chrysovirus : Neosartorya fumigata, Penicillium chrysogenum virus : Penicillium chrysogenum, Grapevine associated chrysovirus 1 : Vitis vinifera, Helminthosporium victoriae 145S virus : Helminthosporium victoriae, Amasya cherry disease associated chrysovirus : Prunus avium, Fusarium oxysporum chrysovirus 1 : Fusarium oxysporum;
+endblock;

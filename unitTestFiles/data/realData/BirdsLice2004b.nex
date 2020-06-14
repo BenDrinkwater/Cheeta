@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Catharacta skua,((((Diomedea epomophora,((Diomedea dabbenena,Diomedea antipodensis),Diomedea exulans)),(Phoebastria immutabilis,Phoebastria irrorata)),(Thalassarche melanophris,Thalassarche chrysostoma)),(Fulmarus glacialis,Fulmarus glacialoides )));
+endblock;
+begin parasite;
+tree parasite =((Haffneria grandis,((Harrisoniella hopkinsi,((Harrisoniella hopkinsi GLA656,Harrisoniella hopkinsi GLA505),Harrisoniella ferox )),Harrisoniella densa)),(Episbates pederiformis,(Perineus concinnoides,(Perineus oblongus,((Perineus circumfasciatus FD09,Perineus circumfasciatus FD06),(Perineus nigrolimbatus 2,Perineus nigrolimbatus GLA519))))));
+endblock;
+begin distribution;
+Range
+Haffneria grandis : Catharacta skua, Harrisoniella hopkinsi : Diomedea epomophora, Harrisoniella hopkinsi GLA656 : Diomedea dabbenena, Harrisoniella hopkinsi GLA505 : Diomedea antipodensis, Perineus nigrolimbatus GLA519 : Fulmarus glacialoides , Perineus nigrolimbatus 2 : Fulmarus glacialis, Perineus circumfasciatus FD06 : Thalassarche chrysostoma, Perineus circumfasciatus FD09 : Thalassarche melanophris, Harrisoniella ferox  : Thalassarche melanophris, Perineus oblongus : Phoebastria irrorata, Episbates pederiformis : Phoebastria irrorata, Perineus concinnoides : Diomedea exulans, Harrisoniella densa : Phoebastria immutabilis;
+endblock;

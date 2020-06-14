@@ -1,0 +1,202 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 31;
+	TAXLABELS
+		peromyscus_boylii
+		reithrodontomys_megalotis
+		reithrodontomys_mexicanus
+		peromycus_maniculatus_g
+		peromycus_maniculatus_f
+		peromycus_leucopus_e
+		peromycus_leucopus_sw
+		bolomys_obscurus
+		akadon_azarae
+		oligoryzomys_longicaudatus
+		oligoryzomys_chacoensis
+		oryzomys_palustris
+		sigmondon_hispidus
+		sigmondon_texenis
+		lsc
+		rios
+		emc
+		snv
+		mon
+		nyv
+		bri
+		bro
+		mac
+		per
+		and
+		orn
+		bmj
+		bay
+		bcc
+		mul1
+		mul2
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00013,
+		H1	InternalNode_00006,
+		H2	InternalNode_00002,
+		H3	peromyscus_boylii,
+		H4	InternalNode_00001,
+		H5	reithrodontomys_megalotis,
+		H6	reithrodontomys_mexicanus,
+		H7	InternalNode_00005,
+		H8	InternalNode_00003,
+		H9	peromycus_maniculatus_g,
+		H10	peromycus_maniculatus_f,
+		H11	InternalNode_00004,
+		H12	peromycus_leucopus_e,
+		H13	peromycus_leucopus_sw,
+		H14	InternalNode_00012,
+		H15	InternalNode_00010,
+		H16	InternalNode_00007,
+		H17	bolomys_obscurus,
+		H18	akadon_azarae,
+		H19	InternalNode_00009,
+		H20	InternalNode_00008,
+		H21	oligoryzomys_longicaudatus,
+		H22	oligoryzomys_chacoensis,
+		H23	oryzomys_palustris,
+		H24	InternalNode_00011,
+		H25	sigmondon_hispidus,
+		H26	sigmondon_texenis,
+		P0	InternalNode_00016,
+		P1	InternalNode_00002,
+		P2	lsc,
+		P3	InternalNode_00001,
+		P4	rios,
+		P5	emc,
+		P6	InternalNode_00015,
+		P7	InternalNode_00006,
+		P8	InternalNode_00004,
+		P9	snv,
+		P10	InternalNode_00003,
+		P11	mon,
+		P12	nyv,
+		P13	InternalNode_00005,
+		P14	bri,
+		P15	bro,
+		P16	InternalNode_00014,
+		P17	InternalNode_00010,
+		P18	InternalNode_00007,
+		P19	mac,
+		P20	per,
+		P21	InternalNode_00009,
+		P22	and,
+		P23	InternalNode_00008,
+		P24	orn,
+		P25	bmj,
+		P26	InternalNode_00013,
+		P27	bay,
+		P28	InternalNode_00012,
+		P29	bcc,
+		P30	InternalNode_00011,
+		P31	mul1,
+		P32	mul2
+		;
+	TREE HOST = (((H3,(H5,H6)H4)H2,((H9,H10)H8,(H12,H13)H11)H7)H1,(((H17,H18)H16,((H21,H22)H20,H23)H19)H15,(H25,H26)H24)H14)H0;
+	TREE PARASITE = ((P2,(P4,P5)P3)P1,(((P9,(P11,P12)P10)P8,(P14,P15)P13)P7,(((P19,P20)P18,(P22,(P24,P25)P23)P21)P17,(P27,(P29,(P31,P32)P30)P28)P26)P16)P6)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		and	oligoryzomys_longicaudatus,
+		bay	oryzomys_palustris,
+		bcc	sigmondon_hispidus,
+		bmj	oligoryzomys_chacoensis,
+		bri	peromycus_leucopus_e,
+		bro	peromycus_leucopus_sw,
+		emc	reithrodontomys_mexicanus,
+		lsc	peromyscus_boylii,
+		mac	bolomys_obscurus,
+		mon	peromycus_maniculatus_f,
+		mul1	sigmondon_hispidus,
+		mul2	sigmondon_texenis,
+		nyv	peromycus_leucopus_e,
+		orn	oligoryzomys_longicaudatus,
+		per	akadon_azarae,
+		rios	reithrodontomys_megalotis,
+		snv	peromycus_maniculatus_g
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

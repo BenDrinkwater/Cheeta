@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((F. odoardi,((F. grossularioides,F. wassa),F. conocephalfolia)),F. tinctori),(((F. hispidioides,(F. nodosa,F. sur)),F. itana),(F. superba,(F. microcarpa,F. xylosycia))));
+endblock;
+begin parasite;
+tree parasite =(W. frustratus,((((K. wassae,(K. jacobsi,L. gibbosae)),((C. dertifer,C. nexilis),C. capensis)),C. armipes),(B. malayana,((P. comeri,E. verticillata),P. rieki))));
+endblock;
+begin distribution;
+Range
+W. frustratus : F. odoardi, K. wassae : F. wassa, K. jacobsi : F. conocephalfolia, L. gibbosae : F. tinctori, C. dertifer : F. hispidioides, C. nexilis : F. nodosa, C. capensis : F. sur, C. armipes : F. itana, B. malayana : F. grossularioides, P. comeri : F. superba, E. verticillata : F. microcarpa, P. rieki : F. xylosycia;
+endblock;

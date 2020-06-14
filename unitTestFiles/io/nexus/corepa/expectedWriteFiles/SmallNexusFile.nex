@@ -1,0 +1,63 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Leaf1
+		Leaf2
+		Leaf3
+		Leaf4
+		Leaf5
+		Leaf6
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00002,
+		H1	InternalNode_00001,
+		H2	Leaf1,
+		H3	Leaf2,
+		H4	Leaf3,
+		P0	InternalNode_00002,
+		P1	InternalNode_00001,
+		P2	Leaf4,
+		P3	Leaf5,
+		P4	Leaf6
+		;
+	TREE HOST = ((H2,H3)H1,H4)H0;
+	TREE PARASITE = ((P2,P3)P1,P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		Leaf6	Leaf1,
+		Leaf5	Leaf2,
+		Leaf4	Leaf3
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,184 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 28;
+	TAXLABELS
+		equus_caballlus
+		sus_scrofa
+		capra_hircus
+		rangifer_tarandus
+		cervus_elaphus
+		bos_taurus
+		bubalus_bubalis
+		felis_catus
+		canis_familiaris
+		phoca_vitrllina
+		saimiri_sciureus
+		macaca_mulatta
+		erythrocebus_patas
+		homo_sapiens
+		e.caballusvcv
+		s.scrofavcv
+		c.hircusvcv
+		r.tarandusvcv
+		ce.elaphusvcv
+		b.taurusvcv
+		b.bubalisvcv
+		f.catusvcv
+		ca.familarisvcv
+		p.vitullinavcv
+		sa.sciureusvcv
+		m.mulattavcv
+		er.patasvcv
+		h.sapiensvcv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00013,
+		H1	InternalNode_00009,
+		H2	InternalNode_00006,
+		H3	equus_caballlus,
+		H4	InternalNode_00005,
+		H5	sus_scrofa,
+		H6	InternalNode_00004,
+		H7	InternalNode_00002,
+		H8	capra_hircus,
+		H9	InternalNode_00001,
+		H10	rangifer_tarandus,
+		H11	cervus_elaphus,
+		H12	InternalNode_00003,
+		H13	bos_taurus,
+		H14	bubalus_bubalis,
+		H15	InternalNode_00008,
+		H16	felis_catus,
+		H17	InternalNode_00007,
+		H18	canis_familiaris,
+		H19	phoca_vitrllina,
+		H20	InternalNode_00012,
+		H21	saimiri_sciureus,
+		H22	InternalNode_00011,
+		H23	InternalNode_00010,
+		H24	macaca_mulatta,
+		H25	erythrocebus_patas,
+		H26	homo_sapiens,
+		P0	InternalNode_00013,
+		P1	InternalNode_00009,
+		P2	e.caballusvcv,
+		P3	InternalNode_00008,
+		P4	InternalNode_00005,
+		P5	s.scrofavcv,
+		P6	InternalNode_00004,
+		P7	c.hircusvcv,
+		P8	InternalNode_00003,
+		P9	InternalNode_00001,
+		P10	r.tarandusvcv,
+		P11	ce.elaphusvcv,
+		P12	InternalNode_00002,
+		P13	b.taurusvcv,
+		P14	b.bubalisvcv,
+		P15	InternalNode_00007,
+		P16	f.catusvcv,
+		P17	InternalNode_00006,
+		P18	ca.familarisvcv,
+		P19	p.vitullinavcv,
+		P20	InternalNode_00012,
+		P21	InternalNode_00010,
+		P22	sa.sciureusvcv,
+		P23	m.mulattavcv,
+		P24	InternalNode_00011,
+		P25	er.patasvcv,
+		P26	h.sapiensvcv
+		;
+	TREE HOST = (((H3,(H5,((H8,(H10,H11)H9)H7,(H13,H14)H12)H6)H4)H2,(H16,(H18,H19)H17)H15)H1,(H21,((H24,H25)H23,H26)H22)H20)H0;
+	TREE PARASITE = ((P2,((P5,(P7,((P10,P11)P9,(P13,P14)P12)P8)P6)P4,(P16,(P18,P19)P17)P15)P3)P1,((P22,P23)P21,(P25,P26)P24)P20)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		b.bubalisvcv	bubalus_bubalis,
+		b.taurusvcv	bos_taurus,
+		c.hircusvcv	capra_hircus,
+		ca.familarisvcv	canis_familiaris,
+		ce.elaphusvcv	cervus_elaphus,
+		e.caballusvcv	equus_caballlus,
+		er.patasvcv	erythrocebus_patas,
+		f.catusvcv	felis_catus,
+		h.sapiensvcv	homo_sapiens,
+		m.mulattavcv	macaca_mulatta,
+		p.vitullinavcv	phoca_vitrllina,
+		r.tarandusvcv	rangifer_tarandus,
+		s.scrofavcv	sus_scrofa,
+		sa.sciureusvcv	saimiri_sciureus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

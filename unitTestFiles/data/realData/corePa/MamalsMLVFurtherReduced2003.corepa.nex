@@ -1,0 +1,107 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 14;
+	TAXLABELS
+		domestic_cow
+		domestic__sheep
+		grey_seal
+		eurasian_badger
+		american_mink
+		human
+		free_tailed_bat
+		haev
+		meevii
+		mievii
+		boev
+		ovevii
+		herv.e
+		teev
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00006,
+		H1	InternalNode_00004,
+		H2	InternalNode_00001,
+		H3	domestic_cow,
+		H4	domestic__sheep,
+		H5	InternalNode_00003,
+		H6	grey_seal,
+		H7	InternalNode_00002,
+		H8	eurasian_badger,
+		H9	american_mink,
+		H10	InternalNode_00005,
+		H11	human,
+		H12	free_tailed_bat,
+		P0	InternalNode_00006,
+		P1	InternalNode_00005,
+		P2	InternalNode_00004,
+		P3	InternalNode_00001,
+		P4	haev,
+		P5	meevii,
+		P6	InternalNode_00003,
+		P7	mievii,
+		P8	InternalNode_00002,
+		P9	boev,
+		P10	ovevii,
+		P11	herv.e,
+		P12	teev
+		;
+	TREE HOST = (((H3,H4)H2,(H6,(H8,H9)H7)H5)H1,(H11,H12)H10)H0;
+	TREE PARASITE = ((((P4,P5)P3,(P7,(P9,P10)P8)P6)P2,P11)P1,P12)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		boev	eurasian_badger,
+		haev	domestic_cow,
+		herv.e	human,
+		meevii	domestic__sheep,
+		mievii	grey_seal,
+		ovevii	american_mink,
+		teev	free_tailed_bat
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

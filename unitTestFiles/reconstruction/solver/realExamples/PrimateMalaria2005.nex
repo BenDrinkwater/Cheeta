@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(New World Monkeys,(((Pan troglodytes,Homo sapiens),Hylobates),(Presbytis,(Macaca,Cercocebus))));
+endblock;
+begin parasite;
+tree parasite =((Pfa,Pre),((Pov,Pma),(((((Psi,Pvi),Pso),(Pcy1,Pcy2)),(((Phy,(Pin1,Pin2)),(Pkn1,(Pkn2,Pkn3))),Pfi)),(Psp,Pgo))));
+endblock;
+begin distribution;
+Range
+Pfa : Homo sapiens, Pov : Homo sapiens, Pma : Homo sapiens, Pvi : Homo sapiens, Pkn1 : Homo sapiens, Pre : Pan troglodytes, Psi : New World Monkeys, Pso : Macaca, Pcy2 : Macaca, Pin2 : Macaca, Pkn3 : Macaca, Pfi : Macaca, Pcy1 : Presbytis, Pin1 : Presbytis, Pkn2 : Presbytis, Phy : Hylobates, Psp : Cercocebus, Pgo : Cercocebus;
+endblock;

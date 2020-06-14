@@ -1,0 +1,129 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		up1bbt
+		up1bss
+		up1bcf
+		up1bhs
+		up1bpt
+		up1brn
+		up1bmm
+		up1bxl
+		up1bxt
+		upiiibt
+		upiiiss
+		upiiicf
+		upiiihs
+		upiiipt
+		upiiirn
+		upiiimm
+		upiiixl
+		upiiixt
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00008,
+		H1	InternalNode_00006,
+		H2	up1bbt,
+		H3	InternalNode_00005,
+		H4	InternalNode_00003,
+		H5	up1bss,
+		H6	InternalNode_00002,
+		H7	up1bcf,
+		H8	InternalNode_00001,
+		H9	up1bhs,
+		H10	up1bpt,
+		H11	InternalNode_00004,
+		H12	up1brn,
+		H13	up1bmm,
+		H14	InternalNode_00007,
+		H15	up1bxl,
+		H16	up1bxt,
+		P0	InternalNode_00008,
+		P1	InternalNode_00006,
+		P2	InternalNode_00004,
+		P3	InternalNode_00002,
+		P4	InternalNode_00001,
+		P5	upiiibt,
+		P6	upiiiss,
+		P7	upiiicf,
+		P8	InternalNode_00003,
+		P9	upiiihs,
+		P10	upiiipt,
+		P11	InternalNode_00005,
+		P12	upiiirn,
+		P13	upiiimm,
+		P14	InternalNode_00007,
+		P15	upiiixl,
+		P16	upiiixt
+		;
+	TREE HOST = ((H2,((H5,(H7,(H9,H10)H8)H6)H4,(H12,H13)H11)H3)H1,(H15,H16)H14)H0;
+	TREE PARASITE = (((((P5,P6)P4,P7)P3,(P9,P10)P8)P2,(P12,P13)P11)P1,(P15,P16)P14)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		upiiibt	up1bbt,
+		upiiicf	up1bcf,
+		upiiihs	up1bhs,
+		upiiimm	up1bmm,
+		upiiipt	up1bpt,
+		upiiirn	up1brn,
+		upiiiss	up1bss,
+		upiiixl	up1bxl,
+		upiiixt	up1bxt
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

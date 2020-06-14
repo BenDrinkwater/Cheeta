@@ -1,0 +1,173 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 25;
+	TAXLABELS
+		new_world_monkeys
+		pan_troglodytes
+		homo_sapiens
+		hylobates
+		presbytis
+		macaca
+		cercocebus
+		pfa
+		pre
+		pov
+		pma
+		psi
+		pvi
+		pso
+		pcy1
+		pcy2
+		phy
+		pin1
+		pin2
+		pkn1
+		pkn2
+		pkn3
+		pfi
+		psp
+		pgo
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00006,
+		H1	new_world_monkeys,
+		H2	InternalNode_00005,
+		H3	InternalNode_00002,
+		H4	InternalNode_00001,
+		H5	pan_troglodytes,
+		H6	homo_sapiens,
+		H7	hylobates,
+		H8	InternalNode_00004,
+		H9	presbytis,
+		H10	InternalNode_00003,
+		H11	macaca,
+		H12	cercocebus,
+		P0	InternalNode_00017,
+		P1	InternalNode_00001,
+		P2	pfa,
+		P3	pre,
+		P4	InternalNode_00016,
+		P5	InternalNode_00002,
+		P6	pov,
+		P7	pma,
+		P8	InternalNode_00015,
+		P9	InternalNode_00013,
+		P10	InternalNode_00006,
+		P11	InternalNode_00004,
+		P12	InternalNode_00003,
+		P13	psi,
+		P14	pvi,
+		P15	pso,
+		P16	InternalNode_00005,
+		P17	pcy1,
+		P18	pcy2,
+		P19	InternalNode_00012,
+		P20	InternalNode_00011,
+		P21	InternalNode_00008,
+		P22	phy,
+		P23	InternalNode_00007,
+		P24	pin1,
+		P25	pin2,
+		P26	InternalNode_00010,
+		P27	pkn1,
+		P28	InternalNode_00009,
+		P29	pkn2,
+		P30	pkn3,
+		P31	pfi,
+		P32	InternalNode_00014,
+		P33	psp,
+		P34	pgo
+		;
+	TREE HOST = (H1,(((H5,H6)H4,H7)H3,(H9,(H11,H12)H10)H8)H2)H0;
+	TREE PARASITE = ((P2,P3)P1,((P6,P7)P5,(((((P13,P14)P12,P15)P11,(P17,P18)P16)P10,(((P22,(P24,P25)P23)P21,(P27,(P29,P30)P28)P26)P20,P31)P19)P9,(P33,P34)P32)P8)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		pcy1	presbytis,
+		pcy2	macaca,
+		pfa	homo_sapiens,
+		pfi	macaca,
+		pgo	cercocebus,
+		phy	hylobates,
+		pin1	presbytis,
+		pin2	macaca,
+		pkn1	homo_sapiens,
+		pkn2	presbytis,
+		pkn3	macaca,
+		pma	homo_sapiens,
+		pov	homo_sapiens,
+		pre	pan_troglodytes,
+		psi	new_world_monkeys,
+		pso	macaca,
+		psp	cercocebus,
+		pvi	homo_sapiens
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

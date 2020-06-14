@@ -1,0 +1,162 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		emma_east_pe
+		favorinus_east_pe
+		etylus_east_e
+		lativitta_east_e
+		erato_east_fg
+		hydara_east_fg
+		hydara_east_t
+		hydara_west_pa
+		petiverana_west_cr
+		petiverana_west_pa
+		hydara_east_c
+		cyrbia_west_e
+		aglaope_east_pe
+		amaryllis_east_pe
+		ecuadoriensis_east_e
+		malleti_east_e
+		thelxiopeia_east_fg
+		melpomene_east_fg
+		melpomene_east_t
+		melpomene_west_pa
+		rosina_west_cr
+		rosina_west_pa
+		melpomene_east_c
+		cythera_west_e
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	InternalNode_00005,
+		H2	InternalNode_00003,
+		H3	InternalNode_00002,
+		H4	emma_east_pe,
+		H5	InternalNode_00001,
+		H6	favorinus_east_pe,
+		H7	etylus_east_e,
+		H8	lativitta_east_e,
+		H9	InternalNode_00004,
+		H10	erato_east_fg,
+		H11	hydara_east_fg,
+		H12	InternalNode_00010,
+		H13	InternalNode_00008,
+		H14	InternalNode_00007,
+		H15	InternalNode_00006,
+		H16	hydara_east_t,
+		H17	hydara_west_pa,
+		H18	petiverana_west_cr,
+		H19	petiverana_west_pa,
+		H20	InternalNode_00009,
+		H21	hydara_east_c,
+		H22	cyrbia_west_e,
+		P0	InternalNode_00011,
+		P1	InternalNode_00006,
+		P2	InternalNode_00003,
+		P3	InternalNode_00001,
+		P4	aglaope_east_pe,
+		P5	amaryllis_east_pe,
+		P6	InternalNode_00002,
+		P7	ecuadoriensis_east_e,
+		P8	malleti_east_e,
+		P9	InternalNode_00005,
+		P10	InternalNode_00004,
+		P11	thelxiopeia_east_fg,
+		P12	melpomene_east_fg,
+		P13	melpomene_east_t,
+		P14	InternalNode_00010,
+		P15	InternalNode_00008,
+		P16	InternalNode_00007,
+		P17	melpomene_west_pa,
+		P18	rosina_west_cr,
+		P19	rosina_west_pa,
+		P20	InternalNode_00009,
+		P21	melpomene_east_c,
+		P22	cythera_west_e
+		;
+	TREE HOST = ((((H4,(H6,H7)H5)H3,H8)H2,(H10,H11)H9)H1,((((H16,H17)H15,H18)H14,H19)H13,(H21,H22)H20)H12)H0;
+	TREE PARASITE = ((((P4,P5)P3,(P7,P8)P6)P2,((P11,P12)P10,P13)P9)P1,(((P17,P18)P16,P19)P15,(P21,P22)P20)P14)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		aglaope_east_pe	emma_east_pe,
+		amaryllis_east_pe	favorinus_east_pe,
+		cythera_west_e	cyrbia_west_e,
+		ecuadoriensis_east_e	etylus_east_e,
+		malleti_east_e	lativitta_east_e,
+		melpomene_east_c	hydara_east_c,
+		melpomene_east_fg	hydara_east_fg,
+		melpomene_east_t	hydara_east_t,
+		melpomene_west_pa	hydara_west_pa,
+		rosina_west_cr	petiverana_west_cr,
+		rosina_west_pa	petiverana_west_pa,
+		thelxiopeia_east_fg	erato_east_fg
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,141 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 20;
+	TAXLABELS
+		goose
+		other_birds
+		bovine
+		hamster
+		mouse
+		rheus_monkey
+		baboon
+		green_monkey
+		human
+		ghpv
+		apv
+		hapv
+		mpv
+		lpv
+		mptv
+		bpv
+		sv40
+		sa12
+		bkv
+		jcv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00008,
+		H1	InternalNode_00001,
+		H2	goose,
+		H3	other_birds,
+		H4	InternalNode_00007,
+		H5	bovine,
+		H6	InternalNode_00006,
+		H7	InternalNode_00002,
+		H8	hamster,
+		H9	mouse,
+		H10	InternalNode_00005,
+		H11	InternalNode_00004,
+		H12	InternalNode_00003,
+		H13	rheus_monkey,
+		H14	baboon,
+		H15	green_monkey,
+		H16	human,
+		P0	InternalNode_00010,
+		P1	InternalNode_00001,
+		P2	ghpv,
+		P3	apv,
+		P4	InternalNode_00009,
+		P5	InternalNode_00003,
+		P6	InternalNode_00002,
+		P7	hapv,
+		P8	mpv,
+		P9	lpv,
+		P10	InternalNode_00008,
+		P11	InternalNode_00004,
+		P12	mptv,
+		P13	bpv,
+		P14	InternalNode_00007,
+		P15	sv40,
+		P16	InternalNode_00006,
+		P17	InternalNode_00005,
+		P18	sa12,
+		P19	bkv,
+		P20	jcv
+		;
+	TREE HOST = ((H2,H3)H1,(H5,((H8,H9)H7,(((H13,H14)H12,H15)H11,H16)H10)H6)H4)H0;
+	TREE PARASITE = ((P2,P3)P1,(((P7,P8)P6,P9)P5,((P12,P13)P11,(P15,((P18,P19)P17,P20)P16)P14)P10)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		apv	other_birds,
+		bkv	human,
+		bpv	bovine,
+		ghpv	goose,
+		hapv	hamster,
+		jcv	human,
+		lpv	green_monkey,
+		mptv	mouse,
+		mpv	mouse,
+		sa12	baboon,
+		sv40	rheus_monkey
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,162 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		k._harpophyllae
+		k._hamitoni
+		k._waterhousei_a
+		k._waterhousei_b
+		k._waterhousei_c
+		k._waterhousei_d
+		k._waterhousei_e
+		k._waterhousei_f
+		k._waterhousei_g
+		k._waterhousei_h
+		k._waterhousei_i
+		k._waterhousei_j
+		k._acaciae
+		k._ellobus
+		k._rugosus_a
+		k._rugosus_b
+		k._rugosus_c
+		k._rugosus_d
+		k._rugosus_e
+		k._rugosus_f
+		k._rugosus_g
+		k._rugosus_h
+		k._rugosus_i
+		k._rugosus_j
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	InternalNode_00001,
+		H2	k._harpophyllae,
+		H3	k._hamitoni,
+		H4	InternalNode_00010,
+		H5	InternalNode_00008,
+		H6	InternalNode_00005,
+		H7	k._waterhousei_a,
+		H8	InternalNode_00004,
+		H9	k._waterhousei_b,
+		H10	InternalNode_00003,
+		H11	k._waterhousei_c,
+		H12	InternalNode_00002,
+		H13	k._waterhousei_d,
+		H14	k._waterhousei_e,
+		H15	InternalNode_00007,
+		H16	k._waterhousei_f,
+		H17	InternalNode_00006,
+		H18	k._waterhousei_g,
+		H19	k._waterhousei_h,
+		H20	InternalNode_00009,
+		H21	k._waterhousei_i,
+		H22	k._waterhousei_j,
+		P0	InternalNode_00011,
+		P1	InternalNode_00001,
+		P2	k._acaciae,
+		P3	k._ellobus,
+		P4	InternalNode_00010,
+		P5	InternalNode_00002,
+		P6	k._rugosus_a,
+		P7	k._rugosus_b,
+		P8	InternalNode_00009,
+		P9	InternalNode_00004,
+		P10	k._rugosus_c,
+		P11	InternalNode_00003,
+		P12	k._rugosus_d,
+		P13	k._rugosus_e,
+		P14	InternalNode_00008,
+		P15	InternalNode_00007,
+		P16	k._rugosus_f,
+		P17	InternalNode_00006,
+		P18	k._rugosus_g,
+		P19	InternalNode_00005,
+		P20	k._rugosus_h,
+		P21	k._rugosus_i,
+		P22	k._rugosus_j
+		;
+	TREE HOST = ((H2,H3)H1,(((H7,(H9,(H11,(H13,H14)H12)H10)H8)H6,(H16,(H18,H19)H17)H15)H5,(H21,H22)H20)H4)H0;
+	TREE PARASITE = ((P2,P3)P1,((P6,P7)P5,((P10,(P12,P13)P11)P9,((P16,(P18,(P20,P21)P19)P17)P15,P22)P14)P8)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		k._acaciae	k._harpophyllae,
+		k._ellobus	k._hamitoni,
+		k._rugosus_a	k._waterhousei_a,
+		k._rugosus_b	k._waterhousei_c,
+		k._rugosus_c	k._waterhousei_b,
+		k._rugosus_d	k._waterhousei_d,
+		k._rugosus_e	k._waterhousei_e,
+		k._rugosus_f	k._waterhousei_g,
+		k._rugosus_g	k._waterhousei_f,
+		k._rugosus_h	k._waterhousei_h,
+		k._rugosus_i	k._waterhousei_i,
+		k._rugosus_j	k._waterhousei_j
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

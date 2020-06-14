@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((koala bear,opossum),((rat,mouse),(rabbit,((baboon,(human,gibbon)),((domestic pig,domestic sheep),(cat,(red fox,(Eurasian badger,American mink)))))))),short-beaked echidna);
+endblock;
+begin parasite;
+tree parasite =(HC2,((RV opossum,((((RV Polynesian rat,RV Mus caroli),(RV koala,GaLV)),(PERV-C,PERV-B)),((((MLV,FeLV),OrEVI),(BaEV,ECEI)),(OvEVI,VuEV)))),((MeEVI,MiEVI),RV echidna)));
+endblock;
+begin distribution;
+Range
+RV koala : koala bear, RV Mus caroli : mouse, MLV : mouse, HC2 : human, RV opossum : opossum, RV Polynesian rat : rat, GaLV : gibbon, PERV-C : domestic pig, PERV-B : domestic pig, FeLV : cat, ECEI : cat, OrEVI : rabbit, BaEV : baboon, OvEVI : domestic sheep, VuEV : red fox, MeEVI : Eurasian badger, MiEVI : American mink, RV echidna : short-beaked echidna;
+endblock;

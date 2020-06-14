@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((P melba grotei,P melba citerior),(P afra,(P lineata,(P phoenicoptera,P hypogrammica))));
+endblock;
+begin parasite;
+tree parasite =((V paradisaea,V obtusa),(V orientails,(V interjecta,V togoensis)));
+endblock;
+begin distribution;
+Range
+V paradisaea : P melba grotei, V obtusa : P afra, V orientails : P melba citerior, V interjecta : P phoenicoptera, V togoensis : P hypogrammica;
+endblock;
