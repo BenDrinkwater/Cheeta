@@ -8,7 +8,7 @@ import tanglegram.CoevolutionaryHistory;
 import util.SolutionSet;
 import util.SolverSet;
 
-public class ImprovedNodeMappingGASolver extends AbstractGeneticAlgorithmSolver implements GeneticAlgoritmSolver {
+public class ImprovedNodeMappingGASolver extends AbstractGeneticAlgorithmSolver implements Solver {
 
 	public ImprovedNodeMappingGASolver(CoevolutionaryHistory history, int numberOfPopulations, boolean multiThreaded) {
 		super(history, numberOfPopulations, new int[] {0, 1, 1, 2}, multiThreaded);
@@ -52,7 +52,7 @@ public class ImprovedNodeMappingGASolver extends AbstractGeneticAlgorithmSolver 
 		}
 
 		@Override
-		protected GeneticAlgoritmSolver getSolver() {
+		protected Solver getSolver() {
 			return new ImprovedNodeMappingGASolver(super.initialHistory, super.populationSize, super.costScheme, false);		
 		}		
 	}

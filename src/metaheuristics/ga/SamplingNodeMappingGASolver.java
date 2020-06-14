@@ -76,7 +76,7 @@ public class SamplingNodeMappingGASolver extends NodeMappingGASolver {
 		}
 
 		@Override
-		protected GeneticAlgoritmSolver getSolver() {
+		protected Solver getSolver() {
 			return new SamplingNodeMappingGASolver(super.initialHistory, super.populationSize, super.costScheme, false, this.restrictedSize, this.restrictionMode);		
 		}		
 	}

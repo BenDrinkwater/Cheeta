@@ -3,7 +3,7 @@ package metaheuristics.ga;
 import reconstruction.CophylogenyReconstruction;
 import util.SolutionSet;
 
-public interface GeneticAlgoritmSolver {
+public interface Solver {
 
 	/**
 	 * Establishes the initial population and solves this. 

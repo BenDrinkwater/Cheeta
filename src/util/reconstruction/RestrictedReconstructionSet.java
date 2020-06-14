@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 import reconstruction.LooseParasiteMapping;
+import reconstruction.solver.nm.RestrictedReconstructionGenerator.RestrictionMode;
 
 public class RestrictedReconstructionSet extends ReconstructionSet {
 
@@ -22,6 +23,10 @@ public class RestrictedReconstructionSet extends ReconstructionSet {
 	
 	public RestrictedReconstructionSet(Size restrictedSize, int hostTreeSize)	{
 		this.maxReconstructionSet = (int) getReconstructionSetSize(restrictedSize, hostTreeSize);
+	}
+	
+	public static Size ParseRestructionSize(String str) {
+		return Size.valueOf(str);
 	}
 	
 	private static double getReconstructionSetSize(Size restrictedSize, int hostTreeSize) {
