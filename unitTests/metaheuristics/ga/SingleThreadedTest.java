@@ -43,7 +43,7 @@ public class SingleThreadedTest {
 	
 	@Test
 	public void MultiThreadedSolverWithPartitiviridaeTest() {
-		GeneticAlgoritmSolver solver = new MultiThreadedSolver(this.partitiviridae, 10);
+		Solver solver = new MultiThreadedSolver(this.partitiviridae, 10);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutionSet = solver.solve(10);
 		assertEquals(true, 71 <= solutionSet.getFirstElement().getEvents().getCost());

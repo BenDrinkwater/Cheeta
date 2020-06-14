@@ -57,7 +57,7 @@ public class GeneticAlgorithmSolverTest {
 	
 	@Test
 	public void TreeCollapseGASolveTest1() {
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.ficusWasp, 30, false);
+		Solver solver = new TreeCollapseGASolver(this.ficusWasp, 30, false);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutions = solver.solve(200);
 		assertNotNull(solutions);
@@ -70,7 +70,7 @@ public class GeneticAlgorithmSolverTest {
 	
 	@Test
 	public void TreeCollapseGASolveTest2() {
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.ficusWasp, 100, false);
+		Solver solver = new TreeCollapseGASolver(this.ficusWasp, 100, false);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutions = solver.solve(100);
 		assertNotNull(solutions);
@@ -80,7 +80,7 @@ public class GeneticAlgorithmSolverTest {
 	
 	@Test
 	public void MultiThreadedTreeCollapseGASolveTest() {
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.ficusWasp, 30, true);
+		Solver solver = new TreeCollapseGASolver(this.ficusWasp, 30, true);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutions = solver.solve(200);
 		assertNotNull(solutions);
@@ -93,7 +93,7 @@ public class GeneticAlgorithmSolverTest {
 	
 	@Test
 	public void MultiThreadedIncrementalTreeCollapseGASolveTest() {	
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.ficusWasp, 30, true);
+		Solver solver = new TreeCollapseGASolver(this.ficusWasp, 30, true);
 		SolutionSet<CophylogenyReconstruction> solutions = solver.initialize();
 		for (int i = 0; i < 200; ++i) {
 			solutions.add(solver.solve(1));

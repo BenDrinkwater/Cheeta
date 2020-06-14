@@ -3,11 +3,11 @@ package app.parameters;
 public class Parameter {
 	private SupportedOption AssociatedOption;
 	
-	private String Value;
+	private String value;
 	
 	public Parameter(SupportedOption associatedOption, String value) {
 		this.AssociatedOption = associatedOption;
-		this.Value = value;
+		this.value = value;
 	}
 	
 	public boolean valueMatchesPermittedDataType() {
@@ -21,17 +21,21 @@ public class Parameter {
 		return this.AssociatedOption;
 	}
 	
+	public String getValue() {
+		return this.value;
+	}
+	
 	private boolean validateArrayParameter() {
-		if (this.Value.length() < 3) {
+		if (this.value.length() < 3) {
 			return false;
 		}
-		if (!this.Value.subSequence(0, 2).equals("@{")) {
+		if (!this.value.subSequence(0, 2).equals("@{")) {
 			return false;
 		}
-		if (this.Value.charAt(this.Value.length()-1) != '}') {
+		if (this.value.charAt(this.value.length()-1) != '}') {
 			return false;
 		}
-		String arrayAsString = this.Value.subSequence(0, this.Value.length()-1).toString();
+		String arrayAsString = this.value.subSequence(0, this.value.length() - 1).toString();
 		return arrayAsString.split(",").length > 0;
 	}
 }

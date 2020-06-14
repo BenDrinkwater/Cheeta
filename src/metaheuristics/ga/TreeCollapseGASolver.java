@@ -7,10 +7,14 @@ import tanglegram.CoevolutionaryHistory;
 import util.SolutionSet;
 import util.SolverSet;
 
-public class TreeCollapseGASolver extends AbstractGeneticAlgorithmSolver implements GeneticAlgoritmSolver {
+public class TreeCollapseGASolver extends AbstractGeneticAlgorithmSolver implements Solver {
 
 	public TreeCollapseGASolver(CoevolutionaryHistory history, int numberOfPopulations, boolean multiThreaded) {
 		super(history, numberOfPopulations, new int[] {0, 1, 1, 2}, multiThreaded);
+	}
+	
+	public TreeCollapseGASolver(CoevolutionaryHistory history, int numberOfPopulations, int[] costScheme, boolean multiThreaded) {
+		super(history, numberOfPopulations, costScheme, multiThreaded);
 	}
 
 	@Override
@@ -41,7 +45,7 @@ public class TreeCollapseGASolver extends AbstractGeneticAlgorithmSolver impleme
 		}
 
 		@Override
-		protected GeneticAlgoritmSolver getSolver() {
+		protected Solver getSolver() {
 			return new TreeCollapseGASolver(super.initialHistory, super.populationSize, false);		
 		}		
 	}	

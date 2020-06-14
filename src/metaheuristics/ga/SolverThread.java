@@ -27,7 +27,7 @@ public abstract class SolverThread implements Runnable {
 		this.solutions = solver.solve(this.solutions, 1, null);
 	}
 
-	protected abstract GeneticAlgoritmSolver getSolver();
+	protected abstract Solver getSolver();
 
 	public SolutionSet<CophylogenyReconstruction> getResults() {
 		return this.solutions;

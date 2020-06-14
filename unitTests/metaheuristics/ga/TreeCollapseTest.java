@@ -38,7 +38,7 @@ public class TreeCollapseTest {
 	
 	@Test
 	public void SingleThreadedSolveTest() {
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.primatesOxyuroids, 20, false);
+		Solver solver = new TreeCollapseGASolver(this.primatesOxyuroids, 20, false);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutionSet = solver.solve(20);
 		assertEquals(true, 34 <= solutionSet.getFirstElement().getEvents().getCost());
@@ -47,7 +47,7 @@ public class TreeCollapseTest {
 	
 	@Test
 	public void MultiThreadedSolveTest() {
-		GeneticAlgoritmSolver solver = new TreeCollapseGASolver(this.primatesOxyuroids, 20, true);
+		Solver solver = new TreeCollapseGASolver(this.primatesOxyuroids, 20, true);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutionSet = solver.solve(20);
 		assertEquals(true, 34 <= solutionSet.getFirstElement().getEvents().getCost());

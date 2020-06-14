@@ -10,7 +10,7 @@ import tanglegram.CoevolutionaryHistory;
 import tree.Tree;
 import util.SolutionSet;
 
-public abstract class AbstractGeneticAlgorithmSolver implements GeneticAlgoritmSolver {
+public abstract class AbstractGeneticAlgorithmSolver implements Solver {
 
 	protected final CoevolutionaryHistory initialHistory;
 	protected final int populationSize;

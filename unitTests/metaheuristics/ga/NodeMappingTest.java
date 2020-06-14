@@ -39,7 +39,7 @@ public class NodeMappingTest {
 	
 	@Test
 	public void SmallTestCaseNewMethod() {
-		GeneticAlgoritmSolver solver = new ImprovedNodeMappingGASolver(this.smallTestCase, 50, false);
+		Solver solver = new ImprovedNodeMappingGASolver(this.smallTestCase, 50, false);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutionSet = solver.solve(50);
 		assertEquals(true, 8 <= solutionSet.getFirstElement().getEvents().getCost());
@@ -48,7 +48,7 @@ public class NodeMappingTest {
 	
 	@Test
 	public void SmallTestCaseOldMethod() {
-		GeneticAlgoritmSolver solver = new NodeMappingGASolver(this.smallTestCase, 50, false);
+		Solver solver = new NodeMappingGASolver(this.smallTestCase, 50, false);
 		solver.initialize();
 		SolutionSet<CophylogenyReconstruction> solutionSet = solver.solve(50);
 		assertEquals(true, 8 <= solutionSet.getFirstElement().getEvents().getCost());

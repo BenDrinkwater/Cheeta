@@ -30,6 +30,10 @@ public class RestrictedReconstructionGenerator extends ReconstructionGenerator {
 		this(history, costs, restrictedSize);
 		this.restrictionMode = restrictionMode;
 	}
+	
+	public static RestrictionMode ParseRestructionMode(String str) {
+		return RestrictionMode.valueOf(str);
+	}
 
 	protected ReconstructionSet getReconstructionSet() {
 		switch(this.restrictionMode) {
@@ -42,5 +46,5 @@ public class RestrictedReconstructionGenerator extends ReconstructionGenerator {
 	
 	protected Set<LooseParasiteMapping> returnReconstructionSet(Set<LooseParasiteMapping> currentSet) {
 		return ((RestrictedReconstructionSet) currentSet).boundSize();
-	}	
+	}
 }
