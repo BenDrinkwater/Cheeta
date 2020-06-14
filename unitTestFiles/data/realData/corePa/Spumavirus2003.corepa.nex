@@ -1,0 +1,140 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 20;
+	TAXLABELS
+		gorilla_gorilla
+		pan_troglodytes
+		homo_sapiens
+		cercopithecus_aethiops
+		cercopithecus_patas
+		macaca_mulatta
+		papio_cynocephalus
+		papio_ursinus
+		mandrillus_sphinx
+		mandrillus_leucophaeus
+		ggsv
+		ptsv
+		hssv
+		mmsv
+		casv
+		cpsv
+		pcsv
+		pusv
+		mssv
+		mlsv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00009,
+		H1	InternalNode_00002,
+		H2	gorilla_gorilla,
+		H3	InternalNode_00001,
+		H4	pan_troglodytes,
+		H5	homo_sapiens,
+		H6	InternalNode_00008,
+		H7	InternalNode_00003,
+		H8	cercopithecus_aethiops,
+		H9	cercopithecus_patas,
+		H10	InternalNode_00007,
+		H11	macaca_mulatta,
+		H12	InternalNode_00006,
+		H13	InternalNode_00004,
+		H14	papio_cynocephalus,
+		H15	papio_ursinus,
+		H16	InternalNode_00005,
+		H17	mandrillus_sphinx,
+		H18	mandrillus_leucophaeus,
+		P0	InternalNode_00009,
+		P1	InternalNode_00002,
+		P2	ggsv,
+		P3	InternalNode_00001,
+		P4	ptsv,
+		P5	hssv,
+		P6	InternalNode_00008,
+		P7	mmsv,
+		P8	InternalNode_00007,
+		P9	casv,
+		P10	InternalNode_00006,
+		P11	cpsv,
+		P12	InternalNode_00005,
+		P13	InternalNode_00003,
+		P14	pcsv,
+		P15	pusv,
+		P16	InternalNode_00004,
+		P17	mssv,
+		P18	mlsv
+		;
+	TREE HOST = ((H2,(H4,H5)H3)H1,((H8,H9)H7,(H11,((H14,H15)H13,(H17,H18)H16)H12)H10)H6)H0;
+	TREE PARASITE = ((P2,(P4,P5)P3)P1,(P7,(P9,(P11,((P14,P15)P13,(P17,P18)P16)P12)P10)P8)P6)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		casv	cercopithecus_aethiops,
+		cpsv	cercopithecus_patas,
+		ggsv	gorilla_gorilla,
+		hssv	homo_sapiens,
+		mlsv	mandrillus_leucophaeus,
+		mmsv	macaca_mulatta,
+		mssv	mandrillus_sphinx,
+		pcsv	papio_cynocephalus,
+		ptsv	pan_troglodytes,
+		pusv	papio_ursinus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

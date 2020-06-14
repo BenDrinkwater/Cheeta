@@ -1,0 +1,85 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		5
+		6
+		4
+		7
+		8
+		12
+		13
+		16
+		17
+		15
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00004,
+		H1	InternalNode_00002,
+		H2	InternalNode_00001,
+		H3	5,
+		H4	6,
+		H5	4,
+		H6	InternalNode_00003,
+		H7	7,
+		H8	8,
+		P0	InternalNode_00004,
+		P1	InternalNode_00001,
+		P2	12,
+		P3	13,
+		P4	InternalNode_00003,
+		P5	InternalNode_00002,
+		P6	16,
+		P7	17,
+		P8	15
+		;
+	TREE HOST = (((H3,H4)H2,H5)H1,(H7,H8)H6)H0;
+	TREE PARASITE = ((P2,P3)P1,((P6,P7)P5,P8)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		12	5,
+		13	6,
+		15	8,
+		16	4,
+		17	7
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,107 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 14;
+	TAXLABELS
+		petromuridae
+		hystricidae
+		erethizontidae
+		caviidae
+		dasyproctidae_a
+		dasyproctidae_b
+		chinchillidae
+		erethizontidae
+		hystricidae
+		petromuridae
+		dasyproctidae_a
+		octodontidae
+		caviidae
+		chinchillidae
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00006,
+		H1	InternalNode_00001,
+		H2	petromuridae,
+		H3	hystricidae,
+		H4	InternalNode_00005,
+		H5	erethizontidae,
+		H6	InternalNode_00004,
+		H7	caviidae,
+		H8	InternalNode_00003,
+		H9	dasyproctidae_a,
+		H10	InternalNode_00002,
+		H11	dasyproctidae_b,
+		H12	chinchillidae,
+		P0	InternalNode_00006,
+		P1	InternalNode_00001,
+		P2	erethizontidae,
+		P3	hystricidae,
+		P4	InternalNode_00005,
+		P5	petromuridae,
+		P6	InternalNode_00004,
+		P7	dasyproctidae_a,
+		P8	InternalNode_00003,
+		P9	octodontidae,
+		P10	InternalNode_00002,
+		P11	caviidae,
+		P12	chinchillidae
+		;
+	TREE HOST = ((H2,H3)H1,(H5,(H7,(H9,(H11,H12)H10)H8)H6)H4)H0;
+	TREE PARASITE = ((P2,P3)P1,(P5,(P7,(P9,(P11,P12)P10)P8)P6)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		caviidae	caviidae,
+		chinchillidae	chinchillidae,
+		dasyproctidae_a	dasyproctidae_a,
+		erethizontidae	erethizontidae,
+		hystricidae	hystricidae,
+		octodontidae	dasyproctidae_a,
+		petromuridae	petromuridae
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

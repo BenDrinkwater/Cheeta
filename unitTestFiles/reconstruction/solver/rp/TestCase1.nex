@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((hostLeaf1,hostLeaf2),(hostLeaf3,hostLeaf4)),hostLeaf5);
+endblock;
+begin parasite;
+tree parasite =((((parasiteLeaf1,parasiteLeaf2),parasiteLeaf3),parasiteLeaf4),parasiteLeaf5);
+endblock;
+begin distribution;
+Range
+parasiteLeaf1 : hostLeaf1, parasiteLeaf2 : hostLeaf2, parasiteLeaf3 : hostLeaf3, parasiteLeaf4 : hostLeaf4, parasiteLeaf5 : hostLeaf5;
+endblock;

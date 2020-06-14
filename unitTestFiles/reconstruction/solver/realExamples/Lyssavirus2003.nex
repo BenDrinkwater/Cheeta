@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Otocyan megalotis,((Vulpes Vulpes,Alopex lagopus),Urocyon cinerecargentus)),(Canis latrans,Nyclareutes procyonides)),((Procyon lotor,Procyon maynardi),(Mephitis mephitis,Mephitis macroura)));
+endblock;
+begin parasite;
+tree parasite =(((V271.BFX,V282.RFX),((V224.GFX,V217.CO),((ONT1.RFX,RU9.RD),((FL.RAC,NY.RAC),867WC.SK)))),V211.SK);
+endblock;
+begin distribution;
+Range
+V211.SK : Mephitis macroura, 867WC.SK : Mephitis mephitis, FL.RAC : Procyon lotor, NY.RAC : Procyon maynardi, RU9.RD : Nyclareutes procyonides, ONT1.RFX : Alopex lagopus, V217.CO : Canis latrans, V224.GFX : Urocyon cinerecargentus, V282.RFX : Vulpes Vulpes, V271.BFX : Otocyan megalotis;
+endblock;

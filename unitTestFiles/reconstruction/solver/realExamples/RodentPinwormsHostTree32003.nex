@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Erethizontidae,Hystricidae),(Petromuridae,(Octodontidae,(Dasyproctidae,(Caviidae,Chinchillidae)))));
+endblock;
+begin parasite;
+tree parasite =((Erethizontidae,Hystricidae),(Petromuridae,(Dasyproctidae,(Octodontidae,(Caviidae,Chinchillidae)))));
+endblock;
+begin distribution;
+Range
+Erethizontidae : Erethizontidae, Hystricidae : Hystricidae, Petromuridae : Petromuridae, Caviidae : Caviidae, Chinchillidae : Chinchillidae, Octodontidae : Octodontidae, Dasyproctidae : Dasyproctidae;
+endblock;

@@ -1,0 +1,144 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 20;
+	TAXLABELS
+		botrytis_cinerea
+		scierotinia_homoeocarpa
+		gremmeniella_abietina
+		ophiostoma_novo_ulmi
+		cryphonectria_parasitica
+		cryphonectria_cubensis
+		botrytis_cinerea_mitovirus_1
+		botrytis_cinerea_mitovirus_1s
+		ophiostoma_mitovirus_3b
+		scierotinia_homoeocarpa_mitovirus
+		ophiostoma_mitovirus_3a
+		cryphonectria_parasitica_mitovirus_1_nb631
+		cryphonectria_cubensis_mitovirus_2c
+		cryphonectria_cubensis_mitovirus_2b
+		cryphonectria_cubensis_mitovirus_2a
+		gremmeniella_abietina_mitochondrial_rna_virus_s2
+		gremmeniella_mitovirus_s1
+		cryphonectria_cubensis_mitovirus_1a
+		cryphonectria_cubensis_mitovirus_1b
+		cryphonectria_cubensis_mitovirus_1c
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00005,
+		H1	InternalNode_00002,
+		H2	InternalNode_00001,
+		H3	botrytis_cinerea,
+		H4	scierotinia_homoeocarpa,
+		H5	gremmeniella_abietina,
+		H6	InternalNode_00004,
+		H7	ophiostoma_novo_ulmi,
+		H8	InternalNode_00003,
+		H9	cryphonectria_parasitica,
+		H10	cryphonectria_cubensis,
+		P0	InternalNode_00013,
+		P1	InternalNode_00008,
+		P2	InternalNode_00004,
+		P3	InternalNode_00002,
+		P4	InternalNode_00001,
+		P5	botrytis_cinerea_mitovirus_1,
+		P6	botrytis_cinerea_mitovirus_1s,
+		P7	ophiostoma_mitovirus_3b,
+		P8	InternalNode_00003,
+		P9	scierotinia_homoeocarpa_mitovirus,
+		P10	ophiostoma_mitovirus_3a,
+		P11	InternalNode_00007,
+		P12	cryphonectria_parasitica_mitovirus_1_nb631,
+		P13	InternalNode_00006,
+		P14	cryphonectria_cubensis_mitovirus_2c,
+		P15	InternalNode_00005,
+		P16	cryphonectria_cubensis_mitovirus_2b,
+		P17	cryphonectria_cubensis_mitovirus_2a,
+		P18	InternalNode_00012,
+		P19	InternalNode_00009,
+		P20	gremmeniella_abietina_mitochondrial_rna_virus_s2,
+		P21	gremmeniella_mitovirus_s1,
+		P22	InternalNode_00011,
+		P23	cryphonectria_cubensis_mitovirus_1a,
+		P24	InternalNode_00010,
+		P25	cryphonectria_cubensis_mitovirus_1b,
+		P26	cryphonectria_cubensis_mitovirus_1c
+		;
+	TREE HOST = (((H3,H4)H2,H5)H1,(H7,(H9,H10)H8)H6)H0;
+	TREE PARASITE = (((((P5,P6)P4,P7)P3,(P9,P10)P8)P2,(P12,(P14,(P16,P17)P15)P13)P11)P1,((P20,P21)P19,(P23,(P25,P26)P24)P22)P18)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		botrytis_cinerea_mitovirus_1	botrytis_cinerea,
+		botrytis_cinerea_mitovirus_1s	botrytis_cinerea,
+		cryphonectria_cubensis_mitovirus_1a	cryphonectria_cubensis,
+		cryphonectria_cubensis_mitovirus_1b	cryphonectria_cubensis,
+		cryphonectria_cubensis_mitovirus_1c	cryphonectria_cubensis,
+		cryphonectria_cubensis_mitovirus_2a	cryphonectria_cubensis,
+		cryphonectria_cubensis_mitovirus_2b	cryphonectria_cubensis,
+		cryphonectria_cubensis_mitovirus_2c	cryphonectria_cubensis,
+		cryphonectria_parasitica_mitovirus_1_nb631	cryphonectria_parasitica,
+		gremmeniella_abietina_mitochondrial_rna_virus_s2	gremmeniella_abietina,
+		gremmeniella_mitovirus_s1	gremmeniella_abietina,
+		ophiostoma_mitovirus_3a	ophiostoma_novo_ulmi,
+		ophiostoma_mitovirus_3b	ophiostoma_novo_ulmi,
+		scierotinia_homoeocarpa_mitovirus	scierotinia_homoeocarpa
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Green Anole,(Boa Constrictor,(((Concho Water Snake,Brown House Snake),Guyana Chicken Snake),(Pit Viper,(Puff Adder,(European Adder,Bush Viper))))));
+endblock;
+begin parasite;
+tree parasite =(RV Green Anole,((RV Boa Constrictor,(RV Concho Water Snake,(RV Guyana Chicken Snake,(RV Pit Viper,(RV Puff Adder,RV European Adder))))),(RV Brown House Snake,RV Bush Viper)));
+endblock;
+begin distribution;
+Range
+RV Bush Viper : Bush Viper, RV Green Anole : Green Anole, RV Boa Constrictor : Boa Constrictor, RV Concho Water Snake : Concho Water Snake, RV Brown House Snake : Brown House Snake, RV European Adder : European Adder, RV Puff Adder : Puff Adder, RV Pit Viper : Pit Viper, RV Guyana Chicken Snake : Guyana Chicken Snake;
+endblock;

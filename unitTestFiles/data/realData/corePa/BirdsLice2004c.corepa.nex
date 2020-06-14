@@ -1,0 +1,179 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 27;
+	TAXLABELS
+		pterodroma_hypoleuca
+		pterodroma_cookii
+		pterodroma_inexpectata
+		pterodroma_lessonii
+		calonectris_diomedea
+		puffinus_huttoni
+		puffinus_assimilis_baroli
+		puffinus_boydi
+		puffinus_tenuirostris
+		puffinus_gravis
+		puffinus_griseus
+		pelagodroma_marina
+		oceanodroma_castro
+		halipeurus_theresae
+		halipeurus_turtur
+		halipeurus_consimilis
+		halipeurus_procellariae
+		halipeurus_abnormis_t53
+		halipeurus_rf21
+		halipeurus_spadix
+		halipeurus_gravis
+		halipeurus_diversus_t25
+		halipeurus_diversus_rf01
+		halipeurus_diversus_rf61
+		halipeurus_diversus
+		halipeurus_pelagicus
+		halipeurus_pelagicus_t43
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00012,
+		H1	InternalNode_00010,
+		H2	InternalNode_00003,
+		H3	InternalNode_00002,
+		H4	pterodroma_hypoleuca,
+		H5	InternalNode_00001,
+		H6	pterodroma_cookii,
+		H7	pterodroma_inexpectata,
+		H8	pterodroma_lessonii,
+		H9	InternalNode_00009,
+		H10	InternalNode_00006,
+		H11	calonectris_diomedea,
+		H12	InternalNode_00005,
+		H13	puffinus_huttoni,
+		H14	InternalNode_00004,
+		H15	puffinus_assimilis_baroli,
+		H16	puffinus_boydi,
+		H17	InternalNode_00008,
+		H18	puffinus_tenuirostris,
+		H19	InternalNode_00007,
+		H20	puffinus_gravis,
+		H21	puffinus_griseus,
+		H22	InternalNode_00011,
+		H23	pelagodroma_marina,
+		H24	oceanodroma_castro,
+		P0	InternalNode_00013,
+		P1	InternalNode_00011,
+		P2	InternalNode_00007,
+		P3	InternalNode_00005,
+		P4	InternalNode_00003,
+		P5	halipeurus_theresae,
+		P6	InternalNode_00002,
+		P7	halipeurus_turtur,
+		P8	InternalNode_00001,
+		P9	halipeurus_consimilis,
+		P10	halipeurus_procellariae,
+		P11	InternalNode_00004,
+		P12	halipeurus_abnormis_t53,
+		P13	halipeurus_rf21,
+		P14	InternalNode_00006,
+		P15	halipeurus_spadix,
+		P16	halipeurus_gravis,
+		P17	InternalNode_00010,
+		P18	InternalNode_00008,
+		P19	halipeurus_diversus_t25,
+		P20	halipeurus_diversus_rf01,
+		P21	InternalNode_00009,
+		P22	halipeurus_diversus_rf61,
+		P23	halipeurus_diversus,
+		P24	InternalNode_00012,
+		P25	halipeurus_pelagicus,
+		P26	halipeurus_pelagicus_t43
+		;
+	TREE HOST = ((((H4,(H6,H7)H5)H3,H8)H2,((H11,(H13,(H15,H16)H14)H12)H10,(H18,(H20,H21)H19)H17)H9)H1,(H23,H24)H22)H0;
+	TREE PARASITE = (((((P5,(P7,(P9,P10)P8)P6)P4,(P12,P13)P11)P3,(P15,P16)P14)P2,((P19,P20)P18,(P22,P23)P21)P17)P1,(P25,P26)P24)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		halipeurus_abnormis_t53	calonectris_diomedea,
+		halipeurus_consimilis	pterodroma_inexpectata,
+		halipeurus_diversus_rf01	puffinus_boydi,
+		halipeurus_diversus_rf61	puffinus_tenuirostris,
+		halipeurus_diversus_t25	puffinus_assimilis_baroli,
+		halipeurus_diversus	puffinus_griseus,
+		halipeurus_gravis	puffinus_gravis,
+		halipeurus_pelagicus_t43	oceanodroma_castro,
+		halipeurus_pelagicus	pelagodroma_marina,
+		halipeurus_procellariae	pterodroma_lessonii,
+		halipeurus_rf21	calonectris_diomedea,
+		halipeurus_spadix	puffinus_huttoni,
+		halipeurus_theresae	pterodroma_hypoleuca,
+		halipeurus_turtur	pterodroma_cookii
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

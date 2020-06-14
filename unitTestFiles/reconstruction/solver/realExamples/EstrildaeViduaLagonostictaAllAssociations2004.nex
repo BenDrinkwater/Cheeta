@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((E dybowskii,(H niveoguttatus,H margaritatus)),(C monteiri,((L larvata,(L rara,((L r congica,L r rubricata),(L virata,(L rhodopareia,L sanguinodorsalis))))),((L rufopicta,L nitidula),(L senegala rendalli,L senegala rhodopsis)))));
+endblock;
+begin parasite;
+tree parasite =(((((V camerunensis a,V camerunensis b),(V camerunensis c,V camerunensis d)),(V maryae,((V larvaticola a,V larvaticola b),V wilsoni))),((V funerea,V purpurascens),((V codringtoni a,V codringtoni b),(V chalybeata. Sa,V chalybeata. Sb)))),V chalybeata. W);
+endblock;
+begin distribution;
+Range
+V camerunensis a : E dybowskii, V camerunensis b : C monteiri, V camerunensis c : L rara, V camerunensis d : L r congica, V maryae : L sanguinodorsalis, V larvaticola a : L larvata, V larvaticola b : L virata, V wilsoni : L rufopicta, V funerea : L r rubricata, V purpurascens : L rhodopareia, V codringtoni a : H niveoguttatus, V codringtoni b : H margaritatus, V chalybeata. Sa : L nitidula, V chalybeata. Sb : L senegala rendalli, V chalybeata. W : L senegala rhodopsis;
+endblock;

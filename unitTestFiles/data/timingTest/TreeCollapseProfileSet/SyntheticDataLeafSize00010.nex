@@ -1,0 +1,1 @@
+#NEXUSBEGIN HOST;	TREE * HOST= ((Host2,Host3),((Host6,Host7),Host8));ENDBLOCK;BEGIN PARASITE;	TREE * PARASITE= ((Parasite2,Parasite3),((Parasite6,Parasite7),Parasite8));ENDBLOCK;BEGIN DISTRIBUTION;	RANGE		Parasite2: Host2,		Parasite3: Host3,		Parasite6: Host6,		Parasite7: Host7,		Parasite8: Host8		;ENDBLOCK;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((K. harpophyllae,K. hamitoni),(((K. waterhousei a,(K. waterhousei b,(K. waterhousei c,(K. waterhousei d,K. waterhousei e)))),(K. waterhousei f,(K. waterhousei g,K. waterhousei h))),(K. waterhousei i,K. waterhousei j)));
+endblock;
+begin parasite;
+tree parasite =((K. acaciae,K. ellobus),((K. rugosus a,K. rugosus b),((K. rugosus c,(K. rugosus d,K. rugosus e)),((K. rugosus f,(K. rugosus g,(K. rugosus h,K. rugosus i))),K. rugosus j))));
+endblock;
+begin distribution;
+Range
+K. rugosus j : K. waterhousei j, K. rugosus i : K. waterhousei i, K. rugosus h : K. waterhousei h, K. rugosus g : K. waterhousei f, K. rugosus f : K. waterhousei g, K. rugosus e : K. waterhousei e, K. rugosus d : K. waterhousei d, K. rugosus c : K. waterhousei b, K. rugosus b : K. waterhousei c, K. rugosus a : K. waterhousei a, K. ellobus : K. hamitoni, K. acaciae : K. harpophyllae;
+endblock;

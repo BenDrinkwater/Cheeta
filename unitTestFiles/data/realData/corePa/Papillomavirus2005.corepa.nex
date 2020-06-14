@@ -1,0 +1,212 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 33;
+	TAXLABELS
+		felis_domesticus
+		canis_familiaris
+		cervus_elaphus
+		cervus_e._nelsoni
+		orvis_aries
+		bos_taurus
+		phocoena_spinipinnis
+		trichechus_manatus
+		gorilla_gorilla
+		homo_sapiens
+		pan_troglodytes
+		pan_panicus
+		colobus_guereza
+		macaca_mulatta
+		macaca_fascicularis
+		oryctolagus_cuniculus
+		fpv
+		cpv
+		cgpv2
+		dpv
+		epv
+		ovpv
+		bpv
+		gpv
+		rpv
+		pspv
+		tmpv
+		hpv
+		ptpv
+		pppv
+		cgpv1
+		mmpv
+		mfpv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00015,
+		H1	InternalNode_00007,
+		H2	InternalNode_00006,
+		H3	InternalNode_00001,
+		H4	felis_domesticus,
+		H5	canis_familiaris,
+		H6	InternalNode_00005,
+		H7	InternalNode_00004,
+		H8	InternalNode_00002,
+		H9	cervus_elaphus,
+		H10	cervus_e._nelsoni,
+		H11	InternalNode_00003,
+		H12	orvis_aries,
+		H13	bos_taurus,
+		H14	phocoena_spinipinnis,
+		H15	trichechus_manatus,
+		H16	InternalNode_00014,
+		H17	InternalNode_00013,
+		H18	InternalNode_00010,
+		H19	gorilla_gorilla,
+		H20	InternalNode_00009,
+		H21	homo_sapiens,
+		H22	InternalNode_00008,
+		H23	pan_troglodytes,
+		H24	pan_panicus,
+		H25	InternalNode_00012,
+		H26	colobus_guereza,
+		H27	InternalNode_00011,
+		H28	macaca_mulatta,
+		H29	macaca_fascicularis,
+		H30	oryctolagus_cuniculus,
+		P0	InternalNode_00016,
+		P1	InternalNode_00008,
+		P2	InternalNode_00002,
+		P3	InternalNode_00001,
+		P4	fpv,
+		P5	cpv,
+		P6	cgpv2,
+		P7	InternalNode_00007,
+		P8	InternalNode_00006,
+		P9	InternalNode_00003,
+		P10	dpv,
+		P11	epv,
+		P12	InternalNode_00005,
+		P13	ovpv,
+		P14	InternalNode_00004,
+		P15	bpv,
+		P16	gpv,
+		P17	rpv,
+		P18	InternalNode_00015,
+		P19	InternalNode_00009,
+		P20	pspv,
+		P21	tmpv,
+		P22	InternalNode_00014,
+		P23	InternalNode_00011,
+		P24	hpv,
+		P25	InternalNode_00010,
+		P26	ptpv,
+		P27	pppv,
+		P28	InternalNode_00013,
+		P29	cgpv1,
+		P30	InternalNode_00012,
+		P31	mmpv,
+		P32	mfpv
+		;
+	TREE HOST = ((((H4,H5)H3,(((H9,H10)H8,(H12,H13)H11)H7,H14)H6)H2,H15)H1,(((H19,(H21,(H23,H24)H22)H20)H18,(H26,(H28,H29)H27)H25)H17,H30)H16)H0;
+	TREE PARASITE = ((((P4,P5)P3,P6)P2,(((P10,P11)P9,(P13,(P15,P16)P14)P12)P8,P17)P7)P1,((P20,P21)P19,((P24,(P26,P27)P25)P23,(P29,(P31,P32)P30)P28)P22)P18)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		bpv	bos_taurus,
+		cgpv1	colobus_guereza,
+		cgpv2	colobus_guereza,
+		cpv	canis_familiaris,
+		dpv	cervus_elaphus,
+		epv	cervus_e._nelsoni,
+		fpv	felis_domesticus,
+		gpv	gorilla_gorilla,
+		hpv	homo_sapiens,
+		mfpv	macaca_fascicularis,
+		mmpv	macaca_mulatta,
+		ovpv	orvis_aries,
+		pppv	pan_panicus,
+		pspv	phocoena_spinipinnis,
+		ptpv	pan_troglodytes,
+		rpv	oryctolagus_cuniculus,
+		tmpv	trichechus_manatus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

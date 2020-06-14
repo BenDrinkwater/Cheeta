@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Peromyscus maniculatus,(Oligoryzomys longicaudatus,(Myodes glareolus,(Microtus arvalis,Microtus pennssylvanicus)))),(Rattus norvegicus,(Apodemus flavicollis,(Apodemus peninsulae,Apodemus agrarius)))),((((Blarina brevicauda,Anourosorex squamipes),((Sorex cinereus,Sorex monticolus),(Sorex roboratus,Sorex araneus))),(Crocidura lasiura,Suncus murinus)),(Scalopus aquaticus,(Neurotrichus gibbsii,(Urotrichus talpoides,Talpa europaea)))));
+endblock;
+begin parasite;
+tree parasite =(((68,((72,73),(74,(76,77)))),((50,(52,(54,55))),(56,((60,(62,((66,67),65))),59)))),(46,47));
+endblock;
+begin distribution;
+Range
+72 : Peromyscus maniculatus, 73 : Oligoryzomys longicaudatus, 74 : Myodes glareolus, 76 : Microtus arvalis, 77 : Microtus pennssylvanicus, 50 : Rattus norvegicus, 52 : Apodemus flavicollis, 54 : Apodemus peninsulae, 55 : Apodemus agrarius, 56 : Blarina brevicauda, 60 : Anourosorex squamipes, 62 : Sorex cinereus, 66 : Sorex monticolus, 67 : Sorex roboratus, 59 : Urotrichus talpoides, 65 : Neurotrichus gibbsii, 46 : Crocidura lasiura, 68 : Scalopus aquaticus, 47 : Suncus murinus;
+endblock;

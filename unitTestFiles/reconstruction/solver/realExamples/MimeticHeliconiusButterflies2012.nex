@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((emma East Pe,(favorinus East Pe,etylus East E)),lativitta East E),(erato East FG,hydara East FG)),((((hydara East T,hydara West Pa),petiverana West CR),petiverana West Pa),(hydara East C,cyrbia West E)));
+endblock;
+begin parasite;
+tree parasite =((((aglaope East Pe,amaryllis East Pe),(ecuadoriensis East E,malleti East E)),((thelxiopeia East FG,melpomene East FG),melpomene East T)),(((melpomene West Pa,rosina West CR),rosina West Pa),(melpomene East C,cythera West E)));
+endblock;
+begin distribution;
+Range
+aglaope East Pe : emma East Pe, amaryllis East Pe : favorinus East Pe, ecuadoriensis East E : etylus East E, malleti East E : lativitta East E, thelxiopeia East FG : erato East FG, melpomene East FG : hydara East FG, melpomene East T : hydara East T, melpomene West Pa : hydara West Pa, rosina West CR : petiverana West CR, rosina West Pa : petiverana West Pa, melpomene East C : hydara East C, cythera West E : cyrbia West E;
+endblock;

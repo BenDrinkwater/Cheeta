@@ -1,0 +1,54 @@
+#NEXUS
+BEGIN TAXA;
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Leaf1
+		Leaf2
+		Leaf3
+		Leaf4
+		Leaf5
+		Leaf6
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	HOST_ROOT,
+		H1	Node1,
+		H2	Leaf1,
+		H3	Leaf2,
+		H4	Leaf3,
+		P0	PARASITE_ROOT,
+		P1	Node2,
+		P2	Leaf4,
+		P3	Leaf5,
+		P4	Leaf6
+		;
+	TREE HOST = ((H2,H3)H1,H4)H0;
+	TREE PARASITE = ((P2,P3)P1,P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		HOST_ROOT	0	0,
+		Node1	0	0,
+		Leaf1	0	0,
+		Leaf2	0	0,
+		Leaf3	0	0,
+		PARASITE_ROOT	0	0,
+		Node2	0	0,
+		Leaf4	0	0,
+		Leaf5	0	0,
+		Leaf6	0	0
+		;
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		Leaf4	Leaf3,
+		Leaf5	Leaf2,
+		Leaf6	Leaf1
+		;
+ENDBLOCK;
+

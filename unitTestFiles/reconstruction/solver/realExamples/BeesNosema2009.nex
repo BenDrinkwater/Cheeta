@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Bombyx mori,(Bombus spp.,(Apis mellifera,Apis cerana)));
+endblock;
+begin parasite;
+tree parasite =(Nosema bombycis,(Nosema apis,(Nosema bombi,(Nosema ceranae a,Nosema ceranae b))));
+endblock;
+begin distribution;
+Range
+Nosema ceranae a : Apis mellifera, Nosema apis : Apis mellifera, Nosema ceranae b : Apis cerana, Nosema bombi : Bombus spp., Nosema bombycis : Bombyx mori;
+endblock;

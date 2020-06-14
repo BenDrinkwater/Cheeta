@@ -1,0 +1,107 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 14;
+	TAXLABELS
+		a._gundlachi
+		a._bimaculatus
+		a._sabanus
+		a._oculatus
+		a._marmoratus
+		a._roquet
+		a._trinitatus
+		gu_p._az._white
+		s_p._az._white
+		pr_p._az._white
+		d_p._az._white
+		st._k_p._az._white
+		m_p._az._white
+		st._v_p._az._white
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00006,
+		H1	InternalNode_00004,
+		H2	a._gundlachi,
+		H3	InternalNode_00003,
+		H4	InternalNode_00001,
+		H5	a._bimaculatus,
+		H6	a._sabanus,
+		H7	InternalNode_00002,
+		H8	a._oculatus,
+		H9	a._marmoratus,
+		H10	InternalNode_00005,
+		H11	a._roquet,
+		H12	a._trinitatus,
+		P0	InternalNode_00006,
+		P1	InternalNode_00003,
+		P2	InternalNode_00002,
+		P3	InternalNode_00001,
+		P4	gu_p._az._white,
+		P5	s_p._az._white,
+		P6	pr_p._az._white,
+		P7	d_p._az._white,
+		P8	InternalNode_00005,
+		P9	st._k_p._az._white,
+		P10	InternalNode_00004,
+		P11	m_p._az._white,
+		P12	st._v_p._az._white
+		;
+	TREE HOST = ((H2,((H5,H6)H4,(H8,H9)H7)H3)H1,(H11,H12)H10)H0;
+	TREE PARASITE = ((((P4,P5)P3,P6)P2,P7)P1,(P9,(P11,P12)P10)P8)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		d_p._az._white	a._oculatus,
+		gu_p._az._white	a._marmoratus,
+		m_p._az._white	a._roquet,
+		pr_p._az._white	a._gundlachi,
+		s_p._az._white	a._sabanus,
+		st._k_p._az._white	a._bimaculatus,
+		st._v_p._az._white	a._trinitatus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

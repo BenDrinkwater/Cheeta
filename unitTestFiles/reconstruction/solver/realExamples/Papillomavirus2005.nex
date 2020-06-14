@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((Felis domesticus,Canis familiaris),(((Cervus elaphus,Cervus e. nelsoni),(Orvis aries,Bos taurus)),Phocoena spinipinnis)),Trichechus manatus),(((Gorilla gorilla,(Homo sapiens,(Pan troglodytes,Pan panicus))),(Colobus guereza,(Macaca mulatta,Macaca fascicularis))),Oryctolagus cuniculus));
+endblock;
+begin parasite;
+tree parasite =((((FPV,CPV),CgPV2),(((DPV,EPV),(OvPV,(BPV,GPV))),RPV)),((PsPV,TmPV),((HPV,(PtPV,PpPV)),(CgPV1,(MmPV,MFPV)))));
+endblock;
+begin distribution;
+Range
+FPV : Felis domesticus, CPV : Canis familiaris, CgPV2 : Colobus guereza, CgPV1 : Colobus guereza, DPV : Cervus elaphus, EPV : Cervus e. nelsoni, OvPV : Orvis aries, BPV : Bos taurus, GPV : Gorilla gorilla, RPV : Oryctolagus cuniculus, PsPV : Phocoena spinipinnis, TmPV : Trichechus manatus, HPV : Homo sapiens, PtPV : Pan troglodytes, PpPV : Pan panicus, CgPV2 : Colobus guereza, CgPV1 : Colobus guereza, MmPV : Macaca mulatta, MFPV : Macaca fascicularis;
+endblock;

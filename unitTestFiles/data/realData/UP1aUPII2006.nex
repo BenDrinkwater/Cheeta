@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((((UP1aMm,UP1aRn),UP1aCf),(UP1aPt,UP1aHs)),(UP1aSs,UP1aBt)),(UP1aXl,UP1aXt));
+endblock;
+begin parasite;
+tree parasite =((UPIIMm,(UPIIRn,(UPIICf,((UPIIPt,UPIIHs),(UPIISs,UPIIBt))))),(UPIIXl,UPIIXt));
+endblock;
+begin distribution;
+Range
+UPIIMm : UP1aMm, UPIIRn : UP1aRn, UPIICf : UP1aCf, UPIIPt : UP1aPt, UPIIHs : UP1aHs, UPIISs : UP1aSs, UPIIBt : UP1aBt, UPIIXl : UP1aXl, UPIIXt : UP1aXt;
+endblock;

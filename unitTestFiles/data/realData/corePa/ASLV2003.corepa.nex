@@ -1,0 +1,185 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 28;
+	TAXLABELS
+		colinus_virginianus
+		colinus_cristatusa
+		phasianus_colchicus
+		centrocercus_urophasianus
+		tympanuchus_cupido
+		lagopus_lagopusa
+		lagopus_mutus
+		bonasa_sewerzowi
+		perdix_dauurica
+		perdix_perdixa
+		bambusicola_thoracica
+		gallus_variusa
+		gallus_gallusa
+		covi2
+		covi1
+		cocr
+		ceur
+		tycu
+		phco1
+		phco2
+		bose
+		bath
+		lala
+		lamu
+		peda
+		pepe
+		gava
+		gaga
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00012,
+		H1	InternalNode_00001,
+		H2	colinus_virginianus,
+		H3	colinus_cristatusa,
+		H4	InternalNode_00011,
+		H5	InternalNode_00008,
+		H6	InternalNode_00006,
+		H7	phasianus_colchicus,
+		H8	InternalNode_00005,
+		H9	InternalNode_00004,
+		H10	InternalNode_00002,
+		H11	centrocercus_urophasianus,
+		H12	tympanuchus_cupido,
+		H13	InternalNode_00003,
+		H14	lagopus_lagopusa,
+		H15	lagopus_mutus,
+		H16	bonasa_sewerzowi,
+		H17	InternalNode_00007,
+		H18	perdix_dauurica,
+		H19	perdix_perdixa,
+		H20	InternalNode_00010,
+		H21	bambusicola_thoracica,
+		H22	InternalNode_00009,
+		H23	gallus_variusa,
+		H24	gallus_gallusa,
+		P0	InternalNode_00014,
+		P1	InternalNode_00010,
+		P2	InternalNode_00008,
+		P3	InternalNode_00004,
+		P4	InternalNode_00002,
+		P5	covi2,
+		P6	InternalNode_00001,
+		P7	covi1,
+		P8	cocr,
+		P9	InternalNode_00003,
+		P10	ceur,
+		P11	tycu,
+		P12	InternalNode_00007,
+		P13	phco1,
+		P14	InternalNode_00006,
+		P15	phco2,
+		P16	InternalNode_00005,
+		P17	bose,
+		P18	bath,
+		P19	InternalNode_00009,
+		P20	lala,
+		P21	lamu,
+		P22	InternalNode_00013,
+		P23	InternalNode_00011,
+		P24	peda,
+		P25	pepe,
+		P26	InternalNode_00012,
+		P27	gava,
+		P28	gaga
+		;
+	TREE HOST = ((H2,H3)H1,(((H7,(((H11,H12)H10,(H14,H15)H13)H9,H16)H8)H6,(H18,H19)H17)H5,(H21,(H23,H24)H22)H20)H4)H0;
+	TREE PARASITE = (((((P5,(P7,P8)P6)P4,(P10,P11)P9)P3,(P13,(P15,(P17,P18)P16)P14)P12)P2,(P20,P21)P19)P1,((P24,P25)P23,(P27,P28)P26)P22)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		bath	bambusicola_thoracica,
+		bose	bonasa_sewerzowi,
+		ceur	centrocercus_urophasianus,
+		cocr	colinus_cristatusa,
+		covi1	colinus_virginianus,
+		covi2	colinus_virginianus,
+		gaga	gallus_gallusa,
+		gava	gallus_variusa,
+		lala	lagopus_lagopusa,
+		lamu	lagopus_mutus,
+		peda	perdix_dauurica,
+		pepe	perdix_perdixa,
+		phco1	phasianus_colchicus,
+		phco2	phasianus_colchicus,
+		tycu	tympanuchus_cupido
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

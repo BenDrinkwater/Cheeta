@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((T. arnicae,((T. bardanae,T. cometa),(T. matricariae,T. divisa))),C. ramulosa),(A. helianthi,(T. stellata,T. amoena))),(S. marginata,((O. flavipennis,(C. doronici,C. guttella)),D. bidentis))),(N. bisetosa,N. pupillata)),B. oleae);
+endblock;
+begin parasite;
+tree parasite =(((((((Stammerula tephritidis T.b.,(Stammerula tephritidis T.a.,(Stammerula tephritidis T.c.,(Stammerula tephritidis T.m.,Stammerula tephritidis T.d.)))),Stammerula sp. A.h.),((Stammerula sp. C.r.,Stammerula sp. T.s.),Stammerula sp. T.a.)),Stammerula sp. S.m.),(Stammerula sp. O.f.,Stammerula sp. C.d.)),((Symb. C.g.,Erwinia dacicola),Symb. D.b.)),(Symb. N.b.,Symb. N.p.));
+endblock;
+begin distribution;
+Range
+Stammerula tephritidis T.a. : T. arnicae, Stammerula tephritidis T.b. : T. bardanae, Stammerula tephritidis T.c. : T. cometa, Stammerula tephritidis T.m. : T. matricariae, Stammerula tephritidis T.d. : T. divisa, Stammerula sp. A.h. : A. helianthi, Stammerula sp. C.r. : C. ramulosa, Stammerula sp. T.s. : T. stellata, Stammerula sp. T.a. : T. amoena, Stammerula sp. S.m. : S. marginata, Symb. N.p. : N. pupillata, Symb. N.b. : N. bisetosa, Symb. D.b. : D. bidentis, Symb. C.g. : C. guttella, Stammerula sp. C.d. : C. doronici, Stammerula sp. O.f. : O. flavipennis, Erwinia dacicola : B. oleae;
+endblock;

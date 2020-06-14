@@ -1,0 +1,321 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 54;
+	TAXLABELS
+		o._atricollis
+		a._subflava
+		g._ianthinogaster
+		g._granatina
+		e._dybowskii
+		h._niveoguttatus
+		h._margaritatus
+		c._monteiri
+		l._larvata
+		l._rara
+		l._r._congica
+		l._r._rubricata
+		l._virata
+		l._rhodopareia
+		l._sanguinodorsalis
+		l._rufopicta
+		l._nitdula
+		l._senegala_rendallii
+		l._senegala_rhodopsis
+		p._melba_grotei
+		p._melba_citerior
+		p._afra
+		p._lineata
+		p._phoenicoptera
+		p._hypogrammica
+		c._quartinia
+		c._melanotis
+		e._astrild
+		e._paludicola
+		e._rhodophyga
+		e._troglodytes
+		e._melpoda
+		e._erythronotos
+		v._fischeri
+		v._regia
+		v._nigeriae
+		v._raricola
+		v._camerunensis
+		v._maryae
+		v._larvaticola
+		v._wilsoni
+		v._funera
+		v._purpurascens
+		v._chalybeata.s
+		v._codringtoni
+		v._chaybeata._w
+		v._paradisaea
+		v._obtusa
+		v._orientalis
+		v._interjecta
+		v._togoensis
+		v._macroura_s
+		v._macroura_w
+		v._hypocherina
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00032,
+		H1	InternalNode_00001,
+		H2	o._atricollis,
+		H3	a._subflava,
+		H4	InternalNode_00031,
+		H5	InternalNode_00023,
+		H6	InternalNode_00002,
+		H7	g._ianthinogaster,
+		H8	g._granatina,
+		H9	InternalNode_00022,
+		H10	InternalNode_00004,
+		H11	e._dybowskii,
+		H12	InternalNode_00003,
+		H13	h._niveoguttatus,
+		H14	h._margaritatus,
+		H15	InternalNode_00021,
+		H16	InternalNode_00015,
+		H17	c._monteiri,
+		H18	InternalNode_00014,
+		H19	InternalNode_00010,
+		H20	l._larvata,
+		H21	InternalNode_00009,
+		H22	l._rara,
+		H23	InternalNode_00008,
+		H24	InternalNode_00005,
+		H25	l._r._congica,
+		H26	l._r._rubricata,
+		H27	InternalNode_00007,
+		H28	l._virata,
+		H29	InternalNode_00006,
+		H30	l._rhodopareia,
+		H31	l._sanguinodorsalis,
+		H32	InternalNode_00013,
+		H33	InternalNode_00011,
+		H34	l._rufopicta,
+		H35	l._nitdula,
+		H36	InternalNode_00012,
+		H37	l._senegala_rendallii,
+		H38	l._senegala_rhodopsis,
+		H39	InternalNode_00020,
+		H40	InternalNode_00016,
+		H41	p._melba_grotei,
+		H42	p._melba_citerior,
+		H43	InternalNode_00019,
+		H44	p._afra,
+		H45	InternalNode_00018,
+		H46	p._lineata,
+		H47	InternalNode_00017,
+		H48	p._phoenicoptera,
+		H49	p._hypogrammica,
+		H50	InternalNode_00030,
+		H51	InternalNode_00024,
+		H52	c._quartinia,
+		H53	c._melanotis,
+		H54	InternalNode_00029,
+		H55	InternalNode_00028,
+		H56	e._astrild,
+		H57	InternalNode_00027,
+		H58	e._paludicola,
+		H59	InternalNode_00026,
+		H60	e._rhodophyga,
+		H61	InternalNode_00025,
+		H62	e._troglodytes,
+		H63	e._melpoda,
+		H64	e._erythronotos,
+		P0	InternalNode_00020,
+		P1	InternalNode_00012,
+		P2	InternalNode_00001,
+		P3	v._fischeri,
+		P4	v._regia,
+		P5	InternalNode_00011,
+		P6	InternalNode_00010,
+		P7	InternalNode_00006,
+		P8	InternalNode_00002,
+		P9	v._nigeriae,
+		P10	v._raricola,
+		P11	InternalNode_00005,
+		P12	InternalNode_00004,
+		P13	InternalNode_00003,
+		P14	v._camerunensis,
+		P15	v._maryae,
+		P16	v._larvaticola,
+		P17	v._wilsoni,
+		P18	InternalNode_00009,
+		P19	v._funera,
+		P20	InternalNode_00008,
+		P21	v._purpurascens,
+		P22	InternalNode_00007,
+		P23	v._chalybeata.s,
+		P24	v._codringtoni,
+		P25	v._chaybeata._w,
+		P26	InternalNode_00019,
+		P27	InternalNode_00018,
+		P28	InternalNode_00016,
+		P29	InternalNode_00013,
+		P30	v._paradisaea,
+		P31	v._obtusa,
+		P32	InternalNode_00015,
+		P33	v._orientalis,
+		P34	InternalNode_00014,
+		P35	v._interjecta,
+		P36	v._togoensis,
+		P37	InternalNode_00017,
+		P38	v._macroura_s,
+		P39	v._macroura_w,
+		P40	v._hypocherina
+		;
+	TREE HOST = ((H2,H3)H1,(((H7,H8)H6,((H11,(H13,H14)H12)H10,((H17,((H20,(H22,((H25,H26)H24,(H28,(H30,H31)H29)H27)H23)H21)H19,((H34,H35)H33,(H37,H38)H36)H32)H18)H16,((H41,H42)H40,(H44,(H46,(H48,H49)H47)H45)H43)H39)H15)H9)H5,((H52,H53)H51,((H56,(H58,(H60,(H62,H63)H61)H59)H57)H55,H64)H54)H50)H4)H0;
+	TREE PARASITE = (((P3,P4)P2,((((P9,P10)P8,(((P14,P15)P13,P16)P12,P17)P11)P7,(P19,(P21,(P23,P24)P22)P20)P18)P6,P25)P5)P1,((((P30,P31)P29,(P33,(P35,P36)P34)P32)P28,(P38,P39)P37)P27,P40)P26)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		H59	0	0,
+		H60	0	0,
+		H61	0	0,
+		H62	0	0,
+		H63	0	0,
+		H64	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		v._camerunensis	l._rara,
+		v._chalybeata.s	l._senegala_rendallii,
+		v._chaybeata._w	l._senegala_rhodopsis,
+		v._codringtoni	h._niveoguttatus,
+		v._fischeri	g._ianthinogaster,
+		v._funera	l._r._rubricata,
+		v._hypocherina	e._erythronotos,
+		v._interjecta	p._phoenicoptera,
+		v._larvaticola	c._monteiri,
+		v._macroura_s	e._astrild,
+		v._macroura_w	e._melpoda,
+		v._maryae	l._sanguinodorsalis,
+		v._nigeriae	o._atricollis,
+		v._obtusa	p._afra,
+		v._orientalis	p._melba_citerior,
+		v._paradisaea	p._melba_grotei,
+		v._purpurascens	l._rhodopareia,
+		v._raricola	a._subflava,
+		v._regia	g._granatina,
+		v._togoensis	p._hypogrammica,
+		v._wilsoni	l._rufopicta
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

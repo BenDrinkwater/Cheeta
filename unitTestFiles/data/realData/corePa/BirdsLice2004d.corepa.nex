@@ -1,0 +1,129 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		diomedea_epomophora
+		diomedea_dabbenena
+		diomedea_exulans
+		diomedea_gibsoni
+		diomedea_antipodensis
+		phoebastria_immutabilis
+		thalassarche_chlororhynchos
+		thalassarche_bulleri
+		thalassarche_cauta
+		docophoroides_brevis_gla657
+		docophoroides_brevis_nz_ap14
+		docophoroides_brevis_fd02
+		docophoroides_brevis_gla501
+		docophoroides_brevis_gla895
+		docophoroides_niethammeri
+		docophoroides_simplex
+		docophoroides_harrisoni_gla487
+		docophoroides_harrisoni_gla550
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00008,
+		H1	InternalNode_00005,
+		H2	InternalNode_00004,
+		H3	diomedea_epomophora,
+		H4	InternalNode_00003,
+		H5	InternalNode_00001,
+		H6	diomedea_dabbenena,
+		H7	diomedea_exulans,
+		H8	InternalNode_00002,
+		H9	diomedea_gibsoni,
+		H10	diomedea_antipodensis,
+		H11	phoebastria_immutabilis,
+		H12	InternalNode_00007,
+		H13	thalassarche_chlororhynchos,
+		H14	InternalNode_00006,
+		H15	thalassarche_bulleri,
+		H16	thalassarche_cauta,
+		P0	InternalNode_00008,
+		P1	InternalNode_00006,
+		P2	InternalNode_00004,
+		P3	docophoroides_brevis_gla657,
+		P4	InternalNode_00003,
+		P5	docophoroides_brevis_nz_ap14,
+		P6	InternalNode_00002,
+		P7	InternalNode_00001,
+		P8	docophoroides_brevis_fd02,
+		P9	docophoroides_brevis_gla501,
+		P10	docophoroides_brevis_gla895,
+		P11	InternalNode_00005,
+		P12	docophoroides_niethammeri,
+		P13	docophoroides_simplex,
+		P14	InternalNode_00007,
+		P15	docophoroides_harrisoni_gla487,
+		P16	docophoroides_harrisoni_gla550
+		;
+	TREE HOST = (((H3,((H6,H7)H5,(H9,H10)H8)H4)H2,H11)H1,(H13,(H15,H16)H14)H12)H0;
+	TREE PARASITE = (((P3,(P5,((P8,P9)P7,P10)P6)P4)P2,(P12,P13)P11)P1,(P15,P16)P14)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		docophoroides_brevis_fd02	diomedea_exulans,
+		docophoroides_brevis_gla501	diomedea_gibsoni,
+		docophoroides_brevis_gla657	diomedea_epomophora,
+		docophoroides_brevis_gla895	diomedea_antipodensis,
+		docophoroides_brevis_nz_ap14	diomedea_dabbenena,
+		docophoroides_harrisoni_gla487	thalassarche_bulleri,
+		docophoroides_harrisoni_gla550	thalassarche_cauta,
+		docophoroides_niethammeri	phoebastria_immutabilis,
+		docophoroides_simplex	thalassarche_chlororhynchos
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

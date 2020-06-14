@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Botrytis cinerea,Scierotinia homoeocarpa),Gremmeniella abietina),(Ophiostoma novo ulmi,(Cryphonectria parasitica,Cryphonectria cubensis)));
+endblock;
+begin parasite;
+tree parasite =(((((Botrytis cinerea mitovirus 1,Botrytis cinerea mitovirus 1S),Ophiostoma mitovirus 3b),(Scierotinia homoeocarpa mitovirus,Ophiostoma mitovirus 3a)),(Cryphonectria parasitica mitovirus 1 NB631,(Cryphonectria cubensis mitovirus 2c,(Cryphonectria cubensis mitovirus 2b,Cryphonectria cubensis mitovirus 2a)))),((Gremmeniella abietina mitochondrial RNA virus S2,Gremmeniella mitovirus S1),(Cryphonectria cubensis mitovirus 1a,(Cryphonectria cubensis mitovirus 1b,Cryphonectria cubensis mitovirus 1c))));
+endblock;
+begin distribution;
+Range
+Botrytis cinerea mitovirus 1S : Botrytis cinerea, Botrytis cinerea mitovirus 1 : Botrytis cinerea, Scierotinia homoeocarpa mitovirus : Scierotinia homoeocarpa, Gremmeniella mitovirus S1 : Gremmeniella abietina, Gremmeniella abietina mitochondrial RNA virus S2 : Gremmeniella abietina, Cryphonectria cubensis mitovirus 1a : Cryphonectria cubensis, Cryphonectria cubensis mitovirus 1b : Cryphonectria cubensis, Cryphonectria cubensis mitovirus 1c : Cryphonectria cubensis, Cryphonectria cubensis mitovirus 2c : Cryphonectria cubensis, Cryphonectria cubensis mitovirus 2b : Cryphonectria cubensis, Cryphonectria cubensis mitovirus 2a : Cryphonectria cubensis, Ophiostoma mitovirus 3b : Ophiostoma novo ulmi, Ophiostoma mitovirus 3a : Ophiostoma novo ulmi, Cryphonectria parasitica mitovirus 1 NB631 : Cryphonectria parasitica;
+endblock;

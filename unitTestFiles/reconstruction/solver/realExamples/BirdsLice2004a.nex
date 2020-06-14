@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Macronectes giganteus,(((Diomedea epomophora,(Diomedea exulans,(Diomedea gibsoni,Diomedea antipodensis))),(Phoebastria nigripes,Phoebastria irrorata)),(((Thalassarche chrysostoma,Thalassarche melanophris),(Thalassarche cauta,Thalassarche bulleri)),Phoebetria palpebrata)));
+endblock;
+begin parasite;
+tree parasite =(((Paraclisis obscura,((Paraclisis hyalina NZ AP16,Paraclisis hyalina FD03),(Paraclisis hyalina GLA901,Paraclisis hyalina GLA896))),(Paraclisis confidens,Paraclisis miriceps)),(((Paraclisis diomedeae FD07,Paraclisis diomedeae FD10),(Paraclisis diomedeae GLA529,Paraclisis diomedeae NZ AP21)),Paraclisis diomedeae FD05));
+endblock;
+begin distribution;
+Range
+Paraclisis obscura : Macronectes giganteus, Paraclisis hyalina NZ AP16 : Diomedea epomophora, Paraclisis hyalina FD03 : Diomedea exulans, Paraclisis hyalina GLA901 : Diomedea gibsoni, Paraclisis hyalina GLA896 : Diomedea antipodensis, Paraclisis confidens : Phoebastria nigripes, Paraclisis miriceps : Phoebastria irrorata, Paraclisis diomedeae FD07 : Thalassarche chrysostoma, Paraclisis diomedeae FD10 : Thalassarche melanophris, Paraclisis diomedeae GLA529 : Thalassarche cauta, Paraclisis diomedeae NZ AP21 : Thalassarche bulleri, Paraclisis diomedeae FD05 : Phoebetria palpebrata;
+endblock;

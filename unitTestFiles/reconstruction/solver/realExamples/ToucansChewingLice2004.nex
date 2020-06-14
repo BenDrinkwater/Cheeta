@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(P. inscriptus,(R. toco,((R. sulfuratus,(R. v. ariel SE Br.,(R. brevis,(R. v. vitellinus,(R. v. ariel Amazon,R. v. culminatus))))),(R. swainsonii,(R. t. cuvieri,R. t. tucanus)))));
+endblock;
+begin parasite;
+tree parasite =(A. cancellosus 3,((A. cancellosus 6,((A. cancellosus 4a,(A. cancellosus 4b,A. cancellosus 4c)),A. cancellosus 5)),(A. cancellosus 1a,((A. cancellosus 1b,A. cancellosus 1c),(A. cancellosus 1d,A. cancellosus 1e)))));
+endblock;
+begin distribution;
+Range
+A. cancellosus 1d : R. t. cuvieri, A. cancellosus 1e : R. t. tucanus, A. cancellosus 1c : R. v. culminatus, A. cancellosus 1b : R. v. ariel Amazon, A. cancellosus 1a : R. toco, A. cancellosus 5 : R. v. ariel SE Br., A. cancellosus 4c : R. swainsonii, A. cancellosus 4b : R. brevis, A. cancellosus 4a : R. sulfuratus, A. cancellosus 6 : R. v. vitellinus, A. cancellosus 3 : P. inscriptus;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Pe. beatae Mexico,(Pe. maniculatus USA,Pe. leucopus USA)),(Re megalotis USA,Re. mexicanus Mexico));
+endblock;
+begin parasite;
+tree parasite =((MTNV Mexico,(ELMCV USA,RIOV Mexico)),(SNV USA,NYV USA));
+endblock;
+begin distribution;
+Range
+MTNV Mexico : Pe. beatae Mexico, ELMCV USA : Re megalotis USA, RIOV Mexico : Re. mexicanus Mexico, SNV USA : Pe. maniculatus USA, NYV USA : Pe. leucopus USA;
+endblock;

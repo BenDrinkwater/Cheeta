@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((talpoides,bottae),(bursarius,(hispidus,(cavator,(underwoodi,(cherriei,heterodus))))));
+endblock;
+begin parasite;
+tree parasite =((wardi,minor),((thomomyus,(actuosi,ewingi)),(chapini,((panamensis,(setzeri1,setzeri2)),(cherriei,cosaricensis)))));
+endblock;
+begin distribution;
+Range
+wardi : talpoides, thomomyus : talpoides, minor : bottae, actuosi : bottae, ewingi : bursarius, chapini : hispidus, panamensis : cavator, setzeri2 : cherriei, cherriei : cherriei, cosaricensis : heterodus, setzeri1 : underwoodi;
+endblock;

@@ -1,0 +1,174 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 26;
+	TAXLABELS
+		f._costaricana
+		f._turbinata
+		f._colubrinae
+		f._dugandii
+		f._paraensis
+		f._nymphaefolia
+		f._popenoei
+		f._trigonata
+		f._triangle
+		f._perforata
+		f._citrifolia
+		f._obtusifolia
+		p._estherae
+		p._baschierii
+		p._grandii
+		p._hoffmeyerii
+		p._longiceps
+		p._piceipes
+		p._gemellus2
+		p._insularis2
+		p._orozcoi
+		p._gemellus1
+		p._herrei
+		p._insularis1
+		p._tonduzi
+		p._lopesi
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	InternalNode_00006,
+		H2	InternalNode_00004,
+		H3	InternalNode_00003,
+		H4	InternalNode_00002,
+		H5	InternalNode_00001,
+		H6	f._costaricana,
+		H7	f._turbinata,
+		H8	f._colubrinae,
+		H9	f._dugandii,
+		H10	f._paraensis,
+		H11	InternalNode_00005,
+		H12	f._nymphaefolia,
+		H13	f._popenoei,
+		H14	InternalNode_00010,
+		H15	InternalNode_00008,
+		H16	InternalNode_00007,
+		H17	f._trigonata,
+		H18	f._triangle,
+		H19	f._perforata,
+		H20	InternalNode_00009,
+		H21	f._citrifolia,
+		H22	f._obtusifolia,
+		P0	InternalNode_00013,
+		P1	p._estherae,
+		P2	InternalNode_00012,
+		P3	InternalNode_00011,
+		P4	InternalNode_00001,
+		P5	p._baschierii,
+		P6	p._grandii,
+		P7	InternalNode_00010,
+		P8	InternalNode_00002,
+		P9	p._hoffmeyerii,
+		P10	p._longiceps,
+		P11	InternalNode_00009,
+		P12	InternalNode_00008,
+		P13	InternalNode_00003,
+		P14	p._piceipes,
+		P15	p._gemellus2,
+		P16	InternalNode_00007,
+		P17	InternalNode_00004,
+		P18	p._insularis2,
+		P19	p._orozcoi,
+		P20	InternalNode_00006,
+		P21	p._gemellus1,
+		P22	InternalNode_00005,
+		P23	p._herrei,
+		P24	p._insularis1,
+		P25	p._tonduzi,
+		P26	p._lopesi
+		;
+	TREE HOST = ((((((H6,H7)H5,H8)H4,H9)H3,H10)H2,(H12,H13)H11)H1,(((H17,H18)H16,H19)H15,(H21,H22)H20)H14)H0;
+	TREE PARASITE = (P1,(((P5,P6)P4,((P9,P10)P8,(((P14,P15)P13,((P18,P19)P17,(P21,(P23,P24)P22)P20)P16)P12,P25)P11)P7)P3,P26)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		p._baschierii	f._turbinata,
+		p._estherae	f._costaricana,
+		p._gemellus1	f._popenoei,
+		p._gemellus2	f._popenoei,
+		p._grandii	f._trigonata,
+		p._herrei	f._paraensis,
+		p._hoffmeyerii	f._obtusifolia,
+		p._insularis1	f._perforata,
+		p._insularis2	f._perforata,
+		p._longiceps	f._dugandii,
+		p._lopesi	f._triangle,
+		p._orozcoi	f._colubrinae,
+		p._piceipes	f._nymphaefolia,
+		p._tonduzi	f._citrifolia
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

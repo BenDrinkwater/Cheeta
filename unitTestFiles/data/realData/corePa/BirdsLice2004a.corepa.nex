@@ -1,0 +1,162 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		macronectes_giganteus
+		diomedea_epomophora
+		diomedea_exulans
+		diomedea_gibsoni
+		diomedea_antipodensis
+		phoebastria_nigripes
+		phoebastria_irrorata
+		thalassarche_chrysostoma
+		thalassarche_melanophris
+		thalassarche_cauta
+		thalassarche_bulleri
+		phoebetria_palpebrata
+		paraclisis_obscura
+		paraclisis_hyalina_nz_ap16
+		paraclisis_hyalina_fd03
+		paraclisis_hyalina_gla901
+		paraclisis_hyalina_gla896
+		paraclisis_confidens
+		paraclisis_miriceps
+		paraclisis_diomedeae_fd07
+		paraclisis_diomedeae_fd10
+		paraclisis_diomedeae_gla529
+		paraclisis_diomedeae_nz_ap21
+		paraclisis_diomedeae_fd05
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00011,
+		H1	macronectes_giganteus,
+		H2	InternalNode_00010,
+		H3	InternalNode_00005,
+		H4	InternalNode_00003,
+		H5	diomedea_epomophora,
+		H6	InternalNode_00002,
+		H7	diomedea_exulans,
+		H8	InternalNode_00001,
+		H9	diomedea_gibsoni,
+		H10	diomedea_antipodensis,
+		H11	InternalNode_00004,
+		H12	phoebastria_nigripes,
+		H13	phoebastria_irrorata,
+		H14	InternalNode_00009,
+		H15	InternalNode_00008,
+		H16	InternalNode_00006,
+		H17	thalassarche_chrysostoma,
+		H18	thalassarche_melanophris,
+		H19	InternalNode_00007,
+		H20	thalassarche_cauta,
+		H21	thalassarche_bulleri,
+		H22	phoebetria_palpebrata,
+		P0	InternalNode_00011,
+		P1	InternalNode_00006,
+		P2	InternalNode_00004,
+		P3	paraclisis_obscura,
+		P4	InternalNode_00003,
+		P5	InternalNode_00001,
+		P6	paraclisis_hyalina_nz_ap16,
+		P7	paraclisis_hyalina_fd03,
+		P8	InternalNode_00002,
+		P9	paraclisis_hyalina_gla901,
+		P10	paraclisis_hyalina_gla896,
+		P11	InternalNode_00005,
+		P12	paraclisis_confidens,
+		P13	paraclisis_miriceps,
+		P14	InternalNode_00010,
+		P15	InternalNode_00009,
+		P16	InternalNode_00007,
+		P17	paraclisis_diomedeae_fd07,
+		P18	paraclisis_diomedeae_fd10,
+		P19	InternalNode_00008,
+		P20	paraclisis_diomedeae_gla529,
+		P21	paraclisis_diomedeae_nz_ap21,
+		P22	paraclisis_diomedeae_fd05
+		;
+	TREE HOST = (H1,(((H5,(H7,(H9,H10)H8)H6)H4,(H12,H13)H11)H3,(((H17,H18)H16,(H20,H21)H19)H15,H22)H14)H2)H0;
+	TREE PARASITE = (((P3,((P6,P7)P5,(P9,P10)P8)P4)P2,(P12,P13)P11)P1,(((P17,P18)P16,(P20,P21)P19)P15,P22)P14)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		paraclisis_confidens	phoebastria_nigripes,
+		paraclisis_diomedeae_fd05	phoebetria_palpebrata,
+		paraclisis_diomedeae_fd07	thalassarche_chrysostoma,
+		paraclisis_diomedeae_fd10	thalassarche_melanophris,
+		paraclisis_diomedeae_gla529	thalassarche_cauta,
+		paraclisis_diomedeae_nz_ap21	thalassarche_bulleri,
+		paraclisis_hyalina_fd03	diomedea_exulans,
+		paraclisis_hyalina_gla896	diomedea_antipodensis,
+		paraclisis_hyalina_gla901	diomedea_gibsoni,
+		paraclisis_hyalina_nz_ap16	diomedea_epomophora,
+		paraclisis_miriceps	phoebastria_irrorata,
+		paraclisis_obscura	macronectes_giganteus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

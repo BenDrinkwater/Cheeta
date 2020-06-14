@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(Human,((Rabbit,Hare),((Cat,Sea Lion),(Cow,Pig))));
+endblock;
+begin parasite;
+tree parasite =(HumanNLV,(((RabbitHDV,BrownHareSV),(FelineCV,(SwineVESV,SMSLV))),(BovineCV,PorcineCV)));
+endblock;
+begin distribution;
+Range
+HumanNLV : Human, RabbitHDV : Rabbit, BrownHareSV : Hare, FelineCV : Cat, SMSLV : Sea Lion, BovineCV : Cow, PorcineCV : Pig, SwineVESV : Pig;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((((F. septica,F. sycomorus),((F. wassa,F. virgata),F. pumila)),F. hombroniana),(((F. pellucidopunctata,F. microcarpa),F. glumosa),F. macrophylla)),F. maxima);
+endblock;
+begin parasite;
+tree parasite =(((((C. bisulcatus,C. arabicus),(K. wassae,L. virgatae)),(W. pumlae,D. hombroniana)),((Wa. bravigena,Eu. verticillala),(El. glumosae,P. froggatti))),T. americanus);
+endblock;
+begin distribution;
+Range
+C. bisulcatus : F. septica, C. arabicus : F. sycomorus, K. wassae : F. wassa, L. virgatae : F. virgata, W. pumlae : F. pumila, D. hombroniana : F. hombroniana, Wa. bravigena : F. pellucidopunctata, Eu. verticillala : F. microcarpa, El. glumosae : F. glumosa, P. froggatti : F. macrophylla, T. americanus : F. maxima;
+endblock;

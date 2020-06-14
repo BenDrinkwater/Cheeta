@@ -1,0 +1,316 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 54;
+	TAXLABELS
+		tephritis_divisa
+		tephritis_matricariae
+		tephritis_cometa
+		tephritis_bardance
+		tephritis_arnicae
+		capitites_ramulosa
+		acanthiophilus_helianthi
+		trupanea_stellata
+		trupanea_amoena
+		sphenella_marginata
+		oxyna_flavipennis
+		campiglossa_doronici
+		campiglossa_guttella
+		dioxyna_bidentis
+		39
+		41
+		45
+		46
+		47
+		48
+		17
+		18
+		19
+		noeeta_pupillata
+		noeeta_bisetosa
+		25
+		26
+		27
+		29
+		33
+		34
+		35
+		36
+		9
+		10
+		5
+		bactrocera_oleae
+		2
+		104
+		105
+		103
+		101
+		99
+		97
+		95
+		92
+		93
+		88
+		89
+		82
+		84
+		85
+		78
+		79
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00037,
+		H1	InternalNode_00036,
+		H2	InternalNode_00034,
+		H3	InternalNode_00032,
+		H4	InternalNode_00024,
+		H5	InternalNode_00019,
+		H6	InternalNode_00013,
+		H7	InternalNode_00008,
+		H8	InternalNode_00005,
+		H9	InternalNode_00004,
+		H10	InternalNode_00003,
+		H11	InternalNode_00001,
+		H12	tephritis_divisa,
+		H13	tephritis_matricariae,
+		H14	InternalNode_00002,
+		H15	tephritis_cometa,
+		H16	tephritis_bardance,
+		H17	tephritis_arnicae,
+		H18	capitites_ramulosa,
+		H19	InternalNode_00007,
+		H20	acanthiophilus_helianthi,
+		H21	InternalNode_00006,
+		H22	trupanea_stellata,
+		H23	trupanea_amoena,
+		H24	InternalNode_00012,
+		H25	sphenella_marginata,
+		H26	InternalNode_00011,
+		H27	oxyna_flavipennis,
+		H28	InternalNode_00010,
+		H29	InternalNode_00009,
+		H30	campiglossa_doronici,
+		H31	campiglossa_guttella,
+		H32	dioxyna_bidentis,
+		H33	InternalNode_00018,
+		H34	39,
+		H35	InternalNode_00017,
+		H36	41,
+		H37	InternalNode_00016,
+		H38	InternalNode_00014,
+		H39	45,
+		H40	46,
+		H41	InternalNode_00015,
+		H42	47,
+		H43	48,
+		H44	InternalNode_00023,
+		H45	InternalNode_00020,
+		H46	17,
+		H47	18,
+		H48	InternalNode_00022,
+		H49	19,
+		H50	InternalNode_00021,
+		H51	noeeta_pupillata,
+		H52	noeeta_bisetosa,
+		H53	InternalNode_00031,
+		H54	InternalNode_00025,
+		H55	25,
+		H56	26,
+		H57	InternalNode_00030,
+		H58	27,
+		H59	InternalNode_00029,
+		H60	29,
+		H61	InternalNode_00028,
+		H62	InternalNode_00026,
+		H63	33,
+		H64	34,
+		H65	InternalNode_00027,
+		H66	35,
+		H67	36,
+		H68	InternalNode_00033,
+		H69	9,
+		H70	10,
+		H71	InternalNode_00035,
+		H72	5,
+		H73	bactrocera_oleae,
+		H74	2,
+		P0	InternalNode_00015,
+		P1	InternalNode_00013,
+		P2	InternalNode_00010,
+		P3	InternalNode_00008,
+		P4	InternalNode_00006,
+		P5	InternalNode_00005,
+		P6	InternalNode_00004,
+		P7	InternalNode_00003,
+		P8	InternalNode_00002,
+		P9	InternalNode_00001,
+		P10	104,
+		P11	105,
+		P12	103,
+		P13	101,
+		P14	99,
+		P15	97,
+		P16	95,
+		P17	InternalNode_00007,
+		P18	92,
+		P19	93,
+		P20	InternalNode_00009,
+		P21	88,
+		P22	89,
+		P23	InternalNode_00012,
+		P24	82,
+		P25	InternalNode_00011,
+		P26	84,
+		P27	85,
+		P28	InternalNode_00014,
+		P29	78,
+		P30	79
+		;
+	TREE HOST = ((((((((((((H12,H13)H11,(H15,H16)H14)H10,H17)H9,H18)H8,(H20,(H22,H23)H21)H19)H7,(H25,(H27,((H30,H31)H29,H32)H28)H26)H24)H6,(H34,(H36,((H39,H40)H38,(H42,H43)H41)H37)H35)H33)H5,((H46,H47)H45,(H49,(H51,H52)H50)H48)H44)H4,((H55,H56)H54,(H58,(H60,((H63,H64)H62,(H66,H67)H65)H61)H59)H57)H53)H3,(H69,H70)H68)H2,(H72,H73)H71)H1,H74)H0;
+	TREE PARASITE = ((((((((((P10,P11)P9,P12)P8,P13)P7,P14)P6,P15)P5,P16)P4,(P18,P19)P17)P3,(P21,P22)P20)P2,(P24,(P26,P27)P25)P23)P1,(P29,P30)P28)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		H59	0	0,
+		H60	0	0,
+		H61	0	0,
+		H62	0	0,
+		H63	0	0,
+		H64	0	0,
+		H65	0	0,
+		H66	0	0,
+		H67	0	0,
+		H68	0	0,
+		H69	0	0,
+		H70	0	0,
+		H71	0	0,
+		H72	0	0,
+		H73	0	0,
+		H74	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		101	capitites_ramulosa,
+		103	tephritis_cometa,
+		104	tephritis_divisa,
+		105	tephritis_matricariae,
+		78	noeeta_pupillata,
+		79	noeeta_bisetosa,
+		82	campiglossa_guttella,
+		84	dioxyna_bidentis,
+		85	bactrocera_oleae,
+		88	campiglossa_doronici,
+		89	oxyna_flavipennis,
+		92	trupanea_stellata,
+		93	trupanea_amoena,
+		95	sphenella_marginata,
+		97	acanthiophilus_helianthi,
+		99	tephritis_arnicae
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

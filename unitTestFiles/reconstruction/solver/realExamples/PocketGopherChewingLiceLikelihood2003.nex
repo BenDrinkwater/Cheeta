@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((((O. underwoodi,O. cavator),(O. cherrieii,O. heterodus)),O. hispidus),P. bulleri),Z. trichopus),((C. merriami,C. castanops),(G. personatus,(G. berviceps,(G. b. majusculus,G. b. halli)))));
+endblock;
+begin parasite;
+tree parasite =(((((G. setzeri,G. panamensis),(G. cherriei,G. costaricensis)),G. chapini),G. perotensis),((G. trichopi,G. nadleri),(G. expansus,((G. texanus,G. ewingi),(G. geomydis,G. oklahomensis)))));
+endblock;
+begin distribution;
+Range
+G. oklahomensis : G. b. halli, G. geomydis : G. b. majusculus, G. ewingi : G. berviceps, G. texanus : G. personatus, G. expansus : C. castanops, G. nadleri : P. bulleri, G. perotensis : C. merriami, G. trichopi : Z. trichopus, G. chapini : O. hispidus, G. costaricensis : O. heterodus, G. cherriei : O. cherrieii, G. panamensis : O. cavator, G. setzeri : O. underwoodi;
+endblock;

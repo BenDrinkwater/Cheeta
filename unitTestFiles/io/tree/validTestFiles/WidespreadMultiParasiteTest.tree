@@ -1,0 +1,245 @@
+HOSTTREE
+1	2	3
+2	4	5
+3	8	9
+4	null
+5	6	7
+6	null
+7	null
+8	10	11
+9	14	15
+10	null
+11	12	13
+12	null
+13	null
+14	16	17
+15	26	27
+16	18	19
+17	24	25
+18	20	21
+19	22	23
+20	null
+21	null
+22	null
+23	null
+24	null
+25	null
+26	28	29
+27	36	37
+28	null
+29	30	31
+30	null
+31	32	33
+32	null
+33	34	35
+34	null
+35	null
+36	null
+37	38	39
+38	null
+39	null
+
+
+HOSTNAMES
+1	1
+2	2
+3	3
+4	HostLeafNode01
+5	5
+6	HostLeafNode02
+7	HostLeafNode03
+8	8
+9	9
+10	HostLeafNode04
+11	11
+12	HostLeafNode05
+13	HostLeafNode06
+14	14
+15	15
+16	16
+17	17
+18	18
+19	19
+20	HostLeafNode07
+21	HostLeafNode08
+22	HostLeafNode09
+23	HostLeafNode10
+24	HostLeafNode11
+25	HostLeafNode12
+26	26
+27	27
+28	HostLeafNode13
+29	29
+30	HostLeafNode14
+31	31
+32	HostLeafNode15
+33	33
+34	HostLeafNode16
+35	HostLeafNode17
+36	HostLeafNode18
+37	37
+38	HostLeafNode19
+39	HostLeafNode20
+
+
+PARASITETREE
+40	41	42
+41	43	44
+42	null
+43	45	46
+44	47	48
+45	null
+46	null
+47	51	52
+48	49	50
+49	null
+50	null
+51	53	54
+52	55	56
+53	null
+54	null
+55	57	58
+56	59	60
+57	null
+58	null
+59	null
+60	61	62
+61	63	64
+62	67	68
+63	65	66
+64	null
+65	null
+66	null
+67	null
+68	null
+
+
+PARASITENAMES
+40	40
+41	41
+42	ParasiteLeafNode15
+43	43
+44	44
+45	ParasiteLeafNode01
+46	ParasiteLeafNode02
+47	47
+48	48
+49	ParasiteLeafNode13
+50	ParasiteLeafNode14
+51	51
+52	52
+53	ParasiteLeafNode03
+54	ParasiteLeafNode04
+55	55
+56	56
+57	ParasiteLeafNode05
+58	ParasiteLeafNode06
+59	ParasiteLeafNode07
+60	60
+61	61
+62	62
+63	63
+64	ParasiteLeafNode10
+65	ParasiteLeafNode08
+66	ParasiteLeafNode09
+67	ParasiteLeafNode11
+68	ParasiteLeafNode12
+
+
+PHI
+4	45
+6	46
+7	46
+10	53
+12	54
+20	57
+21	58
+13	59
+24	65
+25	65
+28	66
+30	66	50
+34	66	50
+35	66	64
+36	64
+38	67
+39	68	42
+23	49
+22	49
+32	50
+
+
+HOSTRANKS
+1	1
+2	1
+3	1
+4	1
+5	1
+6	1
+7	1
+8	1
+9	1
+10	1
+11	1
+12	1
+13	1
+14	1
+15	1
+16	1
+17	1
+18	1
+19	1
+20	1
+21	1
+22	1
+23	1
+24	1
+25	1
+26	1
+27	1
+28	1
+29	1
+30	1
+31	1
+32	1
+33	1
+34	1
+35	1
+36	1
+37	1
+38	1
+39	1
+
+
+PARASITERANKS
+40	1
+41	1
+42	1
+43	1
+44	1
+45	1
+46	1
+47	1
+48	1
+49	1
+50	1
+51	1
+52	1
+53	1
+54	1
+55	1
+56	1
+57	1
+58	1
+59	1
+60	1
+61	1
+62	1
+63	1
+64	1
+65	1
+66	1
+67	1
+68	1
+
+

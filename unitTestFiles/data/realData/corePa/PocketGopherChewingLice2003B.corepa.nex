@@ -1,0 +1,130 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		t._talpoides
+		t._bottae
+		g._bursarius
+		o.hispidus
+		o.cavator
+		o._underwoodi
+		o._cherriei
+		o._heterodus
+		g._wardi
+		g._minor
+		g._thomomyus
+		g._actuosi
+		g._ewingi
+		g._yucatanensis
+		g._panamensis
+		g._setzeri
+		g._cherriei
+		g._costaricensis
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00007,
+		H1	InternalNode_00001,
+		H2	t._talpoides,
+		H3	t._bottae,
+		H4	InternalNode_00006,
+		H5	g._bursarius,
+		H6	InternalNode_00005,
+		H7	o.hispidus,
+		H8	InternalNode_00004,
+		H9	o.cavator,
+		H10	InternalNode_00003,
+		H11	o._underwoodi,
+		H12	InternalNode_00002,
+		H13	o._cherriei,
+		H14	o._heterodus,
+		P0	InternalNode_00009,
+		P1	InternalNode_00001,
+		P2	g._wardi,
+		P3	g._minor,
+		P4	InternalNode_00008,
+		P5	InternalNode_00003,
+		P6	g._thomomyus,
+		P7	InternalNode_00002,
+		P8	g._actuosi,
+		P9	g._ewingi,
+		P10	InternalNode_00007,
+		P11	g._yucatanensis,
+		P12	InternalNode_00006,
+		P13	InternalNode_00004,
+		P14	g._panamensis,
+		P15	g._setzeri,
+		P16	InternalNode_00005,
+		P17	g._cherriei,
+		P18	g._costaricensis
+		;
+	TREE HOST = ((H2,H3)H1,(H5,(H7,(H9,(H11,(H13,H14)H12)H10)H8)H6)H4)H0;
+	TREE PARASITE = ((P2,P3)P1,((P6,(P8,P9)P7)P5,(P11,((P14,P15)P13,(P17,P18)P16)P12)P10)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		g._actuosi	t._bottae,
+		g._cherriei	o._cherriei,
+		g._costaricensis	o._heterodus,
+		g._ewingi	g._bursarius,
+		g._minor	t._bottae,
+		g._panamensis	o.cavator,
+		g._setzeri	o._underwoodi,
+		g._thomomyus	t._talpoides,
+		g._wardi	t._talpoides,
+		g._yucatanensis	o.hispidus
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

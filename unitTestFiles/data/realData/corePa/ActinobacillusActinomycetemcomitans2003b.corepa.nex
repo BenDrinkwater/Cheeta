@@ -1,0 +1,405 @@
+#NEXUS
+BEGIN TAXA;
+	DIMENSIONS NTAX = 46;
+	TAXLABELS
+		aa
+		hi
+		pm
+		se
+		ec
+		yp
+		vc
+		pa
+		bc
+		rs
+		bp
+		ng
+		nm
+		af
+		at
+		sm
+		ml
+		cc
+		ct
+		pg
+		sc
+		mt
+		cd
+		aa
+		pm
+		yp
+		at
+		sm2
+		ml3
+		sm1
+		cc
+		ml1
+		ml2
+		ct
+		rs1
+		bc2
+		bp2
+		rs2
+		af
+		pa
+		bc1
+		bp1
+		sc1
+		sc2
+		mt
+		cd
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00022,
+		H1	InternalNode_00019,
+		H2	InternalNode_00017,
+		H3	InternalNode_00013,
+		H4	InternalNode_00012,
+		H5	InternalNode_00007,
+		H6	InternalNode_00006,
+		H7	InternalNode_00005,
+		H8	InternalNode_00002,
+		H9	InternalNode_00001,
+		H10	aa,
+		H11	hi,
+		H12	pm,
+		H13	InternalNode_00004,
+		H14	InternalNode_00003,
+		H15	se,
+		H16	ec,
+		H17	yp,
+		H18	vc,
+		H19	pa,
+		H20	InternalNode_00011,
+		H21	InternalNode_00009,
+		H22	bc,
+		H23	InternalNode_00008,
+		H24	rs,
+		H25	bp,
+		H26	InternalNode_00010,
+		H27	ng,
+		H28	nm,
+		H29	af,
+		H30	InternalNode_00016,
+		H31	InternalNode_00015,
+		H32	InternalNode_00014,
+		H33	at,
+		H34	sm,
+		H35	ml,
+		H36	cc,
+		H37	InternalNode_00018,
+		H38	ct,
+		H39	pg,
+		H40	InternalNode_00021,
+		H41	sc,
+		H42	InternalNode_00020,
+		H43	mt,
+		H44	cd,
+		P0	InternalNode_00022,
+		P1	InternalNode_00019,
+		P2	InternalNode_00018,
+		P3	InternalNode_00016,
+		P4	InternalNode_00011,
+		P5	InternalNode_00009,
+		P6	InternalNode_00007,
+		P7	InternalNode_00002,
+		P8	InternalNode_00001,
+		P9	aa,
+		P10	pm,
+		P11	yp,
+		P12	InternalNode_00006,
+		P13	InternalNode_00005,
+		P14	InternalNode_00004,
+		P15	InternalNode_00003,
+		P16	at,
+		P17	sm2,
+		P18	ml3,
+		P19	sm1,
+		P20	cc,
+		P21	InternalNode_00008,
+		P22	ml1,
+		P23	ml2,
+		P24	InternalNode_00010,
+		P25	ct,
+		P26	rs1,
+		P27	InternalNode_00015,
+		P28	InternalNode_00014,
+		P29	InternalNode_00013,
+		P30	InternalNode_00012,
+		P31	bc2,
+		P32	bp2,
+		P33	rs2,
+		P34	af,
+		P35	pa,
+		P36	InternalNode_00017,
+		P37	bc1,
+		P38	bp1,
+		P39	sc1,
+		P40	InternalNode_00021,
+		P41	sc2,
+		P42	InternalNode_00020,
+		P43	mt,
+		P44	cd
+		;
+	TREE HOST = ((((((((((H10,H11)H9,H12)H8,((H15,H16)H14,H17)H13)H7,H18)H6,H19)H5,((H22,(H24,H25)H23)H21,(H27,H28)H26)H20)H4,H29)H3,(((H33,H34)H32,H35)H31,H36)H30)H2,(H38,H39)H37)H1,(H41,(H43,H44)H42)H40)H0;
+	TREE PARASITE = (((((((((P9,P10)P8,P11)P7,((((P16,P17)P15,P18)P14,P19)P13,P20)P12)P6,(P22,P23)P21)P5,(P25,P26)P24)P4,((((P31,P32)P30,P33)P29,P34)P28,P35)P27)P3,(P37,P38)P36)P2,P39)P1,(P41,(P43,P44)P42)P40)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		InternalNode_00022	0	0,
+		InternalNode_00019	0	0,
+		InternalNode_00017	0	0,
+		InternalNode_00013	0	0,
+		InternalNode_00012	0	0,
+		InternalNode_00007	0	0,
+		InternalNode_00006	0	0,
+		InternalNode_00005	0	0,
+		InternalNode_00002	0	0,
+		InternalNode_00001	0	0,
+		aa	0	0,
+		hi	0	0,
+		pm	0	0,
+		InternalNode_00004	0	0,
+		InternalNode_00003	0	0,
+		se	0	0,
+		ec	0	0,
+		yp	0	0,
+		vc	0	0,
+		pa	0	0,
+		InternalNode_00011	0	0,
+		InternalNode_00009	0	0,
+		bc	0	0,
+		InternalNode_00008	0	0,
+		rs	0	0,
+		bp	0	0,
+		InternalNode_00010	0	0,
+		ng	0	0,
+		nm	0	0,
+		af	0	0,
+		InternalNode_00016	0	0,
+		InternalNode_00015	0	0,
+		InternalNode_00014	0	0,
+		at	0	0,
+		sm	0	0,
+		ml	0	0,
+		cc	0	0,
+		InternalNode_00018	0	0,
+		ct	0	0,
+		pg	0	0,
+		InternalNode_00021	0	0,
+		sc	0	0,
+		InternalNode_00020	0	0,
+		mt	0	0,
+		cd	0	0,
+		InternalNode_00022	0	0,
+		InternalNode_00019	0	0,
+		InternalNode_00018	0	0,
+		InternalNode_00016	0	0,
+		InternalNode_00011	0	0,
+		InternalNode_00009	0	0,
+		InternalNode_00007	0	0,
+		InternalNode_00002	0	0,
+		InternalNode_00001	0	0,
+		aa	0	0,
+		pm	0	0,
+		yp	0	0,
+		InternalNode_00006	0	0,
+		InternalNode_00005	0	0,
+		InternalNode_00004	0	0,
+		InternalNode_00003	0	0,
+		at	0	0,
+		sm2	0	0,
+		ml3	0	0,
+		sm1	0	0,
+		cc	0	0,
+		InternalNode_00008	0	0,
+		ml1	0	0,
+		ml2	0	0,
+		InternalNode_00010	0	0,
+		ct	0	0,
+		rs1	0	0,
+		InternalNode_00015	0	0,
+		InternalNode_00014	0	0,
+		InternalNode_00013	0	0,
+		InternalNode_00012	0	0,
+		bc2	0	0,
+		bp2	0	0,
+		rs2	0	0,
+		af	0	0,
+		pa	0	0,
+		InternalNode_00017	0	0,
+		bc1	0	0,
+		bp1	0	0,
+		sc1	0	0,
+		InternalNode_00021	0	0,
+		sc2	0	0,
+		InternalNode_00020	0	0,
+		mt	0	0,
+		cd	0	0
+		;
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		aa	aa,
+		pm	pm,
+		yp	yp,
+		at	at,
+		sm2	sm,
+		ml3	ml,
+		sm1	sm,
+		cc	cc,
+		ml1	ml,
+		ml2	ml,
+		ct	ct,
+		rs1	rs,
+		bc2	bc,
+		bp2	bp,
+		rs2	rs,
+		af	af,
+		pa	pa,
+		bc1	bc,
+		bp1	bp,
+		sc1	sc,
+		sc2	sc,
+		mt	mt,
+		cd	cd
+		;
+[RECONSTRUCTIONEVENTS represents the events which occurred in the reconstruction. It includes 'COSPECIATION', 'DUPLICATION', 'EXTINCTION', 'SORTING' and 'HOSTSWITCH']
+[Syntax is: operation cost]
+	RECONSTRUCTIONEVENTS
+		COSPECIATION	-1,
+		SORTING	-1,
+		DUPLICATION	-1,
+		HOSTSWITCH	-1
+		;
+[RECONSTRUCTION represents the associations from the parasite nodes to the host nodes as they occured in the reconstruction/simulation]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	RECONSTRUCTION
+		;
+[POSITIONS represents the x and y position of the node]
+[Syntax is: nodename x_position y_position]
+	POSITIONS
+		InternalNode_00022	4	604,
+		InternalNode_00019	79	529,
+		InternalNode_00017	129	479,
+		InternalNode_00013	229	379,
+		InternalNode_00012	254	354,
+		InternalNode_00007	379	229,
+		InternalNode_00006	404	204,
+		InternalNode_00005	429	179,
+		InternalNode_00002	504	104,
+		InternalNode_00001	529	79,
+		aa	554	54,
+		hi	554	104,
+		pm	554	154,
+		InternalNode_00004	504	254,
+		InternalNode_00003	529	229,
+		se	554	204,
+		ec	554	254,
+		yp	554	304,
+		vc	554	354,
+		pa	554	404,
+		InternalNode_00011	454	554,
+		InternalNode_00009	504	504,
+		bc	554	454,
+		InternalNode_00008	529	529,
+		rs	554	504,
+		bp	554	554,
+		InternalNode_00010	529	629,
+		ng	554	604,
+		nm	554	654,
+		af	554	704,
+		InternalNode_00016	479	829,
+		InternalNode_00015	504	804,
+		InternalNode_00014	529	779,
+		at	554	754,
+		sm	554	804,
+		ml	554	854,
+		cc	554	904,
+		InternalNode_00018	529	979,
+		ct	554	954,
+		pg	554	1004,
+		InternalNode_00021	504	1104,
+		sc	554	1054,
+		InternalNode_00020	529	1129,
+		mt	554	1104,
+		cd	554	1154,
+		InternalNode_00022	1828	615,
+		InternalNode_00019	1752	540,
+		InternalNode_00018	1726	514,
+		InternalNode_00016	1677	464,
+		InternalNode_00011	1553	340,
+		InternalNode_00009	1503	290,
+		InternalNode_00007	1453	240,
+		InternalNode_00002	1327	114,
+		InternalNode_00001	1303	90,
+		aa	1277	64,
+		pm	1277	114,
+		yp	1277	164,
+		InternalNode_00006	1377	314,
+		InternalNode_00005	1353	290,
+		InternalNode_00004	1327	264,
+		InternalNode_00003	1303	240,
+		at	1277	214,
+		sm2	1277	264,
+		ml3	1277	314,
+		sm1	1277	364,
+		cc	1277	414,
+		InternalNode_00008	1303	490,
+		ml1	1277	464,
+		ml2	1277	514,
+		InternalNode_00010	1303	589,
+		ct	1277	564,
+		rs1	1277	615,
+		InternalNode_00015	1377	765,
+		InternalNode_00014	1353	739,
+		InternalNode_00013	1327	715,
+		InternalNode_00012	1303	689,
+		bc2	1277	665,
+		bp2	1277	715,
+		rs2	1277	765,
+		af	1277	815,
+		pa	1277	865,
+		InternalNode_00017	1303	939,
+		bc1	1277	915,
+		bp1	1277	965,
+		sc1	1277	1015,
+		InternalNode_00021	1327	1114,
+		sc2	1277	1065,
+		InternalNode_00020	1303	1140,
+		mt	1277	1114,
+		cd	1277	1164
+		;
+[COSTS represents the cost table for the operations 'COSPECIATION', 'DUPLICATION', 'EXTINCTION', 'SORTING' and 'HOSTSWITCH']
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		SORTING	1,
+		DUPLICATION	1,
+		HOSTSWITCH	2
+		;
+[OPTIONS represents the options for calculating the reconstruction]
+[Syntax is: option value]
+	OPTIONS
+		FULLHOSTSWITCH	0,
+		AUTOMATICCOSTS	0,
+		RANDOMSEED	auto,
+		RANK	0,
+		RANDOMCYCLES	5000,
+		PROBABILITYCOSTS	0,
+		ROOTMAPPING	0,
+		AUTOMATICMETHOD	2,
+		LEAFSPECIACIONCOST	0,
+		CHECKCHRONOLOGY	0,
+		SORTING	1,
+		DUPLICATION	1,
+		HOSTSWITCH	1
+		;
+ENDBLOCK;
+

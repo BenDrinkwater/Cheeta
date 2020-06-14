@@ -1,0 +1,157 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 23;
+	TAXLABELS
+		artibeus_spp.
+		calomys_musculinus
+		calomys_callosus
+		neacomys_guianae
+		oryzomys_capito
+		oryzomys_buccinatus
+		oryzomys_albigularis
+		bolomys_obscurus
+		sigmodon_alstoni
+		sigmodon_hispidus
+		neotoma_albigula
+		tcr
+		jun
+		mac
+		ama1
+		ama2
+		lat
+		olv
+		par
+		pic
+		tam
+		wwa
+		pir
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00010,
+		H1	artibeus_spp.,
+		H2	InternalNode_00009,
+		H3	InternalNode_00008,
+		H4	InternalNode_00006,
+		H5	InternalNode_00005,
+		H6	calomys_musculinus,
+		H7	InternalNode_00004,
+		H8	calomys_callosus,
+		H9	InternalNode_00003,
+		H10	neacomys_guianae,
+		H11	InternalNode_00002,
+		H12	oryzomys_capito,
+		H13	InternalNode_00001,
+		H14	oryzomys_buccinatus,
+		H15	oryzomys_albigularis,
+		H16	bolomys_obscurus,
+		H17	InternalNode_00007,
+		H18	sigmodon_alstoni,
+		H19	sigmodon_hispidus,
+		H20	neotoma_albigula,
+		P0	InternalNode_00011,
+		P1	InternalNode_00004,
+		P2	InternalNode_00002,
+		P3	tcr,
+		P4	InternalNode_00001,
+		P5	jun,
+		P6	mac,
+		P7	InternalNode_00003,
+		P8	ama1,
+		P9	ama2,
+		P10	InternalNode_00010,
+		P11	InternalNode_00005,
+		P12	lat,
+		P13	olv,
+		P14	InternalNode_00009,
+		P15	InternalNode_00008,
+		P16	InternalNode_00006,
+		P17	par,
+		P18	pic,
+		P19	InternalNode_00007,
+		P20	tam,
+		P21	wwa,
+		P22	pir
+		;
+	TREE HOST = (H1,((((H6,(H8,(H10,(H12,(H14,H15)H13)H11)H9)H7)H5,H16)H4,(H18,H19)H17)H3,H20)H2)H0;
+	TREE PARASITE = (((P3,(P5,P6)P4)P2,(P8,P9)P7)P1,((P12,P13)P11,(((P17,P18)P16,(P20,P21)P19)P15,P22)P14)P10)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		ama1	neacomys_guianae,
+		ama2	oryzomys_capito,
+		jun	calomys_musculinus,
+		lat	calomys_callosus,
+		mac	calomys_callosus,
+		olv	bolomys_obscurus,
+		par	oryzomys_buccinatus,
+		pic	oryzomys_albigularis,
+		pir	sigmodon_alstoni,
+		tam	sigmodon_hispidus,
+		tcr	artibeus_spp.,
+		wwa	neotoma_albigula
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

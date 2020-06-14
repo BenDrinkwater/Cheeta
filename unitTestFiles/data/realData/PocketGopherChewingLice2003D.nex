@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((T. bulbivorous 11,((((T. bottae 8,T. bottae 10),(T. townsendii 12,T. townsendii 13)),(T. umbrinus 15,T. umbrinus 16)),((T. bottae 9,((T. umbrinus 17,T. umbrinus 18),(T. umbrinus 19,T. umbrinus 20))),T. umbrinus 14))),((((T. talpoides 4,T. talpoides 7),T. talpoides 6),(T. talpoides 5,(T. mazama 1,T. mazama 2))),T. monticola 3));
+endblock;
+begin parasite;
+tree parasite =(G. chihuahuae 15,((G. centralis 10,(((G. idahoensis 12,G. idahoensis 13),(G. oregonus 11,G. shatensis 9)),((((G. aurei 8,(G. warmanae 16,(G. welleri 17,G. welleri 19))),G. crovelloi 18),G. welleri 20),G. musculi 14))),((G. thomomyus 4,G. thomomyus 7),((G. craigi 6,G. craigi 3),(G. thaeleri 5,(G. thaeleri 1,G. thaeleri 2))))));
+endblock;
+begin distribution;
+Range
+G. chihuahuae 15 : T. umbrinus 15, G. oregonus 11 : T. bulbivorous 11, G. centralis 10 : T. bottae 10, G. aurei 8 : T. bottae 8, G. idahoensis 12 : T. townsendii 12, G. idahoensis 13 : T. townsendii 13, G. shatensis 9 : T. bottae 9, G. warmanae 16 : T. umbrinus 16, G. welleri 17 : T. umbrinus 17, G. crovelloi 18 : T. umbrinus 18, G. welleri 19 : T. umbrinus 19, G. welleri 20 : T. umbrinus 20, G. musculi 14 : T. umbrinus 14, G. thomomyus 4 : T. talpoides 4, G. thomomyus 7 : T. talpoides 7, G. craigi 6 : T. talpoides 6, G. thaeleri 5 : T. talpoides 5, G. craigi 3 : T. monticola 3, G. thaeleri 1 : T. mazama 1, G. thaeleri 2 : T. mazama 2;
+endblock;

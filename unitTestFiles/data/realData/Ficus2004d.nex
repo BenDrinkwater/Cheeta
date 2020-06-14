@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((F. botryocarpa,(F. hispioides,F. bernaysii)),(F. nodosa,(F. racemosa,(F. sur,(F. sycomorus,F. botryoides))))),F. microdictya),(F. semivestita,(F. ochrochlora,F. adenosperma)));
+endblock;
+begin parasite;
+tree parasite =((Apo.GW468,(Apo.B73,(Apo.G093,(Apo.GW522,Apo.G13)))),(Apo.B191,(Apo.G101,((Apo.GW1075B,((Apo.GW1075A,((Apo.GW840A,Apo.GW840B),Apo.MSPAR4)),(Apo.GW841A,Apo.GW841B))),(Apo.GW954,(Apo.GW700,(Apo.GW674,Apo.GW735)))))));
+endblock;
+begin distribution;
+Range
+Apo.GW468 : F. botryocarpa, Apo.B73 : F. hispioides, Apo.G093 : F. hispioides, Apo.B73 : F. hispioides, Apo.G093 : F. hispioides, Apo.GW522 : F. bernaysii, Apo.G13 : F. bernaysii, Apo.GW522 : F. bernaysii, Apo.G13 : F. bernaysii, Apo.B191 : F. nodosa, Apo.G101 : F. nodosa, Apo.B191 : F. nodosa, Apo.G101 : F. nodosa, Apo.GW1075B : F. racemosa, Apo.GW1075A : F. racemosa, Apo.GW1075B : F. racemosa, Apo.GW1075A : F. racemosa, Apo.GW840A : F. sur, Apo.GW840B : F. sur, Apo.GW840A : F. sur, Apo.GW840B : F. sur, Apo.MSPAR4 : F. sycomorus, Apo.GW841A : F. botryoides, Apo.GW841B : F. botryoides, Apo.GW841A : F. botryoides, Apo.GW841B : F. botryoides, Apo.GW954 : F. microdictya, Apo.GW700 : F. semivestita, Apo.GW674 : F. ochrochlora, Apo.GW735 : F. adenosperma;
+endblock;

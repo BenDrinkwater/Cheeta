@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((Diomedea epomophora,Pelagodroma marina),((Pterodroma inexpecta,(Procellaria westlandica,(Puffinus griseus,Puffinus huttoni))),Pelecanoides urinatrixa)),(Eudyptula minor,(Eudyptula pachyrhnchus,Megadyptes antipodes))),Larus dominicanus);
+endblock;
+begin parasite;
+tree parasite =((((Harrisoniella hopkinsi,(Halipeurus consimilis,(Halipeurus pelagicus,((Halipeurus diversus,Halipeurus spadix),Halipeurus falsus)))),((Trabeculus schilingi,(Trabeculus hexakon a,Trabeculus hexakon b)),Trabeculus flemingi)),(Austrogoniodes watersoni,(Austrogoniodes cristati,Austrogoniodes conci))),Saemundssonia lari);
+endblock;
+begin distribution;
+Range
+Saemundssonia lari : Larus dominicanus, Austrogoniodes conci : Megadyptes antipodes, Austrogoniodes cristati : Eudyptula pachyrhnchus, Austrogoniodes watersoni : Eudyptula minor, Halipeurus consimilis : Pterodroma inexpecta, Trabeculus schilingi : Pterodroma inexpecta, Halipeurus pelagicus : Pelagodroma marina, Harrisoniella hopkinsi : Diomedea epomophora, Trabeculus flemingi : Puffinus huttoni, Halipeurus spadix : Puffinus huttoni, Trabeculus hexakon b : Puffinus griseus, Halipeurus diversus : Puffinus griseus, Trabeculus hexakon a : Procellaria westlandica, Halipeurus falsus : Pelecanoides urinatrixa;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Equus caballlus,(Sus scrofa,((Capra hircus,(Rangifer tarandus,Cervus elaphus)),(Bos taurus,Bubalus Bubalis)))),(Felis catus,(Canis familiaris,Phoca vitrllina))),(Saimiri sciureus,((Macaca mulatta,Erythrocebus patas),Homo sapiens)));
+endblock;
+begin parasite;
+tree parasite =((E.caballusVCV,((S.scrofaVCV,(C.hircusVCV,((R.tarandusVCV,Ce.elaphusVCV),(B.taurusVCV,B.bubalisVCV)))),(F.catusVCV,(Ca.familarisVCV,P.vitullinaVCV)))),((Sa.sciureusVCV,M.mulattaVCV),(Er.patasVCV,H.sapiensVCV)));
+endblock;
+begin distribution;
+Range
+E.caballusVCV : Equus caballlus, S.scrofaVCV : Sus scrofa, C.hircusVCV : Capra hircus, R.tarandusVCV : Rangifer tarandus, Ce.elaphusVCV : Cervus elaphus, B.taurusVCV : Bos taurus, B.bubalisVCV : Bubalus Bubalis, F.catusVCV : Felis catus, Ca.familarisVCV : Canis familiaris, P.vitullinaVCV : Phoca vitrllina, Sa.sciureusVCV : Saimiri sciureus, M.mulattaVCV : Macaca mulatta, Er.patasVCV : Erythrocebus patas, H.sapiensVCV : Homo sapiens;
+endblock;

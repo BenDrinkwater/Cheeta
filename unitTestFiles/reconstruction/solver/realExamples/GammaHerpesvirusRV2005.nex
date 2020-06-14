@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Bison bison,(((Capra hirtua,Capra nubiana),(Ovis canadensis,Ovis aries)),Ovibos moschatus)),(Addax sp.,Oryx gazella)),(Odocoileus virginanus,Cervus elaphus));
+endblock;
+begin parasite;
+tree parasite =((((B.bisonRV,C.hirtuaRV4),(O.canadensisRV,O.ariesRV3)),(Addax sp.RV,Or.gazellaRV1)),((O.moschatusRV,((C.hirtuaRV2,C.nubianaRV),(O.ariesRV1,Od.virginanusRV))),(Or.gazellaRV2,Ce.elaphusRV)));
+endblock;
+begin distribution;
+Range
+B.bisonRV : Bison bison, C.hirtuaRV4 : Capra hirtua, C.hirtuaRV2 : Capra hirtua, O.canadensisRV : Ovis canadensis, O.ariesRV3 : Ovis aries, O.ariesRV1 : Ovis aries, Addax sp.RV : Addax sp., Or.gazellaRV1 : Oryx gazella, Or.gazellaRV2 : Oryx gazella, O.moschatusRV : Ovibos moschatus, C.hirtuaRV4 : Capra hirtua, C.hirtuaRV2 : Capra hirtua, C.nubianaRV : Capra nubiana, O.ariesRV3 : Ovis aries, O.ariesRV1 : Ovis aries, Od.virginanusRV : Odocoileus virginanus, Or.gazellaRV1 : Oryx gazella, Or.gazellaRV2 : Oryx gazella, Ce.elaphusRV : Cervus elaphus;
+endblock;

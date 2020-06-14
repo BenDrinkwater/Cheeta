@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(african,(((european,indian subcontinent),(n.e. asian,native american)),(pacific,s.e. asian)));
+endblock;
+begin parasite;
+tree parasite =(one,(six,(three,(eight,((seven a,((seven b1,seven b2),(seven c1,seven c2))),((two d1,two d2),(two a1,two a2)))))));
+endblock;
+begin distribution;
+Range
+six : african, three : african, one : european, seven c2 : indian subcontinent, two d1 : indian subcontinent, seven b1 : n.e. asian, two a1 : n.e. asian, two d2 : n.e. asian, two a2 : native american, eight : pacific, seven a : s.e. asian, seven b2 : s.e. asian, seven c1 : s.e. asian;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((human,chimp.),gorilla),orang.),gibbon);
+endblock;
+begin parasite;
+tree parasite =(((anth.,lero.),buck.),(verm. a,verm. b));
+endblock;
+begin distribution;
+Range
+buck. : orang., lero. : gorilla, anth. : chimp., verm. b : gibbon, verm. a : human;
+endblock;

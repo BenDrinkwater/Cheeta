@@ -1,0 +1,207 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 32;
+	TAXLABELS
+		t._talpoides
+		t._bottae
+		z._trichopus
+		p._bulleri
+		o.hispidus
+		o._underwoodi
+		o._cavator
+		o._cherriei
+		o._heterodus
+		c._merriami
+		c._castanops
+		g._bursarius_majus
+		g_bursarius_halli
+		g._breviceps
+		g._personatus
+		t._barbarae
+		t._minor
+		g._trichopi
+		g._nadleri
+		g._chapini
+		g._setzeri
+		g._panamensis
+		g._cherriei
+		g._costaricensis
+		g._thomomyus
+		g._perotensis
+		g._actuosi
+		g._expansus
+		g._geomydis
+		g._oklahomensis
+		g._ewingi
+		g._texanus
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00014,
+		H1	InternalNode_00001,
+		H2	t._talpoides,
+		H3	t._bottae,
+		H4	InternalNode_00013,
+		H5	InternalNode_00009,
+		H6	z._trichopus,
+		H7	InternalNode_00008,
+		H8	InternalNode_00006,
+		H9	p._bulleri,
+		H10	InternalNode_00005,
+		H11	o.hispidus,
+		H12	InternalNode_00004,
+		H13	InternalNode_00002,
+		H14	o._underwoodi,
+		H15	o._cavator,
+		H16	InternalNode_00003,
+		H17	o._cherriei,
+		H18	o._heterodus,
+		H19	InternalNode_00007,
+		H20	c._merriami,
+		H21	c._castanops,
+		H22	InternalNode_00012,
+		H23	InternalNode_00011,
+		H24	InternalNode_00010,
+		H25	g._bursarius_majus,
+		H26	g_bursarius_halli,
+		H27	g._breviceps,
+		H28	g._personatus,
+		P0	InternalNode_00016,
+		P1	InternalNode_00001,
+		P2	t._barbarae,
+		P3	t._minor,
+		P4	InternalNode_00015,
+		P5	InternalNode_00002,
+		P6	g._trichopi,
+		P7	g._nadleri,
+		P8	InternalNode_00014,
+		P9	InternalNode_00006,
+		P10	g._chapini,
+		P11	InternalNode_00005,
+		P12	InternalNode_00003,
+		P13	g._setzeri,
+		P14	g._panamensis,
+		P15	InternalNode_00004,
+		P16	g._cherriei,
+		P17	g._costaricensis,
+		P18	InternalNode_00013,
+		P19	InternalNode_00007,
+		P20	g._thomomyus,
+		P21	g._perotensis,
+		P22	InternalNode_00012,
+		P23	g._actuosi,
+		P24	InternalNode_00011,
+		P25	InternalNode_00009,
+		P26	g._expansus,
+		P27	InternalNode_00008,
+		P28	g._geomydis,
+		P29	g._oklahomensis,
+		P30	InternalNode_00010,
+		P31	g._ewingi,
+		P32	g._texanus
+		;
+	TREE HOST = ((H2,H3)H1,((H6,((H9,(H11,((H14,H15)H13,(H17,H18)H16)H12)H10)H8,(H20,H21)H19)H7)H5,(((H25,H26)H24,H27)H23,H28)H22)H4)H0;
+	TREE PARASITE = ((P2,P3)P1,((P6,P7)P5,((P10,((P13,P14)P12,(P16,P17)P15)P11)P9,((P20,P21)P19,(P23,((P26,(P28,P29)P27)P25,(P31,P32)P30)P24)P22)P18)P8)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		g._actuosi	t._bottae,
+		g._chapini	o.hispidus,
+		g._cherriei	o._cherriei,
+		g._costaricensis	o._heterodus,
+		g._ewingi	g._breviceps,
+		g._expansus	c._castanops,
+		g._geomydis	g._bursarius_majus,
+		g._nadleri	p._bulleri,
+		g._oklahomensis	g_bursarius_halli,
+		g._panamensis	o._cavator,
+		g._perotensis	c._merriami,
+		g._setzeri	o._underwoodi,
+		g._texanus	g._personatus,
+		g._thomomyus	t._talpoides,
+		g._trichopi	z._trichopus,
+		t._barbarae	t._talpoides,
+		t._minor	t._bottae
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

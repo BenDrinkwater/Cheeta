@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Aratinga astec,(Nyctibius jamaicensis,((Formicarius moniliger,Thamnophilus doliatus),((((Ploceus velatus,(Cacicus haemorrhous,Carpodacus mexicanus)),(((Pycnonotus nigricans,Hypsipetes philppenis),Parisoma subcaeruleum),((Parus niger,Parus elegans),Sitta frontalis))),Ficedula hyperythra),(Rhipidura nigrocinnamomea,(Coracina striata,Cyanocorax morio)))))),((Trogon massena,Trogon melanocephalus),Momotus momota)),(Melanerpes candidus,((Andigena nigrirostris,Aulacorhynchus prasinus),(Megalaima monticola,Megalaim mystacophanos))));
+endblock;
+begin parasite;
+tree parasite =(Nyctibicola longirostris,(((Paragonicotes sp.,(Formicaricola analoides,Formicaphagus sp.)),(((Brueelia sp. 7,Brueelia sp. 6),(((Brueelia sp. 8,Brueelia sp. 11),(Brueelia sp. 9,Brueelia sp. 10)),Brueelia sp. 12)),(Brueelia sp. 5,(((Brueelia moriona,((Brueelia sp. 2,((Brueelia sp. 1a,Brueelia sp. 1b),(Brueelia sp. 1c,Brueelia sp. 1d))),(Brueelia sp. 3a,Brueelia sp. 3b))),(Brueelia laticeps a,Brueelia laticeps b)),(Brueelia sp. 4a,Brueelia sp. 4b))))),Brueelia marginella));
+endblock;
+begin distribution;
+Range
+Nyctibicola longirostris : Nyctibius jamaicensis, Paragonicotes sp. : Aratinga astec, Formicaricola analoides : Formicarius moniliger, Formicaphagus sp. : Thamnophilus doliatus, Brueelia sp. 7 : Ploceus velatus, Brueelia sp. 6 : Parus niger, Brueelia sp. 8 : Cacicus haemorrhous, Brueelia sp. 9 : Carpodacus mexicanus, Brueelia sp. 12 : Pycnonotus nigricans, Brueelia sp. 2 : Hypsipetes philppenis, Brueelia sp. 11 : Parisoma subcaeruleum, Brueelia sp. 1a : Parus elegans, Brueelia sp. 1b : Sitta frontalis, Brueelia sp. 1c : Ficedula hyperythra, Brueelia sp. 1d : Rhipidura nigrocinnamomea, Brueelia sp. 5 : Coracina striata, Brueelia moriona : Cyanocorax morio, Brueelia sp. 3a : Trogon massena, Brueelia sp. 3b : Trogon melanocephalus, Brueelia marginella : Momotus momota, Brueelia sp. 10 : Melanerpes candidus, Brueelia laticeps a : Andigena nigrirostris, Brueelia laticeps b : Aulacorhynchus prasinus, Brueelia sp. 4a : Megalaima monticola, Brueelia sp. 4b : Megalaim mystacophanos;
+endblock;

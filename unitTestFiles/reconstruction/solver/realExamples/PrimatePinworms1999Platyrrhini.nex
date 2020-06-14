@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((((Callimico goeldii,(Callithrix jacchus,(Saguinus oedipus,Saguinus nigricollis))),(Cebus spp.,Saimiri spp.)),(Aotes trivirgatus,(Callicebus moloch,Callicebus torquatus))),((Chiropotes spp.,Pithecia spp.),(Alouatta seniculus,(Brachyteles arachnoides,(Lagothrix lagotricha,Ateles ater)))));
+endblock;
+begin parasite;
+tree parasite =(((((H. goeldii,H. oedipi),H. callithricis),H. tamarini),(T. clemenentinae,T. sceleratus)),(T. microon,((T. callicebi,T. croizati),((T. satanas,T. trypanuris),(T. minutus,(Paraoxyuronema spp.,(P. brachytelesis,P. atelis)))))));
+endblock;
+begin distribution;
+Range
+H. goeldii : Callimico goeldii, H. oedipi : Saguinus oedipus, H. callithricis : Callithrix jacchus, H. tamarini : Saguinus nigricollis, T. clemenentinae : Cebus spp., T. sceleratus : Saimiri spp., T. microon : Aotes trivirgatus, T. callicebi : Callicebus moloch, T. croizati : Callicebus torquatus, T. satanas : Chiropotes spp., T. trypanuris : Pithecia spp., T. minutus : Alouatta seniculus, Paraoxyuronema spp. : Lagothrix lagotricha, P. brachytelesis : Brachyteles arachnoides, P. atelis : Ateles ater;
+endblock;

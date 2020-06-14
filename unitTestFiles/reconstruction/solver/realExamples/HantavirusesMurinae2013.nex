@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Ni. confucianus China,(Ba. indica Thailand,(Ra. tanezumi Singapore,Ra. norvegicus China))),(Hy. simus Guinea,(Ap. flavicollis Greece,(Ap. peninsulae China,(Ap. agrarius China,Ap. agrarius Germany)))));
+endblock;
+begin parasite;
+tree parasite =(((THAIV Thailand,SERV Singapore),SEOV China),((SANGV Guinea,(DOBV Greece,SAAV Germany)),(DBSV China,(ASV China,HTNV China))));
+endblock;
+begin distribution;
+Range
+THAIV Thailand : Ba. indica Thailand, SERV Singapore : Ra. tanezumi Singapore, SEOV China : Ra. norvegicus China, SANGV Guinea : Hy. simus Guinea, DOBV Greece : Ap. flavicollis Greece, SAAV Germany : Ap. agrarius Germany, DBSV China : Ni. confucianus China, ASV China : Ap. peninsulae China, HTNV China : Ap. agrarius China;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((Peromyscus boylii,(Reithrodontomys megalotis,Reithrodontomys mexicanus)),((Peromycus maniculatus G,Peromycus maniculatus F),(Peromycus leucopus E,Peromycus leucopus SW))),(((Bolomys obscurus,Akadon azarae),((Oligoryzomys longicaudatus,Oligoryzomys chacoensis),Oryzomys palustris)),(Sigmondon hispidus,Sigmondon texenis)));
+endblock;
+begin parasite;
+tree parasite =((LSC,(RIOS,EMC)),(((SNV,(MON,NYV)),(BRI,BRO)),(((MAC,PER),(AND,(ORN,BMJ))),(BAY,(BCC,(MUL1,MUL2))))));
+endblock;
+begin distribution;
+Range
+LSC : Peromyscus boylii, RIOS : Reithrodontomys megalotis, EMC : Reithrodontomys mexicanus, SNV : Peromycus maniculatus G, MON : Peromycus maniculatus F, NYV : Peromycus leucopus E, BRI : Peromycus leucopus E, BRO : Peromycus leucopus SW, MAC : Bolomys obscurus, PER : Akadon azarae, AND : Oligoryzomys longicaudatus, ORN : Oligoryzomys longicaudatus, BMJ : Oligoryzomys chacoensis, BAY : Oryzomys palustris, BCC : Sigmondon hispidus, MUL1 : Sigmondon hispidus, MUL2 : Sigmondon texenis;
+endblock;

@@ -1,0 +1,158 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 23;
+	TAXLABELS
+		bison_bison
+		capra_hirtua
+		capra_nubiana
+		ovis_canadensis
+		ovis_aries
+		ovibos_moschatus
+		addax_sp.
+		oryx_gazella
+		odocoileus_virginanus
+		cervus_elaphus
+		b.bisonrv
+		c.hirtuarv4
+		o.canadensisrv
+		o.ariesrv3
+		addax_sp.rv
+		or.gazellarv1
+		o.moschatusrv
+		c.hirtuarv2
+		c.nubianarv
+		o.ariesrv1
+		od.virginanusrv
+		or.gazellarv2
+		ce.elaphusrv
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00009,
+		H1	InternalNode_00007,
+		H2	InternalNode_00005,
+		H3	bison_bison,
+		H4	InternalNode_00004,
+		H5	InternalNode_00003,
+		H6	InternalNode_00001,
+		H7	capra_hirtua,
+		H8	capra_nubiana,
+		H9	InternalNode_00002,
+		H10	ovis_canadensis,
+		H11	ovis_aries,
+		H12	ovibos_moschatus,
+		H13	InternalNode_00006,
+		H14	addax_sp.,
+		H15	oryx_gazella,
+		H16	InternalNode_00008,
+		H17	odocoileus_virginanus,
+		H18	cervus_elaphus,
+		P0	InternalNode_00012,
+		P1	InternalNode_00005,
+		P2	InternalNode_00003,
+		P3	InternalNode_00001,
+		P4	b.bisonrv,
+		P5	c.hirtuarv4,
+		P6	InternalNode_00002,
+		P7	o.canadensisrv,
+		P8	o.ariesrv3,
+		P9	InternalNode_00004,
+		P10	addax_sp.rv,
+		P11	or.gazellarv1,
+		P12	InternalNode_00011,
+		P13	InternalNode_00009,
+		P14	o.moschatusrv,
+		P15	InternalNode_00008,
+		P16	InternalNode_00006,
+		P17	c.hirtuarv2,
+		P18	c.nubianarv,
+		P19	InternalNode_00007,
+		P20	o.ariesrv1,
+		P21	od.virginanusrv,
+		P22	InternalNode_00010,
+		P23	or.gazellarv2,
+		P24	ce.elaphusrv
+		;
+	TREE HOST = (((H3,(((H7,H8)H6,(H10,H11)H9)H5,H12)H4)H2,(H14,H15)H13)H1,(H17,H18)H16)H0;
+	TREE PARASITE = ((((P4,P5)P3,(P7,P8)P6)P2,(P10,P11)P9)P1,((P14,((P17,P18)P16,(P20,P21)P19)P15)P13,(P23,P24)P22)P12)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		addax_sp.rv	addax_sp.,
+		b.bisonrv	bison_bison,
+		c.hirtuarv2	capra_hirtua,
+		c.hirtuarv4	capra_hirtua,
+		c.nubianarv	capra_nubiana,
+		ce.elaphusrv	cervus_elaphus,
+		o.ariesrv1	ovis_aries,
+		o.ariesrv3	ovis_aries,
+		o.canadensisrv	ovis_canadensis,
+		o.moschatusrv	ovibos_moschatus,
+		od.virginanusrv	odocoileus_virginanus,
+		or.gazellarv1	oryx_gazella,
+		or.gazellarv2	oryx_gazella
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

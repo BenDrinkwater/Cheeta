@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Claravis pretiosa,(Columbina inca,Columbina passerina)),((Ptilinopus occipitalis,(Phapitreron leucotis,Phapitreron amethystina)),((((Columba guinea,Columba livia),(Streptopelia capicola,Streptopelia senegalensis)),(Columba plumbea,Columba speciosa)),((Geotrygon montana,(Leptotila plumbeiceps,(Leptotila jamaicensis,(L. verreauxi fulviventris,L. verreauxi angelica)))),(Zenaida asiatica,(Zenaida galapagoensis,Zenaida macrourae))))));
+endblock;
+begin parasite;
+tree parasite =((((Physconelloides eurysema 1,Physconelloides eurysema 3),(Physconelloides eurysema 2a,Physconelloides eurysema 2b)),(((Physconelloides anolaimae,Physconelloides spenceri),(Auricotes rotundus,Campanulotes compar)),(((Coloceras n. sp. 1,(Coloceras clypeatum,Coloceras savoi)),(Coloceras n. sp. 2a,Coloceras n. sp. 2b)),((Physconelloides ceratoceps 3a,(Physconelloides ceratoceps 3b,Physconelloides ceratoceps 3c)),(Physconelloides ceratoceps 2,((Physconelloides certoceps 1a,Physconelloides certoceps 1b),Physconelloides cubanus)))))),(Physconelloides wisemani,(Physconelloides galapagensis,Physconelloides zenaidurae)));
+endblock;
+begin distribution;
+Range
+Physconelloides eurysema 1 : Columbina inca, Physconelloides eurysema 3 : Columbina passerina, Physconelloides eurysema 2b : Columbina passerina, Physconelloides eurysema 2a : Claravis pretiosa, Physconelloides anolaimae : Columba plumbea, Physconelloides spenceri : Columba speciosa, Auricotes rotundus : Ptilinopus occipitalis, Campanulotes compar : Columba livia, Coloceras n. sp. 1 : Phapitreron leucotis, Coloceras clypeatum : Phapitreron amethystina, Coloceras savoi : Columba guinea, Coloceras n. sp. 2a : Streptopelia capicola, Coloceras n. sp. 2b : Streptopelia senegalensis, Physconelloides ceratoceps 3a : Leptotila plumbeiceps, Physconelloides ceratoceps 2 : Leptotila plumbeiceps, Physconelloides certoceps 1a : Leptotila plumbeiceps, Physconelloides ceratoceps 3b : L. verreauxi fulviventris, Physconelloides ceratoceps 3c : L. verreauxi angelica, Physconelloides certoceps 1b : Leptotila jamaicensis, Physconelloides cubanus : Geotrygon montana, Physconelloides wisemani : Zenaida asiatica, Physconelloides galapagensis : Zenaida galapagoensis, Physconelloides zenaidurae : Zenaida macrourae;
+endblock;

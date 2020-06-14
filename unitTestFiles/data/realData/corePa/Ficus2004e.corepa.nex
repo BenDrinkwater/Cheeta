@@ -1,0 +1,173 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 26;
+	TAXLABELS
+		p._regalis
+		p._nitens
+		p._schizodontes
+		p._nigriventris
+		p._proximus
+		p._athysanus
+		p._astrabocheilus
+		p._cuneatus
+		p._macrocainus
+		p._xanthocephalus
+		p._greenwoodi
+		p._riecki
+		p._blandus
+		syco._sp402
+		syco._sp407
+		syco._sp401
+		syco._sp409
+		syco._sp406
+		syco._sp403
+		syco._sp400
+		syco._sp405
+		syco._sp399
+		syco._sp410
+		syco._sp411
+		syco._sp413
+		syco._sp434
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00012,
+		H1	InternalNode_00011,
+		H2	p._regalis,
+		H3	InternalNode_00010,
+		H4	InternalNode_00009,
+		H5	InternalNode_00007,
+		H6	InternalNode_00001,
+		H7	p._nitens,
+		H8	p._schizodontes,
+		H9	InternalNode_00006,
+		H10	p._nigriventris,
+		H11	InternalNode_00005,
+		H12	InternalNode_00004,
+		H13	p._proximus,
+		H14	InternalNode_00003,
+		H15	p._athysanus,
+		H16	InternalNode_00002,
+		H17	p._astrabocheilus,
+		H18	p._cuneatus,
+		H19	p._macrocainus,
+		H20	InternalNode_00008,
+		H21	p._xanthocephalus,
+		H22	p._greenwoodi,
+		H23	p._riecki,
+		H24	p._blandus,
+		P0	InternalNode_00012,
+		P1	InternalNode_00003,
+		P2	syco._sp402,
+		P3	InternalNode_00002,
+		P4	syco._sp407,
+		P5	InternalNode_00001,
+		P6	syco._sp401,
+		P7	syco._sp409,
+		P8	InternalNode_00011,
+		P9	InternalNode_00009,
+		P10	InternalNode_00007,
+		P11	InternalNode_00005,
+		P12	syco._sp406,
+		P13	InternalNode_00004,
+		P14	syco._sp403,
+		P15	syco._sp400,
+		P16	InternalNode_00006,
+		P17	syco._sp405,
+		P18	syco._sp399,
+		P19	InternalNode_00008,
+		P20	syco._sp410,
+		P21	syco._sp411,
+		P22	InternalNode_00010,
+		P23	syco._sp413,
+		P24	syco._sp434
+		;
+	TREE HOST = ((H2,((((H7,H8)H6,(H10,((H13,(H15,(H17,H18)H16)H14)H12,H19)H11)H9)H5,(H21,H22)H20)H4,H23)H3)H1,H24)H0;
+	TREE PARASITE = ((P2,(P4,(P6,P7)P5)P3)P1,((((P12,(P14,P15)P13)P11,(P17,P18)P16)P10,(P20,P21)P19)P9,(P23,P24)P22)P8)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		syco._sp399	p._macrocainus,
+		syco._sp400	p._proximus,
+		syco._sp401	p._schizodontes,
+		syco._sp402	p._regalis,
+		syco._sp403	p._astrabocheilus,
+		syco._sp405	p._cuneatus,
+		syco._sp406	p._athysanus,
+		syco._sp407	p._nitens,
+		syco._sp409	p._nigriventris,
+		syco._sp410	p._riecki,
+		syco._sp411	p._blandus,
+		syco._sp413	p._xanthocephalus,
+		syco._sp434	p._greenwoodi
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

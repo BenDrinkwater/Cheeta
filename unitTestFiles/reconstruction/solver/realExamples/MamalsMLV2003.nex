@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(S. Beaked Echidna,((Opossum,Koala Bear),(Mouse,(Rabbit,((((Human,Gibbon),Baboon),Free Tailed Bat),((Domestic Cat,(Red Fox,(Grey Seal,(Eurasian Badger,American Mink)))),(Domestic Pig,(Domestic Cow,Domestic Sheep))))))));
+endblock;
+begin parasite;
+tree parasite =((HC2,((RV Echidna,(MeEVI,MiEVI)),(RV Opossum,(((((MuLV,FeLV),OrEV),BaEV),(VeEV,OvEVI)),(((RV Koala,GaLV),MuRRS),(PERV MP,(PoEV,PERVPK))))))),(TaEV,((HaEV,(MeEVII,MiEVII)),(BoE,OvEVII))));
+endblock;
+begin distribution;
+Range
+RV Echidna : S. Beaked Echidna, HC2 : Human, RV Opossum : Opossum, MuLV : Mouse, MuRRS : Mouse, OrEV : Rabbit, BaEV : Baboon, OvEVII : Domestic Sheep, OvEVI : Domestic Sheep, BoE : Domestic Cow, PERV MP : Domestic Pig, PoEV : Domestic Pig, PERVPK : Domestic Pig, TaEV : Free Tailed Bat, HaEV : Grey Seal, MeEVII : Eurasian Badger, MeEVI : Eurasian Badger, MiEVII : American Mink, MiEVI : American Mink, RV Koala : Koala Bear, GaLV : Gibbon, VeEV : Red Fox, FeLV : Domestic Cat;
+endblock;

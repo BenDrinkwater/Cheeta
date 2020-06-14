@@ -1,0 +1,113 @@
+HOSTTREE
+1	2	3
+2	6	7
+3	4	5
+4	null
+5	null
+6	8	9
+7	10	11
+8	14	15
+9	null
+10	12	13
+11	null
+12	null
+13	null
+14	null
+15	null
+
+
+HOSTNAMES
+1	1
+2	2
+3	3
+4	Sycomorus
+5	Urostigma
+6	6
+7	7
+8	8
+9	Caulocarpae
+10	10
+11	Galoglychia
+12	Chlamydodorae B
+13	Crassicostae
+14	Chlamydodorae A
+15	Platyphylla
+
+
+PARASITETREE
+16	17	18
+17	19	20
+18	27	28
+19	21	22
+20	null
+21	23	24
+22	null
+23	25	26
+24	null
+25	null
+26	null
+27	null
+28	null
+
+
+PARASITENAMES
+16	16
+17	17
+18	18
+19	19
+20	Courtella
+21	21
+22	Nigeriella
+23	23
+24	Allotriozoon
+25	Elisabethiella
+26	Alfonsiella
+27	Ceratosolen
+28	Platyscapa
+
+
+PHI
+4	27
+5	28
+11	24
+13	25
+12	25
+9	20
+15	22	25
+14	25	26
+
+
+HOSTRANKS
+1	1
+2	1
+3	1
+4	1
+5	1
+6	1
+7	1
+8	1
+9	1
+10	1
+11	1
+12	1
+13	1
+14	1
+15	1
+
+
+PARASITERANKS
+16	1
+17	1
+18	1
+19	1
+20	1
+21	1
+22	1
+23	1
+24	1
+25	1
+26	1
+27	1
+28	1
+
+

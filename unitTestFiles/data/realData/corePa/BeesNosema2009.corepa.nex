@@ -1,0 +1,80 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		bombyx_mori
+		bombus_spp.
+		apis_mellifera
+		apis_cerana
+		nosema_bombycis
+		nosema_apis
+		nosema_bombi
+		nosema_ceranae_a
+		nosema_ceranae_b
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00003,
+		H1	bombyx_mori,
+		H2	InternalNode_00002,
+		H3	bombus_spp.,
+		H4	InternalNode_00001,
+		H5	apis_mellifera,
+		H6	apis_cerana,
+		P0	InternalNode_00004,
+		P1	nosema_bombycis,
+		P2	InternalNode_00003,
+		P3	nosema_apis,
+		P4	InternalNode_00002,
+		P5	nosema_bombi,
+		P6	InternalNode_00001,
+		P7	nosema_ceranae_a,
+		P8	nosema_ceranae_b
+		;
+	TREE HOST = (H1,(H3,(H5,H6)H4)H2)H0;
+	TREE PARASITE = (P1,(P3,(P5,(P7,P8)P6)P4)P2)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		nosema_apis	apis_mellifera,
+		nosema_bombi	bombus_spp.,
+		nosema_bombycis	bombyx_mori,
+		nosema_ceranae_a	apis_mellifera,
+		nosema_ceranae_b	apis_cerana
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

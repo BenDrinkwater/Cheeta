@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Claravis pretiosa,(Columbina inca,Columbina passerina)),((Ptilinopus occipitalis,(Phapitreron leucotis,Phapitreron amethystina)),((((Columba guinea,Columba livia),(Streptopelia capicola,Streptopelia senegalensis)),(Columba plumbea,Columba speciosa)),((Geotrygon montana,(Leptotila plumbeiceps,(Leptotila jamaicensis,(L. verreauxi fulviventris,L. verreauxi angelica)))),(Zenaida asiatica,(Zenaida galapagoensis,Zenaida macrourae))))));
+endblock;
+begin parasite;
+tree parasite =(((Columbicola passerinae 2,(Columbicola passerinae 1a,Columbicola passerinae 1b)),(((Columbicola xavieri,Columbicola veigasimoni),((Columbicola columbae 2 ,Columbicola columbae 1),(Columbicola exilicornis,((((Columbicola adamsi a,Columbicola adamsi b),((Columbicola macrourae 1a,Columbicola macrourae 1b),(Columbicola macrourae 1c,Columbicola macrourae 1d))),(Columbicola macrourae 2a,Columbicola macrourae 2b)),(Columbicola macrourae 4,Columbicola macrourae 3))))),((Columbicola theresae a,Columbicola theresae b),(Columbicola gracilicapitis a,(Columbicola gracilicapitis b,Columbicola gracilicapitis c))))),Columbicola baculoides);
+endblock;
+begin distribution;
+Range
+Columbicola passerinae 2 : Claravis pretiosa, Columbicola passerinae 1a : Columbina inca, Columbicola passerinae 1b : Columbina passerina, Columbicola xavieri : Ptilinopus occipitalis, Columbicola veigasimoni : Phapitreron leucotis, Columbicola exilicornis : Phapitreron amethystina, Columbicola columbae 2  : Columba guinea, Columbicola columbae 1 : Columba livia, Columbicola adamsi a : Columba plumbea, Columbicola adamsi b : Columba speciosa, Columbicola macrourae 1a : Geotrygon montana, Columbicola macrourae 1b : Leptotila plumbeiceps, Columbicola gracilicapitis a : Leptotila plumbeiceps, Columbicola macrourae 1c : L. verreauxi fulviventris, Columbicola gracilicapitis c : L. verreauxi fulviventris, Columbicola macrourae 1d : L. verreauxi angelica, Columbicola macrourae 2a : L. verreauxi angelica, Columbicola macrourae 2b : Zenaida asiatica, Columbicola macrourae 4 : Zenaida galapagoensis, Columbicola macrourae 3 : Zenaida macrourae, Columbicola baculoides : Zenaida macrourae, Columbicola theresae a : Streptopelia capicola, Columbicola theresae b : Streptopelia senegalensis, Columbicola gracilicapitis b : Leptotila jamaicensis;
+endblock;

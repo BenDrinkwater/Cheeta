@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((Wood Pidgeon,((Wren,(Starling,(Robin,(Blackbird,Redwing)))),(Regents Bower Bird,(Magpie,(Jackdaw,(Crow,Rook)))))),(Partridge,(Chicken,Pheasant)));
+endblock;
+begin parasite;
+tree parasite =((RV Regents Bower BirdIII,((RV Wood Pidgeon,RV Wren),(RV Starling,RV Robin))),((((RV Blackbird,RV Redwing),(RV Regents Bower BirdII,(RV Magpie,(RV Jackdaw,(RV Crow,RV Rook))))),(RV PartridgeI,(RV PartridgeII,RV Chicken))),RV Pheasant));
+endblock;
+begin distribution;
+Range
+RV Regents Bower BirdIII : Regents Bower Bird, RV Regents Bower BirdII : Regents Bower Bird, RV Wood Pidgeon : Wood Pidgeon, RV Wren : Wren, RV Starling : Starling, RV Robin : Robin, RV Blackbird : Blackbird, RV Redwing : Redwing, RV Regents Bower BirdIII : Regents Bower Bird, RV Regents Bower BirdII : Regents Bower Bird, RV Magpie : Magpie, RV Jackdaw : Jackdaw, RV Crow : Crow, RV Rook : Rook, RV PartridgeI : Partridge, RV PartridgeII : Partridge, RV PartridgeI : Partridge, RV PartridgeII : Partridge, RV Chicken : Chicken, RV Pheasant : Pheasant;
+endblock;

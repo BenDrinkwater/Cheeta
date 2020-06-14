@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((O atricollis,A subflava),(((G ianthinogaster,G granatina),((E dybowskii,(H niveoguttatus,H margaritatus)),((C monteiri,((L larvata,(L rara,((L r congica,L r rubricata),(L virata,(L rhodopareia,L sanguinodorsalis))))),((L rufopicta,L nitidula),(L senegala rendalli,L senegala rhodopsis)))),((P melba grotei,P melba citerior),(P afra,(P lineata,(P phoenicoptera,P hypogrammica))))))),((C quartinia,C melanotis),((E astrild,(E paludicola,(E rhodopyga,(E troglodytes,E melpoda)))),E erythronotos))));
+endblock;
+begin parasite;
+tree parasite =(((V fischeri,V regia),(((V nigeriae,(V camerunensis,(V raricola,(V maryae,(V larvaticola,V wilsoni))))),((V funerea,V purpurascens),(V codringtoni,V chalybeata. S))),V chalybeata. W)),((((V paradisaea,V obtusa),(V orientails,(V interjecta,V togoensis))),(((V macroura. Sa,V macroura. Sb),(V macroura. Sc,(V macroura. Sd,V macroura. Se))),(V macroura. Wa,V macroura. Wb))),V hypocherina));
+endblock;
+begin distribution;
+Range
+V hypocherina : E erythronotos, V macroura. Wb : E melpoda, V macroura. Wa : E troglodytes, V macroura. Se : E rhodopyga, V macroura. Sd : E paludicola, V macroura. Sc : E astrild, V macroura. Sb : C melanotis, V macroura. Sa : C quartinia, V togoensis : P hypogrammica, V interjecta : P phoenicoptera, V obtusa : P afra, V orientails : P melba citerior, V paradisaea : P melba grotei, V chalybeata. W : L senegala rhodopsis, V chalybeata. S : L senegala rendalli, V codringtoni : H niveoguttatus, V purpurascens : L rhodopareia, V funerea : L r rubricata, V wilsoni : L rufopicta, V larvaticola : L larvata, V maryae : L sanguinodorsalis, V raricola : A subflava, V camerunensis : L rara, V nigeriae : O atricollis, V regia : G granatina, V fischeri : G ianthinogaster;
+endblock;

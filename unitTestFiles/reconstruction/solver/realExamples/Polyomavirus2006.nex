@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =((goose,other birds),(bovine,((hamster,mouse),(((rheus monkey,baboon),green monkey),human))));
+endblock;
+begin parasite;
+tree parasite =((GHPV,APV),(((HaPV,MPV),LPV),((MPtV,BPV),(SV40,((Sa12,BKV),JCV)))));
+endblock;
+begin distribution;
+Range
+GHPV : goose, APV : other birds, HaPV : hamster, MPV : mouse, MPtV : mouse, BPV : bovine, LPV : green monkey, Sa12 : baboon, SV40 : rheus monkey, BKV : human, JCV : human;
+endblock;

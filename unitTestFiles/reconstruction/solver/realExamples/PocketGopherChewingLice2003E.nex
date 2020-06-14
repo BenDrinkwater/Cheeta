@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(((T. bottae 10,(T. umbrinus 15,T. umbrinus 16)),(T. umbrinus 20,T. umbrinus 18)),(T. talpoides 6,(T. talpoides 7,T. talpoides 4)));
+endblock;
+begin parasite;
+tree parasite =(((((T. minor 10,(T. assymetricus 15,T. asymmetricus 16)),T. zacatecae 6),T. neocopei 20),T. birneyi 18),(T. barbarae 7,T. arlenae 4));
+endblock;
+begin distribution;
+Range
+T. assymetricus 15 : T. umbrinus 15, T. asymmetricus 16 : T. umbrinus 16, T. minor 10 : T. bottae 10, T. zacatecae 6 : T. talpoides 6, T. neocopei 20 : T. umbrinus 20, T. birneyi 18 : T. umbrinus 18, T. barbarae 7 : T. talpoides 7, T. arlenae 4 : T. talpoides 4;
+endblock;

@@ -1,0 +1,11 @@
+#nexus
+begin host;
+tree host =(chimpanzee,(colobus,(((mandrill,drill),(sotty mangbey,red capped mangabey)),(talapoin,((vervet,grivet),((l'hoest,sun-tailed),sykes))))));
+endblock;
+begin parasite;
+tree parasite =(SIVcol,((SIVrcm,(SIVmnd-2,SIVdri)),(SIVcpz,(((SIVagmVER,SIVagmGRI),SIVsm),((SIVhoest,SIVsun),(SIVtal,SIVsyk))))));
+endblock;
+begin distribution;
+Range
+SIVsyk : sykes, SIVtal : talapoin, SIVsun : sun-tailed, SIVhoest : l'hoest, SIVsm : sotty mangbey, SIVagmGRI : grivet, SIVagmVER : vervet, SIVcpz : chimpanzee, SIVdri : drill, SIVmnd-2 : mandrill, SIVrcm : red capped mangabey, SIVcol : colobus;
+endblock;

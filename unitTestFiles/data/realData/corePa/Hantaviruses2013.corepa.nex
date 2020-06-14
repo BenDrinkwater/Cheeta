@@ -1,0 +1,625 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 108;
+	TAXLABELS
+		pi._abramus_china
+		rh._affinis_china
+		rh._sinicus_china
+		rh._monoceros_china
+		ta._europaea_hungary
+		ur._talpoides_japan
+		ne._gibbsii_usa
+		sc._aquaticus_usa
+		an._squamipes_china
+		an._squamipes_vietnam
+		su._murinus_india
+		cr._lasiura_south_korea
+		cr._shantungensis_south_korea
+		so._monticolus_usa
+		so._cylindricauda_china
+		so._isodon_china
+		so._roboratus_russia
+		so._araneus_switzerland
+		ni._confucianus_china
+		ba._indical_thailand
+		ra._tanezumi_singapore
+		ra._norvegicus_china
+		hy._simus_guinea
+		ap._flavicollis_greece
+		ap._peninsulae_china
+		ap._agrarius_china
+		ap._agrarius_germany
+		le._lemmus_russia
+		mi._arvalis_germany
+		mi._fortis_682_china
+		mi._fortis_yuanijiang_15_china
+		mi._maximowiczii_china
+		mi._californicus_usa
+		mi._pennsylvanicus_usa
+		my._glareolus_russia
+		my._rufocanus_japan
+		my._rufocanus_china
+		eo._regulus_south_korea
+		eo._miletus_china
+		si_hispididus_usa
+		si_alstoni_venezuela
+		ak._montensis_brazil
+		ca._launcha_paraguay
+		or._palustris_usa
+		or._couesi_mexico
+		or._microtis_bolivia
+		or._fulvescens_venezuela_and_paraguay
+		or._longicaudatus_argentina
+		pe._beatae_mexico
+		pe._maniculatus_usa
+		pe._leucopus_usa
+		pe._megalotis_usa
+		pe._mexicanus_mexico
+		tpmv_india
+		mjnv_south_korea
+		hupv_china
+		longquan_ra_5_china
+		longquan_rs_32_china
+		longquan_rm_180_china
+		nvav_hungary
+		oxbv_usa
+		jmsv_usa
+		lhev_china
+		cbnv_vietnam
+		jjuv_south_korea
+		asav_japan
+		qdlv_china
+		yksv_china
+		kkmv_russia
+		swsv_switzerland
+		thaiv_thailand
+		serv_singapore
+		seov_china
+		sangv_guinea
+		dobv_greece
+		saav_germany
+		dbsv_china
+		asv_china
+		htnv_china
+		tulv_germany
+		islav_usa
+		phv_usa
+		vlav_china
+		yujv_china
+		topv_russia
+		khav_china
+		puuv_russia
+		hokv_japan
+		puuv_like_china
+		mujv_south_korea
+		luxv_china
+		rkpv_usa
+		bccv_usa
+		mulv_usa
+		bayv_usa
+		orov_mexico
+		jabv_brazil
+		mprlv_venezuela
+		lanv_paraguay
+		riomv_bolivia
+		andv_argentina
+		chov_paraguay
+		cadv_venezuela
+		mtnv_mexico
+		elmc_usa
+		riov_mexico
+		snv_usa
+		nyv_usa
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00052,
+		H1	InternalNode_00017,
+		H2	InternalNode_00003,
+		H3	pi._abramus_china,
+		H4	InternalNode_00002,
+		H5	InternalNode_00001,
+		H6	rh._affinis_china,
+		H7	rh._sinicus_china,
+		H8	rh._monoceros_china,
+		H9	InternalNode_00016,
+		H10	InternalNode_00006,
+		H11	InternalNode_00005,
+		H12	InternalNode_00004,
+		H13	ta._europaea_hungary,
+		H14	ur._talpoides_japan,
+		H15	ne._gibbsii_usa,
+		H16	sc._aquaticus_usa,
+		H17	InternalNode_00015,
+		H18	InternalNode_00007,
+		H19	an._squamipes_china,
+		H20	an._squamipes_vietnam,
+		H21	InternalNode_00014,
+		H22	InternalNode_00009,
+		H23	su._murinus_india,
+		H24	InternalNode_00008,
+		H25	cr._lasiura_south_korea,
+		H26	cr._shantungensis_south_korea,
+		H27	InternalNode_00013,
+		H28	so._monticolus_usa,
+		H29	InternalNode_00012,
+		H30	so._cylindricauda_china,
+		H31	InternalNode_00011,
+		H32	so._isodon_china,
+		H33	InternalNode_00010,
+		H34	so._roboratus_russia,
+		H35	so._araneus_switzerland,
+		H36	InternalNode_00051,
+		H37	InternalNode_00025,
+		H38	InternalNode_00020,
+		H39	ni._confucianus_china,
+		H40	InternalNode_00019,
+		H41	ba._indical_thailand,
+		H42	InternalNode_00018,
+		H43	ra._tanezumi_singapore,
+		H44	ra._norvegicus_china,
+		H45	InternalNode_00024,
+		H46	hy._simus_guinea,
+		H47	InternalNode_00023,
+		H48	ap._flavicollis_greece,
+		H49	InternalNode_00022,
+		H50	ap._peninsulae_china,
+		H51	InternalNode_00021,
+		H52	ap._agrarius_china,
+		H53	ap._agrarius_germany,
+		H54	InternalNode_00050,
+		H55	InternalNode_00045,
+		H56	InternalNode_00036,
+		H57	InternalNode_00031,
+		H58	le._lemmus_russia,
+		H59	InternalNode_00030,
+		H60	InternalNode_00028,
+		H61	mi._arvalis_germany,
+		H62	InternalNode_00027,
+		H63	InternalNode_00026,
+		H64	mi._fortis_682_china,
+		H65	mi._fortis_yuanijiang_15_china,
+		H66	mi._maximowiczii_china,
+		H67	InternalNode_00029,
+		H68	mi._californicus_usa,
+		H69	mi._pennsylvanicus_usa,
+		H70	InternalNode_00035,
+		H71	InternalNode_00034,
+		H72	my._glareolus_russia,
+		H73	InternalNode_00033,
+		H74	InternalNode_00032,
+		H75	my._rufocanus_japan,
+		H76	my._rufocanus_china,
+		H77	eo._regulus_south_korea,
+		H78	eo._miletus_china,
+		H79	InternalNode_00044,
+		H80	InternalNode_00037,
+		H81	si_hispididus_usa,
+		H82	si_alstoni_venezuela,
+		H83	InternalNode_00043,
+		H84	ak._montensis_brazil,
+		H85	InternalNode_00042,
+		H86	ca._launcha_paraguay,
+		H87	InternalNode_00041,
+		H88	InternalNode_00038,
+		H89	or._palustris_usa,
+		H90	or._couesi_mexico,
+		H91	InternalNode_00040,
+		H92	or._microtis_bolivia,
+		H93	InternalNode_00039,
+		H94	or._fulvescens_venezuela_and_paraguay,
+		H95	or._longicaudatus_argentina,
+		H96	InternalNode_00049,
+		H97	InternalNode_00047,
+		H98	pe._beatae_mexico,
+		H99	InternalNode_00046,
+		H100	pe._maniculatus_usa,
+		H101	pe._leucopus_usa,
+		H102	InternalNode_00048,
+		H103	pe._megalotis_usa,
+		H104	pe._mexicanus_mexico,
+		P0	InternalNode_00054,
+		P1	InternalNode_00001,
+		P2	tpmv_india,
+		P3	mjnv_south_korea,
+		P4	InternalNode_00053,
+		P5	InternalNode_00005,
+		P6	InternalNode_00004,
+		P7	hupv_china,
+		P8	InternalNode_00003,
+		P9	InternalNode_00002,
+		P10	longquan_ra_5_china,
+		P11	longquan_rs_32_china,
+		P12	longquan_rm_180_china,
+		P13	nvav_hungary,
+		P14	InternalNode_00052,
+		P15	InternalNode_00023,
+		P16	InternalNode_00014,
+		P17	InternalNode_00009,
+		P18	InternalNode_00006,
+		P19	oxbv_usa,
+		P20	jmsv_usa,
+		P21	InternalNode_00008,
+		P22	InternalNode_00007,
+		P23	lhev_china,
+		P24	cbnv_vietnam,
+		P25	jjuv_south_korea,
+		P26	InternalNode_00013,
+		P27	asav_japan,
+		P28	InternalNode_00012,
+		P29	InternalNode_00011,
+		P30	InternalNode_00010,
+		P31	qdlv_china,
+		P32	yksv_china,
+		P33	kkmv_russia,
+		P34	swsv_switzerland,
+		P35	InternalNode_00022,
+		P36	InternalNode_00016,
+		P37	InternalNode_00015,
+		P38	thaiv_thailand,
+		P39	serv_singapore,
+		P40	seov_china,
+		P41	InternalNode_00021,
+		P42	InternalNode_00018,
+		P43	sangv_guinea,
+		P44	InternalNode_00017,
+		P45	dobv_greece,
+		P46	saav_germany,
+		P47	InternalNode_00020,
+		P48	dbsv_china,
+		P49	InternalNode_00019,
+		P50	asv_china,
+		P51	htnv_china,
+		P52	InternalNode_00051,
+		P53	InternalNode_00033,
+		P54	InternalNode_00025,
+		P55	tulv_germany,
+		P56	InternalNode_00024,
+		P57	islav_usa,
+		P58	phv_usa,
+		P59	InternalNode_00032,
+		P60	InternalNode_00028,
+		P61	InternalNode_00026,
+		P62	vlav_china,
+		P63	yujv_china,
+		P64	InternalNode_00027,
+		P65	topv_russia,
+		P66	khav_china,
+		P67	InternalNode_00031,
+		P68	InternalNode_00030,
+		P69	InternalNode_00029,
+		P70	puuv_russia,
+		P71	hokv_japan,
+		P72	puuv_like_china,
+		P73	mujv_south_korea,
+		P74	InternalNode_00050,
+		P75	InternalNode_00034,
+		P76	luxv_china,
+		P77	rkpv_usa,
+		P78	InternalNode_00049,
+		P79	InternalNode_00037,
+		P80	InternalNode_00036,
+		P81	InternalNode_00035,
+		P82	bccv_usa,
+		P83	mulv_usa,
+		P84	bayv_usa,
+		P85	orov_mexico,
+		P86	InternalNode_00048,
+		P87	InternalNode_00041,
+		P88	InternalNode_00038,
+		P89	jabv_brazil,
+		P90	mprlv_venezuela,
+		P91	InternalNode_00040,
+		P92	InternalNode_00039,
+		P93	lanv_paraguay,
+		P94	riomv_bolivia,
+		P95	andv_argentina,
+		P96	InternalNode_00047,
+		P97	InternalNode_00045,
+		P98	InternalNode_00042,
+		P99	chov_paraguay,
+		P100	cadv_venezuela,
+		P101	InternalNode_00044,
+		P102	mtnv_mexico,
+		P103	InternalNode_00043,
+		P104	elmc_usa,
+		P105	riov_mexico,
+		P106	InternalNode_00046,
+		P107	snv_usa,
+		P108	nyv_usa
+		;
+	TREE HOST = (((H3,((H6,H7)H5,H8)H4)H2,((((H13,H14)H12,H15)H11,H16)H10,((H19,H20)H18,((H23,(H25,H26)H24)H22,(H28,(H30,(H32,(H34,H35)H33)H31)H29)H27)H21)H17)H9)H1,(((H39,(H41,(H43,H44)H42)H40)H38,(H46,(H48,(H50,(H52,H53)H51)H49)H47)H45)H37,((((H58,((H61,((H64,H65)H63,H66)H62)H60,(H68,H69)H67)H59)H57,((H72,((H75,H76)H74,H77)H73)H71,H78)H70)H56,((H81,H82)H80,(H84,(H86,((H89,H90)H88,(H92,(H94,H95)H93)H91)H87)H85)H83)H79)H55,((H98,(H100,H101)H99)H97,(H103,H104)H102)H96)H54)H36)H0;
+	TREE PARASITE = ((P2,P3)P1,(((P7,((P10,P11)P9,P12)P8)P6,P13)P5,(((((P19,P20)P18,((P23,P24)P22,P25)P21)P17,(P27,(((P31,P32)P30,P33)P29,P34)P28)P26)P16,(((P38,P39)P37,P40)P36,((P43,(P45,P46)P44)P42,(P48,(P50,P51)P49)P47)P41)P35)P15,(((P55,(P57,P58)P56)P54,(((P62,P63)P61,(P65,P66)P64)P60,(((P70,P71)P69,P72)P68,P73)P67)P59)P53,((P76,P77)P75,((((P82,P83)P81,P84)P80,P85)P79,(((P89,P90)P88,((P93,P94)P92,P95)P91)P87,(((P99,P100)P98,(P102,(P104,P105)P103)P101)P97,(P107,P108)P106)P96)P86)P78)P74)P52)P14)P4)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		H49	0	0,
+		H50	0	0,
+		H51	0	0,
+		H52	0	0,
+		H53	0	0,
+		H54	0	0,
+		H55	0	0,
+		H56	0	0,
+		H57	0	0,
+		H58	0	0,
+		H59	0	0,
+		H60	0	0,
+		H61	0	0,
+		H62	0	0,
+		H63	0	0,
+		H64	0	0,
+		H65	0	0,
+		H66	0	0,
+		H67	0	0,
+		H68	0	0,
+		H69	0	0,
+		H70	0	0,
+		H71	0	0,
+		H72	0	0,
+		H73	0	0,
+		H74	0	0,
+		H75	0	0,
+		H76	0	0,
+		H77	0	0,
+		H78	0	0,
+		H79	0	0,
+		H80	0	0,
+		H81	0	0,
+		H82	0	0,
+		H83	0	0,
+		H84	0	0,
+		H85	0	0,
+		H86	0	0,
+		H87	0	0,
+		H88	0	0,
+		H89	0	0,
+		H90	0	0,
+		H91	0	0,
+		H92	0	0,
+		H93	0	0,
+		H94	0	0,
+		H95	0	0,
+		H96	0	0,
+		H97	0	0,
+		H98	0	0,
+		H99	0	0,
+		H100	0	0,
+		H101	0	0,
+		H102	0	0,
+		H103	0	0,
+		H104	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0,
+		P41	0	0,
+		P42	0	0,
+		P43	0	0,
+		P44	0	0,
+		P45	0	0,
+		P46	0	0,
+		P47	0	0,
+		P48	0	0,
+		P49	0	0,
+		P50	0	0,
+		P51	0	0,
+		P52	0	0,
+		P53	0	0,
+		P54	0	0,
+		P55	0	0,
+		P56	0	0,
+		P57	0	0,
+		P58	0	0,
+		P59	0	0,
+		P60	0	0,
+		P61	0	0,
+		P62	0	0,
+		P63	0	0,
+		P64	0	0,
+		P65	0	0,
+		P66	0	0,
+		P67	0	0,
+		P68	0	0,
+		P69	0	0,
+		P70	0	0,
+		P71	0	0,
+		P72	0	0,
+		P73	0	0,
+		P74	0	0,
+		P75	0	0,
+		P76	0	0,
+		P77	0	0,
+		P78	0	0,
+		P79	0	0,
+		P80	0	0,
+		P81	0	0,
+		P82	0	0,
+		P83	0	0,
+		P84	0	0,
+		P85	0	0,
+		P86	0	0,
+		P87	0	0,
+		P88	0	0,
+		P89	0	0,
+		P90	0	0,
+		P91	0	0,
+		P92	0	0,
+		P93	0	0,
+		P94	0	0,
+		P95	0	0,
+		P96	0	0,
+		P97	0	0,
+		P98	0	0,
+		P99	0	0,
+		P100	0	0,
+		P101	0	0,
+		P102	0	0,
+		P103	0	0,
+		P104	0	0,
+		P105	0	0,
+		P106	0	0,
+		P107	0	0,
+		P108	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		andv_argentina	or._longicaudatus_argentina,
+		asav_japan	ur._talpoides_japan,
+		asv_china	ap._peninsulae_china,
+		bayv_usa	or._palustris_usa,
+		bccv_usa	si_hispididus_usa,
+		cadv_venezuela	si_alstoni_venezuela,
+		cbnv_vietnam	an._squamipes_vietnam,
+		chov_paraguay	or._fulvescens_venezuela_and_paraguay,
+		dbsv_china	ni._confucianus_china,
+		dobv_greece	ap._flavicollis_greece,
+		elmc_usa	pe._megalotis_usa,
+		hokv_japan	my._rufocanus_japan,
+		htnv_china	ap._agrarius_china,
+		hupv_china	pi._abramus_china,
+		islav_usa	mi._californicus_usa,
+		jabv_brazil	ak._montensis_brazil,
+		jjuv_south_korea	cr._shantungensis_south_korea,
+		jmsv_usa	so._monticolus_usa,
+		khav_china	mi._maximowiczii_china,
+		kkmv_russia	so._roboratus_russia,
+		lanv_paraguay	ca._launcha_paraguay,
+		lhev_china	an._squamipes_china,
+		longquan_ra_5_china	rh._affinis_china,
+		longquan_rm_180_china	rh._monoceros_china,
+		longquan_rs_32_china	rh._sinicus_china,
+		luxv_china	eo._miletus_china,
+		mjnv_south_korea	cr._lasiura_south_korea,
+		mprlv_venezuela	or._fulvescens_venezuela_and_paraguay,
+		mtnv_mexico	pe._beatae_mexico,
+		mujv_south_korea	eo._regulus_south_korea,
+		mulv_usa	si_hispididus_usa,
+		nvav_hungary	ta._europaea_hungary,
+		nyv_usa	pe._leucopus_usa,
+		orov_mexico	or._couesi_mexico,
+		oxbv_usa	ne._gibbsii_usa,
+		phv_usa	mi._pennsylvanicus_usa,
+		puuv_like_china	my._rufocanus_china,
+		puuv_russia	my._glareolus_russia,
+		qdlv_china	so._cylindricauda_china,
+		riomv_bolivia	or._microtis_bolivia,
+		riov_mexico	pe._mexicanus_mexico,
+		rkpv_usa	sc._aquaticus_usa,
+		saav_germany	ap._agrarius_germany,
+		sangv_guinea	hy._simus_guinea,
+		seov_china	ra._norvegicus_china,
+		serv_singapore	ra._tanezumi_singapore,
+		snv_usa	pe._maniculatus_usa,
+		swsv_switzerland	so._araneus_switzerland,
+		thaiv_thailand	ba._indical_thailand,
+		topv_russia	le._lemmus_russia,
+		tpmv_india	su._murinus_india,
+		tulv_germany	mi._arvalis_germany,
+		vlav_china	mi._fortis_682_china,
+		yksv_china	so._isodon_china,
+		yujv_china	mi._fortis_yuanijiang_15_china
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+

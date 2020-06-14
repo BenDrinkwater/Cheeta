@@ -1,0 +1,359 @@
+#nexus
+BEGIN TAXA;
+	DIMENSIONS NTAX = 59;
+	TAXLABELS
+		armigeres_subalbatus
+		drosphila_melanogaster
+		litopenaeus_vannamei
+		salmo_salar
+		saccharomyces_cerevisiae
+		tuber_aestivum
+		emericella_nidulans
+		gremmeniella_abietina
+		botryotinia_fuckeliana
+		epichloe_festucae
+		tolypocladium_cylindrosporum
+		thielaviopsis_basicola
+		ophiostoma_minus
+		magnaporthe_oryzae
+		coniothyrium_minitans
+		coniothyrium_victoriae
+		sphaeropsis_sapinea
+		helicobasidium_mompa
+		ribes_nigrum
+		ribes_sp.
+		prunus_avium
+		black_raspberry
+		trichomonas_vaginalis
+		leishmania_sp.
+		leishmania_major
+		armigeres_subalbatus_virus_sax06_ak20
+		drosphila_melanogaster_totivirus_sw_2009a
+		penaeid_shrimp_infectious_myonecrosis_virus
+		piscine_myocarditis_virus_al_v_708
+		totivirus_atlantic_salmon_cms_norway
+		saccharomyces_cerevisiae_virus_la_l1
+		tuber_aestivum_virus_1
+		unidentifed_blackcurrent_totivirdae
+		ribes_virus_f
+		amasya_cherry_disease_associated_mycovirus
+		cherry_chlorotic_rusty_spot_associated_totiviral_like_dsrna_4
+		black_raspberry_virus_f
+		aspergillus_mycovirus_178
+		gremmeniella_abietina_rna_virus_l1
+		gremmeniella_abietina_rna_virus_l2
+		magnaporthe_oryzae_virus_2
+		coniothyrium_minitans_rna_virus
+		epichloe_festucae_virus_1
+		sphaeropsis_sapinea_rna_virus_2
+		sphaeropsis_sapinea_rna_virus_1
+		botryotinia_fuckeliana_totivirus_1
+		helicobasidium_victoriae_virus_190s
+		tolypocladium_cylindrosporum_virus_1
+		chalara_elegans_rna_virus_1
+		ophiostoma_minus_totivirus
+		magnaporthe_oryzae_virus_1
+		helicobasidium_mompa_totivirus_1_17
+		trichomonas_vaginalis_virus_2
+		trichomonas_vaginalis_virus_3
+		trichomonas_vaginalis_virus
+		trichomonas_vaginalis_virus_1
+		leishmania_rna_virus_1_1
+		leishmania_rna_virus_1_4
+		leishmania_rna_virus_2_1
+		;
+ENDBLOCK;
+
+BEGIN TREES;
+	TRANSLATE
+		H0	InternalNode_00024,
+		H1	InternalNode_00017,
+		H2	InternalNode_00003,
+		H3	InternalNode_00002,
+		H4	InternalNode_00001,
+		H5	armigeres_subalbatus,
+		H6	drosphila_melanogaster,
+		H7	litopenaeus_vannamei,
+		H8	salmo_salar,
+		H9	InternalNode_00016,
+		H10	InternalNode_00015,
+		H11	saccharomyces_cerevisiae,
+		H12	InternalNode_00014,
+		H13	tuber_aestivum,
+		H14	InternalNode_00013,
+		H15	emericella_nidulans,
+		H16	InternalNode_00012,
+		H17	InternalNode_00009,
+		H18	InternalNode_00004,
+		H19	gremmeniella_abietina,
+		H20	botryotinia_fuckeliana,
+		H21	InternalNode_00008,
+		H22	InternalNode_00006,
+		H23	InternalNode_00005,
+		H24	epichloe_festucae,
+		H25	tolypocladium_cylindrosporum,
+		H26	thielaviopsis_basicola,
+		H27	InternalNode_00007,
+		H28	ophiostoma_minus,
+		H29	magnaporthe_oryzae,
+		H30	InternalNode_00011,
+		H31	InternalNode_00010,
+		H32	coniothyrium_minitans,
+		H33	coniothyrium_victoriae,
+		H34	sphaeropsis_sapinea,
+		H35	helicobasidium_mompa,
+		H36	InternalNode_00023,
+		H37	InternalNode_00020,
+		H38	InternalNode_00018,
+		H39	ribes_nigrum,
+		H40	ribes_sp.,
+		H41	InternalNode_00019,
+		H42	prunus_avium,
+		H43	black_raspberry,
+		H44	InternalNode_00022,
+		H45	trichomonas_vaginalis,
+		H46	InternalNode_00021,
+		H47	leishmania_sp.,
+		H48	leishmania_major,
+		P0	InternalNode_00033,
+		P1	InternalNode_00011,
+		P2	InternalNode_00004,
+		P3	InternalNode_00002,
+		P4	InternalNode_00001,
+		P5	armigeres_subalbatus_virus_sax06_ak20,
+		P6	drosphila_melanogaster_totivirus_sw_2009a,
+		P7	penaeid_shrimp_infectious_myonecrosis_virus,
+		P8	InternalNode_00003,
+		P9	piscine_myocarditis_virus_al_v_708,
+		P10	totivirus_atlantic_salmon_cms_norway,
+		P11	InternalNode_00010,
+		P12	InternalNode_00005,
+		P13	saccharomyces_cerevisiae_virus_la_l1,
+		P14	tuber_aestivum_virus_1,
+		P15	InternalNode_00009,
+		P16	InternalNode_00008,
+		P17	InternalNode_00006,
+		P18	unidentifed_blackcurrent_totivirdae,
+		P19	ribes_virus_f,
+		P20	InternalNode_00007,
+		P21	amasya_cherry_disease_associated_mycovirus,
+		P22	cherry_chlorotic_rusty_spot_associated_totiviral_like_dsrna_4,
+		P23	black_raspberry_virus_f,
+		P24	InternalNode_00032,
+		P25	InternalNode_00029,
+		P26	InternalNode_00027,
+		P27	InternalNode_00026,
+		P28	InternalNode_00025,
+		P29	InternalNode_00017,
+		P30	InternalNode_00016,
+		P31	InternalNode_00015,
+		P32	InternalNode_00014,
+		P33	InternalNode_00013,
+		P34	aspergillus_mycovirus_178,
+		P35	InternalNode_00012,
+		P36	gremmeniella_abietina_rna_virus_l1,
+		P37	gremmeniella_abietina_rna_virus_l2,
+		P38	magnaporthe_oryzae_virus_2,
+		P39	coniothyrium_minitans_rna_virus,
+		P40	epichloe_festucae_virus_1,
+		P41	sphaeropsis_sapinea_rna_virus_2,
+		P42	InternalNode_00024,
+		P43	InternalNode_00023,
+		P44	sphaeropsis_sapinea_rna_virus_1,
+		P45	InternalNode_00022,
+		P46	InternalNode_00020,
+		P47	InternalNode_00019,
+		P48	InternalNode_00018,
+		P49	botryotinia_fuckeliana_totivirus_1,
+		P50	helicobasidium_victoriae_virus_190s,
+		P51	tolypocladium_cylindrosporum_virus_1,
+		P52	chalara_elegans_rna_virus_1,
+		P53	InternalNode_00021,
+		P54	ophiostoma_minus_totivirus,
+		P55	magnaporthe_oryzae_virus_1,
+		P56	helicobasidium_mompa_totivirus_1_17,
+		P57	trichomonas_vaginalis_virus_2,
+		P58	trichomonas_vaginalis_virus_3,
+		P59	InternalNode_00028,
+		P60	trichomonas_vaginalis_virus,
+		P61	trichomonas_vaginalis_virus_1,
+		P62	InternalNode_00031,
+		P63	InternalNode_00030,
+		P64	leishmania_rna_virus_1_1,
+		P65	leishmania_rna_virus_1_4,
+		P66	leishmania_rna_virus_2_1
+		;
+	TREE HOST = (((((H5,H6)H4,H7)H3,H8)H2,((H11,(H13,(H15,(((H19,H20)H18,(((H24,H25)H23,H26)H22,(H28,H29)H27)H21)H17,((H32,H33)H31,H34)H30)H16)H14)H12)H10,H35)H9)H1,(((H39,H40)H38,(H42,H43)H41)H37,(H45,(H47,H48)H46)H44)H36)H0;
+	TREE PARASITE = (((((P5,P6)P4,P7)P3,(P9,P10)P8)P2,((P13,P14)P12,(((P18,P19)P17,(P21,P22)P20)P16,P23)P15)P11)P1,((((((((((P34,(P36,P37)P35)P33,P38)P32,P39)P31,P40)P30,P41)P29,((P44,((((P49,P50)P48,P51)P47,P52)P46,(P54,P55)P53)P45)P43,P56)P42)P28,P57)P27,P58)P26,(P60,P61)P59)P25,((P64,P65)P63,P66)P62)P24)P0;
+ENDBLOCK;
+
+BEGIN COPHYLOGENY;
+[RANKS represents the ranks of the nodes in the tree]
+[Syntax is: nodename timezone_from timezone_to]
+	RANKS
+		H0	0	0,
+		H1	0	0,
+		H2	0	0,
+		H3	0	0,
+		H4	0	0,
+		H5	0	0,
+		H6	0	0,
+		H7	0	0,
+		H8	0	0,
+		H9	0	0,
+		H10	0	0,
+		H11	0	0,
+		H12	0	0,
+		H13	0	0,
+		H14	0	0,
+		H15	0	0,
+		H16	0	0,
+		H17	0	0,
+		H18	0	0,
+		H19	0	0,
+		H20	0	0,
+		H21	0	0,
+		H22	0	0,
+		H23	0	0,
+		H24	0	0,
+		H25	0	0,
+		H26	0	0,
+		H27	0	0,
+		H28	0	0,
+		H29	0	0,
+		H30	0	0,
+		H31	0	0,
+		H32	0	0,
+		H33	0	0,
+		H34	0	0,
+		H35	0	0,
+		H36	0	0,
+		H37	0	0,
+		H38	0	0,
+		H39	0	0,
+		H40	0	0,
+		H41	0	0,
+		H42	0	0,
+		H43	0	0,
+		H44	0	0,
+		H45	0	0,
+		H46	0	0,
+		H47	0	0,
+		H48	0	0,
+		P0	0	0,
+		P1	0	0,
+		P2	0	0,
+		P3	0	0,
+		P4	0	0,
+		P5	0	0,
+		P6	0	0,
+		P7	0	0,
+		P8	0	0,
+		P9	0	0,
+		P10	0	0,
+		P11	0	0,
+		P12	0	0,
+		P13	0	0,
+		P14	0	0,
+		P15	0	0,
+		P16	0	0,
+		P17	0	0,
+		P18	0	0,
+		P19	0	0,
+		P20	0	0,
+		P21	0	0,
+		P22	0	0,
+		P23	0	0,
+		P24	0	0,
+		P25	0	0,
+		P26	0	0,
+		P27	0	0,
+		P28	0	0,
+		P29	0	0,
+		P30	0	0,
+		P31	0	0,
+		P32	0	0,
+		P33	0	0,
+		P34	0	0,
+		P35	0	0,
+		P36	0	0,
+		P37	0	0,
+		P38	0	0,
+		P39	0	0,
+		P40	0	0,
+		P41	0	0,
+		P42	0	0,
+		P43	0	0,
+		P44	0	0,
+		P45	0	0,
+		P46	0	0,
+		P47	0	0,
+		P48	0	0,
+		P49	0	0,
+		P50	0	0,
+		P51	0	0,
+		P52	0	0,
+		P53	0	0,
+		P54	0	0,
+		P55	0	0,
+		P56	0	0,
+		P57	0	0,
+		P58	0	0,
+		P59	0	0,
+		P60	0	0,
+		P61	0	0,
+		P62	0	0,
+		P63	0	0,
+		P64	0	0,
+		P65	0	0,
+		P66	0	0
+		;
+
+[PHI represents the associations from the parasite leaf nodes to the host leaf nodes]
+[Syntax is: parasite_leaf_name host_leaf_name]
+	PHI
+		amasya_cherry_disease_associated_mycovirus	prunus_avium,
+		armigeres_subalbatus_virus_sax06_ak20	armigeres_subalbatus,
+		aspergillus_mycovirus_178	emericella_nidulans,
+		black_raspberry_virus_f	black_raspberry,
+		botryotinia_fuckeliana_totivirus_1	botryotinia_fuckeliana,
+		chalara_elegans_rna_virus_1	thielaviopsis_basicola,
+		cherry_chlorotic_rusty_spot_associated_totiviral_like_dsrna_4	prunus_avium,
+		coniothyrium_minitans_rna_virus	coniothyrium_minitans,
+		drosphila_melanogaster_totivirus_sw_2009a	drosphila_melanogaster,
+		epichloe_festucae_virus_1	epichloe_festucae,
+		gremmeniella_abietina_rna_virus_l1	gremmeniella_abietina,
+		gremmeniella_abietina_rna_virus_l2	gremmeniella_abietina,
+		helicobasidium_mompa_totivirus_1_17	helicobasidium_mompa,
+		helicobasidium_victoriae_virus_190s	coniothyrium_victoriae,
+		leishmania_rna_virus_1_1	leishmania_sp.,
+		leishmania_rna_virus_1_4	leishmania_sp.,
+		leishmania_rna_virus_2_1	leishmania_major,
+		magnaporthe_oryzae_virus_1	magnaporthe_oryzae,
+		magnaporthe_oryzae_virus_2	magnaporthe_oryzae,
+		ophiostoma_minus_totivirus	ophiostoma_minus,
+		penaeid_shrimp_infectious_myonecrosis_virus	litopenaeus_vannamei,
+		piscine_myocarditis_virus_al_v_708	salmo_salar,
+		ribes_virus_f	ribes_sp.,
+		saccharomyces_cerevisiae_virus_la_l1	saccharomyces_cerevisiae,
+		sphaeropsis_sapinea_rna_virus_1	sphaeropsis_sapinea,
+		sphaeropsis_sapinea_rna_virus_2	sphaeropsis_sapinea,
+		tolypocladium_cylindrosporum_virus_1	tolypocladium_cylindrosporum,
+		totivirus_atlantic_salmon_cms_norway	salmo_salar,
+		trichomonas_vaginalis_virus_1	trichomonas_vaginalis,
+		trichomonas_vaginalis_virus_2	trichomonas_vaginalis,
+		trichomonas_vaginalis_virus_3	trichomonas_vaginalis,
+		trichomonas_vaginalis_virus	trichomonas_vaginalis,
+		tuber_aestivum_virus_1	tuber_aestivum,
+		unidentifed_blackcurrent_totivirdae	ribes_nigrum
+;
+[COSTS represents the cost table for the operations COSPECIATION, DUPLICATION, EXTINCTION, SORTING and HOSTSWITCH]
+[Syntax is: operation cost]
+	COSTS
+		COSPECIATION	0,
+		DUPLICATION	1,
+		SORTING	1,
+		HOSTSWITCH	2
+		;
+ENDBLOCK;
+
