@@ -14,7 +14,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void ImprovedNodeMappingTest() {
-		String[] args = new String[] {"--CostScheme", "@{0,1,1,2}", "--Algorithm", "NM", "--File", hantivirusesFileName };
+		String[] args = new String[] {"--CostScheme", "@{0,1,1,2}", "--Algorithm", "INM", "--File", hantivirusesFileName };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);
@@ -24,7 +24,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void ImprovedNodeMappingWithMetaHeursitcTest() {
-		String[] args = new String[] {"--CostScheme", "@{0,1,1,2}", "--Algorithm", "NM", "--File", hantivirusesFileName, "--MetaHeuristic", "GA", "--MetaHeuristicSettings", "@{100, 100}" };
+		String[] args = new String[] {"--CostScheme", "@{0,1,1,2}", "--Algorithm", "INM", "--File", hantivirusesFileName, "--MetaHeuristic", "GA", "--MetaHeuristicSettings", "@{100, 100}" };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);
@@ -54,7 +54,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void IsNotValidParameterSetTest1() {
-		String[] args = new String[] {"--CostScheme", "0,1,1,2", "--Algorithm", "NM", "--File", hantivirusesFileName };
+		String[] args = new String[] {"--CostScheme", "0,1,1,2", "--Algorithm", "INM", "--File", hantivirusesFileName };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);
@@ -64,7 +64,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void IsNotValidParameterSetTest2() {
-		String[] args = new String[] {"--CostScheme", "0", "--Algorithm", "NM", "--File", hantivirusesFileName };
+		String[] args = new String[] {"--CostScheme", "0", "--Algorithm", "INM", "--File", hantivirusesFileName };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);
@@ -74,7 +74,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void IsNotValidParameterSetTest3() {
-		String[] args = new String[] {"--CostScheme", "@{0,1,1,2", "--Algorithm", "NM", "--File", hantivirusesFileName };
+		String[] args = new String[] {"--CostScheme", "@{0,1,1,2", "--Algorithm", "INM", "--File", hantivirusesFileName };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);
@@ -84,7 +84,7 @@ public class ParameterParserTest {
 	
 	@Test
 	public void IsNotValidParameterSetTest4() {
-		String[] args = new String[] {"--CostScheme", "{0,1,1,2}", "--Algorithm", "NM", "--File", hantivirusesFileName };
+		String[] args = new String[] {"--CostScheme", "{0,1,1,2}", "--Algorithm", "INM", "--File", hantivirusesFileName };
 		ParameterParser parser = new ParameterParser(args);
 		List<Parameter> parameters = parser.GetParameters();
 		assertNotNull(parameters);

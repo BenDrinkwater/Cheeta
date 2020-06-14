@@ -12,11 +12,19 @@ public class ParameterParser {
 	public ParameterParser(String[] args) {
 		this.Arguments = args;
 		SupportedOptions = new SupportedOptions();
-		this.Parameters = LoadParameters();
 	}
 	
 	public List<Parameter> GetParameters() {
+		this.Parameters = LoadParameters();
 		return this.Parameters;
+	}
+	
+	public String LoadErrorMessage() {
+		return this.SupportedOptions.ErrorMessage();
+	}
+	
+	public SupportedOptions getSupportedOptions() {
+		return this.SupportedOptions;
 	}
 	
 	private List<Parameter> LoadParameters() {
